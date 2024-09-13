@@ -51,7 +51,7 @@ Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, tur
 Source code can be included by fencing the code with three backticks. Syntax highlighting works automatically when specifying the language after the backticks.
 
 ````
-```latex
+```tex
 Euler's identity asserts that $$e^{i\pi}$$ is equal to $$-1$$. This fact follows from Euler's formula
 
 $$ e^{i\theta} = \cos(\theta) + i\sin(\theta). $$
@@ -60,7 +60,7 @@ $$ e^{i\theta} = \cos(\theta) + i\sin(\theta). $$
 
 This would be rendered as:
 
-```latex
+```tex
 Euler's identity asserts that $$e^{i\pi}$$ is equal to $$-1$$. This fact follows from Euler's formula
 
 $$ e^{i\theta} = \cos(\theta) + i\sin(\theta). $$
