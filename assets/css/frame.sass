@@ -14,6 +14,21 @@ body > header, body > footer
   background: lighten($dark, 5%)
   color: $light
 
+nav a
+  margin: .25em
+  padding: .5em .5em
+
+nav a.selected
+  background: lighten($dark, 10%)
+
+nav a:hover, nav a.selected:hover
+  background: lighten($dark, 20%)
+  text-decoration: inherit
+
+.icon
+  margin-right: 0.5em
+  color: inherit!important
+
 @media (min-width: 32em)
   body > header, body > article, body > footer
     padding: 1.75em calc(22% - 6em)
