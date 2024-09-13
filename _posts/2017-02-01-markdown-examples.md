@@ -53,9 +53,9 @@ Source code can be included by fencing the code with three backticks. Syntax hig
 ````
 ```latex
 Euler's identity asserts that $e^{i\pi}$ is equal to $-1$. This fact follows from Euler's formula
-\begin{equation*}
+$$
   e^{i\theta} = \cos(\theta) + i\sin(\theta).
-\end{equation*}
+$$
 ```
 ````
 
@@ -63,10 +63,16 @@ This would be rendered as:
 
 ```latex
 Euler's identity asserts that $e^{i\pi}$ is equal to $-1$. This fact follows from Euler's formula
-\begin{equation*}
+$$
   e^{i\theta} = \cos(\theta) + i\sin(\theta).
-\end{equation*}
+$$
 ```
+
+Euler's identity asserts that $e^{i\pi}$ is equal to $-1$. This fact follows from Euler's formula
+$$
+  e^{i\theta} = \cos(\theta) + i\sin(\theta).
+$$
+
 
 ## Lists
 
