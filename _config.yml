@@ -22,9 +22,9 @@ mathjax: true
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html", icon: home}
-  - {file: "publications.md", icon: square-root-variable}
-  - {file: "seminar-talks.md", icon: comment}
-  - {file: "teaching.md", icon: pencil}
+  - {file: "publications.md", icon: paper}
+  - {file: "seminar-talks.md", icon: talk}
+  - {file: "teaching.md", icon: teacher}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:antti.kaenmaki@gmail.com"}
