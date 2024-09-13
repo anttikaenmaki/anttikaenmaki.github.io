@@ -23,7 +23,7 @@ mathjax: true
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html", icon: home}
   - {file: "publications.md", icon: file}
-  - {file: "seminar-talks.md", icon: superscript}
+  - {file: "seminar-talks.md", icon: comment}
   - {file: "teaching.md", icon: chalkboard-teacher}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
