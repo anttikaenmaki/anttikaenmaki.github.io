@@ -50,7 +50,7 @@ My preprints and publications are listed here. The list also contains surveys an
     (with K. J. Falconer and J. M. Fraser)\
     [Proc. Amer. Math. Soc., 151 (2023), no. 2, 779-794](https://doi.org/10.1090/proc/16174)
 
-50. **[Super-exponential condensation without exact overlaps](https://doi.org/10.48550/arXiv.1910.04623)** | Numerical calculations\
+50. **[Super-exponential condensation without exact overlaps](https://doi.org/10.48550/arXiv.1910.04623)** | [Numerical calculations](/assets/mathematica/50-numerical-calculations.nb)\
     (with B. Bárány)\
     [Adv. Math., 379 (2021), 107549](https://doi.org/10.1016/j.aim.2020.107549)
 
@@ -74,7 +74,7 @@ My preprints and publications are listed here. The list also contains surveys an
     (with B. Bárány, T. Jordan, and M. Rams)\
     [Int. Math. Res. Not. IMRN 2021, no. 10, 7966-8005](https://doi.org/10.1093/imrn/rnz359)
 
-44. **[Self-conformal sets with positive Hausdorff measure](https://doi.org/10.48550/arXiv.1803.09113)** | Numerical calculations\
+44. **[Self-conformal sets with positive Hausdorff measure](https://doi.org/10.48550/arXiv.1803.09113)** | [Numerical calculations](/assets/mathematica/44-numerical-calculations-for-example-76.cdf)\
     (with J. Angelevska and S. Troscheit)\
     [Bull. Lond. Math. Soc., 52 (2020), no. 1, 200-223](https://doi.org/10.1112/blms.12320)
 
