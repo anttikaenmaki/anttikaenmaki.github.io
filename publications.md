@@ -4,7 +4,7 @@ title: Publications
 permalink: /publications/
 ---
 
-My preprints and publications are listed here. The list also contains surveys and likes. The research mainly concerns ergodic theory, fractal geometry, and geometric measure theory. Note that the versions below may differ from the published ones. Information associated with my publications can be found for example in my [MathSciNet](https://mathscinet.ams.org/mathscinet/) [profile](https://mathscinet.ams.org/mathscinet/MRAuthorID/713182), [zbMATH Open](https://zbmath.org/) [profile](https://zbmath.org/authors/kaenmaki.antti), or [Google Scholar](https://scholar.google.com/) [profile](https://scholar.google.com/citations?user=ubIXkowAAAAJ).
+QMy preprints and publications are listed here. The list also contains surveys and likes. The research mainly concerns ergodic theory, fractal geometry, and geometric measure theory. Note that the versions below may differ from the published ones. Information associated with my publications can be found for example in my [MathSciNet](https://mathscinet.ams.org/mathscinet/) [profile](https://mathscinet.ams.org/mathscinet/MRAuthorID/713182), [zbMATH Open](https://zbmath.org/) [profile](https://zbmath.org/authors/kaenmaki.antti), or [Google Scholar](https://scholar.google.com/) [profile](https://scholar.google.com/citations?user=ubIXkowAAAAJ).
 
 61. [**Thermodynamic formalism of countably generated self-affine sets**](https://doi.org/10.48550/arXiv.2405.00520)\
     (with I. D. Morris)\
