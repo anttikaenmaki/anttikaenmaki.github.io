@@ -1,7 +1,9 @@
 ---
-layout: default
+layout: page
 title: Blog
 permalink: /blog/
 ---
 
-{% include archive.html %}
+This is my blog.
+
+{% include archive.html language=page.language %}
