@@ -1,8 +1,6 @@
 {% if include.category %}
-VARMISTUS: {{ include.category }}
 {% for category in site.categories %}
 {% if category[0] == include.category %}
-  OSUMA!
   {% assign posts = category[1] %}
   {% break %}
 {% endif %}
