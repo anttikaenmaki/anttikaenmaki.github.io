@@ -1,0 +1,1 @@
+<strong>{{ include.theorem | default: "Theorem" }}{% if include.no %} {{ include.no }}{% else %}{% endif %}</strong>{% if include.info %} ({{ include.info }}).{% else %}.{% endif %}

@@ -1,5 +1,28 @@
 <header>
   <h1>{{ include.post.title }}</h1>
   {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
-  <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: date_format }}</time>
+  <time datetime="{{ include.post.date | date_to_xmlschema }}">
+{% if include.language == "finnish" %}
+{% assign m = page.date | date: "%-m" %}
+{% case m %}
+  {% when '1' %}Tammikuu
+  {% when '2' %}Helmikuu
+  {% when '3' %}Maaliskuu
+  {% when '4' %}Huhtikuu
+  {% when '5' %}Toukokuu
+  {% when '6' %}Kesäkuu
+  {% when '7' %}Heinäkuu
+  {% when '8' %}Elokuu
+  {% when '9' %}Syyskuu
+  {% when '10' %}Lokakuu
+  {% when '11' %}Marraskuu
+  {% when '12' %}Joulukuu
+{% endcase %}
+{{ page.date | date: "%-d" }},
+{{ page.date | date: "%Y" }}
+{% else %}
+  {{ include.post.date | date: date_format }}
+{% endif %}
+  </time>
 </header>
+
