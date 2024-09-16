@@ -1,7 +1,6 @@
 ---
 title:  "Do self-conformal measures on the real line resonate?"
 layout: post
-categories: media
 description: We go through some advanced stuff
 ---
 

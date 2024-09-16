@@ -1,7 +1,6 @@
 ---
 title:  "Advanced examples"
 layout: post
-categories: media
 description: We go through some advanced examples
 ---
 

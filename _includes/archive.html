@@ -1,5 +1,15 @@
+{% if include.category %}
+{% for category in site.categories %}
+{% if category[0] == include.category %}
+  {% assign posts = category[1] %}
+  {% break %}
+{% endif %}
+{% endfor %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
 <ol reversed>
-  {% for post in site.posts %}
+  {% for post in posts %}
   <li>
     <p><a href="{{ post.url | relative_url }}"><strong>{{ post.title }}</strong></a><br />
     {% if post.description %}
