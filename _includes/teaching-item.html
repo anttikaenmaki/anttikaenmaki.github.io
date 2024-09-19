@@ -1,0 +1,3 @@
+    [**{{ include.coursename }}**](/assets/pdfs/{{ include.filename }})\
+    {{ include.description }}\{% assign pdf = site.static_files | where: "name", include.filename | first %}
+    {{ pdf.modified_time | date: site.date_format }}
