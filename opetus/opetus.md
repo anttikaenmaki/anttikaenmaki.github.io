@@ -10,7 +10,7 @@ Matematiikan opiskelu yliopistossa on perinteisesti koostunut [luennoista](https
 {% for paper in site.data.luentomonisteet %}
 {% assign paperdata = paper[1] %}
 {{ paper[0] }}. {% include teaching-item.html language=page.language
+    name=paperdata.name 
     filename=paperdata.filename 
-    coursename=paperdata.coursename 
     description=paperdata.description %}
 {% endfor %}{:reversed="reversed"}
