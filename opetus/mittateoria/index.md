@@ -2,7 +2,7 @@
 layout: page
 language: finnish
 title: Mittateoria
-permalink: /teaching/mittateoria
+permalink: /opetus/mittateoria
 ---
 
 Tämä on mittateorian kurssin kurssisivu.

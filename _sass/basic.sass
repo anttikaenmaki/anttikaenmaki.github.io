@@ -1,3 +1,6 @@
+html
+  color-scheme: light dark
+
 body
   background: $light
   color: $dark
@@ -11,11 +14,6 @@ body
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
-@media (prefers-color-scheme: dark)
-  body
-    background: $dark
-    color: $light
-
 h1, h2, h3, h4, h5, h6
   font-weight: $heading-weight
   color: darken($green, 10%)!important
@@ -24,14 +22,46 @@ b, strong, th
   color: darken($green, 5%)!important
   font-weight: $font-weight + 200
 
-p
-  text-align: justify
-
 a
-  color: $link-color
+  color: $green
   text-decoration: inherit
   &:hover
     text-decoration: underline
+
+.button
+  font-family: $font-family
+  font-weight: $font-weight
+  font-size: $font-size
+  padding: 3px 0
+  border: none
+  margin: 0
+  cursor: pointer
+  background-color: $light
+  color: $green
+  @media (prefers-color-scheme: dark)
+    color-scheme: dark
+    background-color: $dark
+    color: $lightgreen!important
+  &:hover, &.active
+    background-color: lighten($lightgreen, 10%)
+    color: $green
+    @media (prefers-color-scheme: dark)
+      background-color: lighten($dark, 15%)
+      color: $lightgreen
+
+@media (prefers-color-scheme: dark)
+  body
+    background: $dark
+    color: $light
+  h1, h2, h3, h4, h5, h6
+    color: $lightgreen!important
+  b, strong, th
+    color: $lightgreen!important
+  a
+    color: $lightgreen!important
+
+p
+  text-align: justify
 
 header a, footer a, aside a
   color: inherit

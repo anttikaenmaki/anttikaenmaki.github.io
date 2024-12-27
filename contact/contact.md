@@ -4,4 +4,4 @@ title: Contact
 permalink: /contact/
 ---
 
-This is a page for contacting information.
+Email: [antti@kaenmaki.net](mailto:antti@kaenmaki.net)

@@ -1,0 +1,13 @@
+{
+	"2" : {
+		"filename"			: "funktiot-arviointi.pdf",
+		"coursename"		: "Funktiot ja arviointi",
+		"description"		: "Kuvaus, lukumäärä, kolmioepäyhtälö ja kompleksiluvut"
+	},
+
+	"1" : {
+		"filename"			: "todistaminen-joukko-oppi.pdf",
+		"coursename"		: "Todistaminen ja joukko-oppi",
+		"description"		: "Logiikka, todistaminen, joukko-opin operaatiot ja relaatio"
+	}
+}
