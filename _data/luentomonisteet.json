@@ -1,13 +1,13 @@
 {
 	"2" : {
-		"name"				: "Funktiot ja arviointi",
-		"filename"			: "funktiot-arviointi.pdf",
-		"description"		: "Kuvaus, lukumäärä, kolmioepäyhtälö ja kompleksiluvut"
+		"name"				: "Kuvaukset ja kompleksiluvut",
+		"filename"			: "kuvaukset-kompleksiluvut.pdf",
+		"description"		: "Käänteiskuvaus, lukumäärä, alkeisfunktiot, kolmioepäyhtälö, kompleksiluvut ja napakoordinaatit"
 	},
 
 	"1" : {
 		"name"				: "Joukot ja todistaminen",
 		"filename"			: "joukot-todistaminen.pdf",
-		"description"		: "Logiikka, todistaminen, joukko-opin operaatiot ja relaatio"
+		"description"		: "Lauselogiikka, predikaattilogiikka, todistaminen, joukko ja relaatio"
 	}
 }
