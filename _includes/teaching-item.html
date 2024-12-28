@@ -1,4 +1,4 @@
 
     [**{{ include.name }}**](/assets/pdfs/{{ include.filename }})\
     {{ include.description }}\{% assign pdf = site.static_files | where: "name", include.filename | first %}\
-    {% include date.html date=pdf.modified_time language=page.language %}
+    {{ include.date }}

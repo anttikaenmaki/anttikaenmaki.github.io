@@ -12,5 +12,6 @@ Matematiikan opiskelu yliopistossa on perinteisesti koostunut [luennoista](https
 {{ paper[0] }}. {% include teaching-item.html language=page.language
     name=paperdata.name 
     filename=paperdata.filename 
-    description=paperdata.description %}
+    description=paperdata.description
+    date=paperdata.date %}
 {% endfor %}{:reversed="reversed"}
