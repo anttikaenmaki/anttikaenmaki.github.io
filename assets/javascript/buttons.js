@@ -6,7 +6,6 @@ function toggle(button) {
     for (let i = 0; i < buttons.length; i++) {
       document.getElementById(buttons[i].id).value = "OFF";
       document.getElementById(button.id).classList.remove("active");
-      document.getElementById(button.id).classList.remove("hover");
     }
     document.getElementById(button.id).value = "ON";
     document.getElementById(button.id).classList.add("active");
@@ -19,7 +18,6 @@ function toggle(button) {
   else {
     document.getElementById(button.id).value = "OFF";
     document.getElementById(button.id).classList.remove("active");
-    document.getElementById(button.id).classList.remove("hover");
     // Make all OFF -> ON
     offno = 0;
     for (let i = 0; i < buttons.length; i++) {
