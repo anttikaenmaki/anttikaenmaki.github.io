@@ -175,11 +175,11 @@ If we had conditions under which
 
 $$ \mathrm{dim}_{\mathrm{H}} X_{\mathcal{J}_n} = \min\{d,\mathrm{dim}_{\mathrm{aff}}(A_i)_{i \in \mathcal{J}_n}\}, $$
 
-then, by the monotonicity and the countable stability of the Hausdorff dimension, we would get
+then, by the monotonicity and the countable stability of the Hausdorff dimension and [Theorem 2](#theorem-2)(2), we would get
 
 $$ \mathrm{dim}_{\mathrm{H}} X \ge \sup_{n \ge 1} \mathrm{dim}_{\mathrm{H}} X_{\mathcal{J}_n} = \min\{d,\sup_{n \ge 1}\mathrm{dim}_{\mathrm{aff}}(A_i)_{i \in \mathcal{J}_n}\} = \min\{d,\underline{\mathrm{dim}}_{\mathrm{aff}}\mathsf{A}\}. $$
   
-[Hochman (2014)](https://doi.org/10.48550/arXiv.1212.1873) has found such assumptions on $$\mathbb{R}$$. Note that self-affine sets on $$\mathbb{R}$$ are self-similar.
+[Hochman (2014)](https://doi.org/10.48550/arXiv.1212.1873) has found such assumptions on $$\mathbb{R}$$. Therefore, as in this case the affinity dimension exists, the above explained procedure allows us to extend his result into the infinitely generated setting. Note that self-affine sets on $$\mathbb{R}$$ are self-similar.
 
 {% include theorem.html no="7" theorem="Theorem" %}
 *Let $$X \subset \mathbb{R}$$ be a self-similar set satisfying the exponential separation condition. Then $$\mathrm{dim}_{\mathrm{H}} X = \min\{1,\mathrm{dim}_{\mathrm{aff}}\mathsf{A}\}$$.*
@@ -258,7 +258,7 @@ is a *cylinder set* at level $$n$$. We show that if $$\mu \in \mathcal{M}_\sigma
 
 $$ P^{(j)}(\mu,\mathsf{A},s) = h(\mu) + \Lambda^{(j)}(\mu,\mathsf{A},s). $$
  
-The idea in the proof is to first use [Reeve-K (2014)](https://doi.org/10.48550/arXiv.1212.5820): For each $$j \in \{1,\ldots,p\}$$ the quasi-multiplicativity of $$\Phi^{(j)}_s$$ implies the existence of a unique ergodic $$\mu^{(j)} \in \mathcal{M}_\sigma(\mathcal{I}^\mathbb{N})$$ for which $$P^{(j)}(\mu,\mathsf{A},s) = P^{(j)}(\mathsf{A},s)$$. Then, by proving $$h(\mu^{(j)})<\infty$$ and considering only pressure maximising indices $$j \in \{1,\ldots,p\}$$, we see that $$\mu^{(j)}$$ is an $$\varphi^s$$-equilibrium state. Thus, the number of distinct ergodic $$\varphi^s$$-equilibrium states for $$\mathsf{A}$$ is at least one and is not more than $$p$$. The fact that equilibrium states are fully supported allows us to prove the following result.
+The idea in the proof is to first use [K-Reeve (2014)](https://doi.org/10.48550/arXiv.1212.5820): For each $$j \in \{1,\ldots,p\}$$ the quasi-multiplicativity of $$\Phi^{(j)}_s$$ implies the existence of a unique ergodic $$\mu^{(j)} \in \mathcal{M}_\sigma(\mathcal{I}^\mathbb{N})$$ for which $$P^{(j)}(\mu,\mathsf{A},s) = P^{(j)}(\mathsf{A},s)$$. Then, by proving $$h(\mu^{(j)})<\infty$$ and considering only pressure maximising indices $$j \in \{1,\ldots,p\}$$, we see that $$\mu^{(j)}$$ is an $$\varphi^s$$-equilibrium state. Thus, the number of distinct ergodic $$\varphi^s$$-equilibrium states for $$\mathsf{A}$$ is at least one and is not more than $$p$$. The fact that equilibrium states are fully supported allows us to prove the following result.
 
 {% include theorem.html no="13" theorem="Proposition" %}
 *Let $$\mathsf{A}=(A_i)_{i \in I} \in \mathrm{GL}_d(\mathbb{R})^\mathcal{I}$$. If $$\theta_\mathsf{A} < \overline{\mathrm{dim}}_{\mathrm{aff}}\mathsf{A}$$, then $$\mathrm{dim}_{\mathrm{aff}} (A_i)_{i \in \mathcal{J}} < \mathrm{dim}_{\mathrm{aff}} \mathsf{A}$$ for every proper subset $$\mathcal{J}$$ of $$\mathcal{I}$$.*
