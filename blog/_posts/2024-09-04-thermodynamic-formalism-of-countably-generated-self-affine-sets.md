@@ -165,6 +165,8 @@ $$ \underline{\mathrm{dim}}_{\mathrm{aff}}\mathsf{A} = \beta < \gamma = \theta_{
 
 *Furthermore, $$\mathsf{A}$$ may be chosen such that $$P(\mathsf{A},\theta_{\mathsf{A}})$$ is either negative or infinite, as desired.*
 
+
+
 ## Hausdorff dimension of self-affine sets
 
 As in the finite case, the upper bound $$\mathrm{dim}_{\mathrm{H}} X \le \min\{d,\overline{\mathrm{dim}}_{\mathrm{aff}}\mathsf{A}\}$$ for the Hausdorff dimension of the self-affine set is straightforward. The goal is to find conditions under which $$\mathrm{dim}_{\mathrm{H}} X \ge \min\{d,\underline{\mathrm{dim}}_{\mathrm{aff}}\mathsf{A}\}$$ since then, if $$\underline{\mathrm{dim}}_{\mathrm{aff}}\mathsf{A} = \overline{\mathrm{dim}}_{\mathrm{aff}}\mathsf{A}$$, we obtain $$\mathrm{dim}_{\mathrm{H}} X = \min\{d,\mathrm{dim}_{\mathrm{aff}}\mathsf{A}\}$$. If $$\mathcal{J}$$ is a finite subset of $$\mathcal{I}$$, then we denote the self-affine set associated to the finite affine iterated function system $$(T_i)_{i \in \mathcal{J}}$$ by $$X_\mathcal{J}$$. Observe that if a sequence $$(\mathcal{J}_n)_{n \ge 1}$$ of finite subsets of $$\mathcal{I}$$ satisfies $$\bigcup_{n=1}^\infty \mathcal{J}_n = \mathcal{I}$$, we have
@@ -175,7 +177,7 @@ If we had conditions under which
 
 $$ \mathrm{dim}_{\mathrm{H}} X_{\mathcal{J}_n} = \min\{d,\mathrm{dim}_{\mathrm{aff}}(A_i)_{i \in \mathcal{J}_n}\}, $$
 
-then, by the monotonicity and the countable stability of the Hausdorff dimension and [Theorem 2](#theorem-2)(2), we would get
+then, by the monotonicity and the countable stability of the Hausdorff dimension, we would get
 
 $$ \mathrm{dim}_{\mathrm{H}} X \ge \sup_{n \ge 1} \mathrm{dim}_{\mathrm{H}} X_{\mathcal{J}_n} = \min\{d,\sup_{n \ge 1}\mathrm{dim}_{\mathrm{aff}}(A_i)_{i \in \mathcal{J}_n}\} = \min\{d,\underline{\mathrm{dim}}_{\mathrm{aff}}\mathsf{A}\}. $$
   
