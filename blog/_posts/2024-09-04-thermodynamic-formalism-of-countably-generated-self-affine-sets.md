@@ -181,7 +181,7 @@ then, by the monotonicity and the countable stability of the Hausdorff dimension
 
 $$ \mathrm{dim}_{\mathrm{H}} X \ge \sup_{n \ge 1} \mathrm{dim}_{\mathrm{H}} X_{\mathcal{J}_n} = \min\{d,\sup_{n \ge 1}\mathrm{dim}_{\mathrm{aff}}(A_i)_{i \in \mathcal{J}_n}\} = \min\{d,\underline{\mathrm{dim}}_{\mathrm{aff}}\mathsf{A}\}. $$
   
-[Hochman (2014)](https://doi.org/10.48550/arXiv.1212.1873) has found such assumptions on $$\mathbb{R}$$. Therefore, as in this case the affinity dimension exists, the above explained procedure allows us to extend his result into the infinitely generated setting. Note that self-affine sets on $$\mathbb{R}$$ are self-similar.
+[Hochman (2014)](https://doi.org/10.48550/arXiv.1212.1873) has found such assumptions on $$\mathbb{R}$$. Therefore, as in this case the affinity dimension exists, the above explained procedure allows us to extend Hochman's result into the infinitely generated setting. Note that self-affine sets on $$\mathbb{R}$$ are self-similar.
 
 {% include theorem.html no="7" theorem="Theorem" %}
 *Let $$X \subset \mathbb{R}$$ be a self-similar set satisfying the exponential separation condition. Then $$\mathrm{dim}_{\mathrm{H}} X = \min\{1,\mathrm{dim}_{\mathrm{aff}}\mathsf{A}\}$$.*
