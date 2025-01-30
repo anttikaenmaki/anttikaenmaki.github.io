@@ -171,7 +171,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "orponentuomas",
-	    "journal"			: "J. Fractal Geom. 10 (2023), no. 1, 169-207",
+	    "journal"			: "J. Fractal Geom., 10 (2023), no. 1, 169-207",
 	    "doi"				: "https://doi.org/10.4171/jfg/127"
 	},
 
@@ -204,7 +204,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "baranybalazs jordanthomas ramsmichal",
-	    "journal"			: "Int. Math. Res. Not. IMRN 2021, no. 10, 7966-8005",
+	    "journal"			: "Int. Math. Res. Not., IMRN 2021, no. 10, 7966-8005",
 	    "doi"				: "https://doi.org/10.1093/imrn/rnz359"
 	},
 
@@ -237,8 +237,8 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "orponentuomas venierilaura",
-	    "journal"			: "Amer. J. Math., to appear",
-	    "doi"				: ""
+	    "journal"			: "Amer. J. Math., 147 (2025), no. 1, 81-123",
+	    "doi"				: "https://doi.org/10.1353/ajm.2025.a950274"
 	},
 
 	"41" : {
@@ -314,7 +314,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "ojalatuomo rossieino",
-	    "journal"			: "Int. Math. Res. Not. IMRN 2018, no. 12, 3769-3799",
+	    "journal"			: "Int. Math. Res. Not., IMRN 2018, no. 12, 3769-3799",
 	    "doi"				: "https://dx.doi.org/10.1093/imrn/rnw336"
 	},
 

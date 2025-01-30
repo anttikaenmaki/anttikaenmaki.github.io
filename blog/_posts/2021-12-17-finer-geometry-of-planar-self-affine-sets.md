@@ -221,7 +221,7 @@ in Hausdorff distance, where $$M_{x,r}(z) = \frac{z-x}{r}$$. The collection of w
 
 $$      \dim_{\mathrm{A}}(X) = \max\{\dim_{\mathrm{H}}(T) : T \in \mathrm{Tan}(X)\}. $$
 
-We are now ready to sketch the proof of [Theorem 14](#theorem-14):
+We are now ready to sketch the proof of [Theorem 10](#theorem-10):
 
 *Proof.* To simplify, the idea in the proof is the following: First show that there exists $$T \in \mathrm{Tan}(X)$$ such that $$T = L \times W$$, $$W$$ contains a projected copy of $$X$$, and for every $$V \in X_F$$ and $$x \in X$$ the set $$L$$ contains an affine copy of $$X \cap (V+x)$$. Since $$\dim_{\mathrm{H}}(W)=1$$, Marstrand's slicing theorem shows that
 
