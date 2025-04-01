@@ -11,13 +11,13 @@
 	},
 
 	"62" : {
-		"status"			: "preprint",
+		"status"			: "publication",
 		"papername"			: "Regularity of non-autonomous self-similar sets",
 		"arxiv"				: "https://doi.org/10.48550/arXiv.2410.17944",
 		"attachment"		: "",
 		"attachmentfile"	: "",
 		"collaborators"		: "rutaralex",
-		"journal"			: "Preprint, 2024",
+		"journal"			: "Math. Proc. Cambridge Philos. Soc., to appear",
 		"doi"				: ""
 	},
 

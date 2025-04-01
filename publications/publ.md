@@ -5,24 +5,35 @@ permalink: /publications/test/
 ---
 
 I have authored a total of 7 <label for="preprint">preprints</label> 
-<input type="checkbox" id="preprint" onclick="myFunction(this)">
-
-<p id="text" style="display:none">Checkbox is CHECKED!</p>
+<input type="checkbox" id="preprint" item="paper" class="button" checked onclick="toggle(this)" />
+and 49 <label for="publication">publications</label> 
+<input type="checkbox" id="publication" item="paper" class="button" checked onclick="toggle(this)" />
+and 7 <label for="survey">surveys</label> 
+<input type="checkbox" id="survey" item="paper" class="button" onclick="toggle(this)" />
 
 <script>
-function myFunction(button) {
-  var checkBox = document.getElementById("preprint");
-  var text = document.getElementById("text");
-  if (checkBox.checked == true){
-    text.style.display = "block";
-    console.log(button.id);
-    var element = document.getElementById(button.id);
-    console.log(element);
-    element.classList.remove("active");
+function toggle(button) {
+  // change the status of the clicked checkbox
+  var checkbox = document.getElementById(button.id);
+  if (checkbox.checked == true) {
+    checkbox.classList.remove("active");
   } else {
-     text.style.display = "none";
-//    document.getElementById(button.id).classList.add("active");
-    document.getElementById("preprint").classList.add("active");
+    checkbox.classList.add("active");
+  }
+  // show the list elements according to the checked status
+  const buttons = document.getElementsByClassName("button");
+  let item = event.target.getAttribute("item");
+  const papers = document.getElementsByClassName(item);
+  for (let i = 0; i < papers.length; i++) {
+    papers[i].style.display = "none";
+    for (let j = 0; j < buttons.length; j++) {
+      if (document.getElementById(buttons[j].id).checked == true) {
+        if (Array.from(papers[i].classList).includes(buttons[j].id)) {
+          papers[i].style.display = "list-item";
+          break;
+        }
+      }
+    }
   }
 }
 </script>
