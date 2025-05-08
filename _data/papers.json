@@ -1,4 +1,15 @@
 {
+	"64" : {
+		"status"			: "preprint",
+		"papername"			: "Self-affine sponges with random contractions",
+		"arxiv"				: "https://arxiv.org/abs/2505.04383",
+		"attachment"		: "",
+		"attachmentfile"	: "",
+		"collaborators"		: "baranybalazs ramsmichal",
+		"journal"			: "Preprint, 2025",
+		"doi"				: ""
+	},
+
 	"63" : {
 		"status"			: "preprint",
 		"papername"			: "Tangents and slices of self-affine carpets",
