@@ -1,253 +1,253 @@
 {
 	"angelevskajasmina" : {
-		"name" : "Jasmina Angelevska",
-		"shortname" : "J. Angelevska",
-		"www" : ""
+		"name" 				: "Jasmina Angelevska",
+		"shortname" 		: "J. Angelevska",
+		"www" 				: ""
 	},
 
 	"anttilaroope" : {
-		"name" : "Roope Anttila",
-		"shortname" : "R. Anttila",
-		"www" : "https://r-anttila.github.io/"
+		"name"				: "Roope Anttila",
+		"shortname"			: "R. Anttila",
+		"www"				: "https://r-anttila.github.io/"
 	},
 
 	"bandtchristoph" : {
-		"name" : "Christoph Bandt",
-		"shortname" : "C. Bandt",
-		"www" : ""
+		"name"				: "Christoph Bandt",
+		"shortname"			: "C. Bandt",
+		"www"				: ""
 	},
 
 	"baranybalazs" : {
-		"name" : "Balázs Bárány",
-		"shortname" : "B. Bárány",
-		"www" : "https://math.bme.hu/~balubs/"
+		"name"				: "Balázs Bárány",
+		"shortname"			: "B. Bárány",
+		"www"				: "https://math.bme.hu/~balubs/"
 	},
 
 	"batsisalex" : {
-		"name" : "Alex Batsis",
-		"shortname" : "A. Batsis",
-		"www" : ""
+		"name"				: "Alex Batsis",
+		"shortname"			: "A. Batsis",
+		"www"				: ""
 	},
 
 	"beliaevdmitry" : {
-		"name" : "Dmitry Beliaev",
-		"shortname" : "D. Beliaev",
-		"www" : "https://people.maths.ox.ac.uk/belyaev/"
+		"name"				: "Dmitry Beliaev",
+		"shortname"			: "D. Beliaev",
+		"www"				: "https://people.maths.ox.ac.uk/belyaev/"
 	},
 
 	"csornyeimarianna" : {
-		"name" : "Marianna Csörnyei",
-		"shortname" : "M. Csörnyei",
-		"www" : "https://mathematics.uchicago.edu/people/profile/marianna-csoernyei/"
+		"name"				: "Marianna Csörnyei",
+		"shortname"			: "M. Csörnyei",
+		"www"				: "https://mathematics.uchicago.edu/people/profile/marianna-csoernyei/"
 	},
 
 	"falconerkenneth" : {
-		"name" : "Kenneth J. Falconer",
-		"shortname" : "K. J. Falconer",
-		"www" : "https://kennethfalconer.github.io/"
+		"name"				: "Kenneth J. Falconer",
+		"shortname"			: "K. J. Falconer",
+		"www"				: "https://kennethfalconer.github.io/"
 	},
 
 	"fengdejun" : {
-		"name" : "De-Jun Feng",
-		"shortname" : "D.-J. Feng",
-		"www" : "https://www.math.cuhk.edu.hk/~djfeng/"
+		"name"				: "De-Jun Feng",
+		"shortname"			: "D.-J. Feng",
+		"www"				: "https://www.math.cuhk.edu.hk/~djfeng/"
 	},
 
 	"fraserjonathan" : {
-		"name" : "Jonathan M. Fraser",
-		"shortname" : "J. M. Fraser",
-		"www" : "https://jonathan-fraser.github.io/homepage/"
+		"name"				: "Jonathan M. Fraser",
+		"shortname"			: "J. M. Fraser",
+		"www"				: "https://jonathan-fraser.github.io/homepage/"
 	},
 
 	"howroyddouglas" : {
-		"name" : "Douglas C. Howroyd",
-		"shortname" : "D. C. Howroyd",
-		"www" : ""
+		"name"				: "Douglas C. Howroyd",
+		"shortname"			: "D. C. Howroyd",
+		"www"				: ""
 	},
 
 	"jarvenpaaesa" : {
-		"name" : "Esa Järvenpää",
-		"shortname" : "E. Järvenpää",
-		"www" : ""
+		"name"				: "Esa Järvenpää",
+		"shortname"			: "E. Järvenpää",
+		"www"				: ""
 	},
 
 	"jarvenpaamaarit" : {
-		"name" : "Maarit Järvenpää",
-		"shortname" : "M. Järvenpää",
-		"www" : ""
+		"name"				: "Maarit Järvenpää",
+		"shortname"			: "M. Järvenpää",
+		"www"				: ""
 	},
 
 	"jordanthomas" : {
-		"name" : "Thomas Jordan",
-		"shortname" : "T. Jordan",
-		"www" : ""
+		"name"				: "Thomas Jordan",
+		"shortname"			: "T. Jordan",
+		"www"				: ""
 	},
 
 	"kemptontom" : {
-		"name" : "Thomas Kempton",
-		"shortname" : "T. Kempton",
-		"www" : "https://personalpages.manchester.ac.uk/staff/thomas.kempton/"
+		"name"				: "Thomas Kempton",
+		"shortname"			: "T. Kempton",
+		"www"				: "https://personalpages.manchester.ac.uk/staff/thomas.kempton/"
 	},
 
 	"koivusalohenna" : {
-		"name" : "Henna Koivusalo",
-		"shortname" : "H. Koivusalo",
-		"www" : "https://people.maths.bris.ac.uk/~te20281/"
+		"name"				: "Henna Koivusalo",
+		"shortname"			: "H. Koivusalo",
+		"www"				: "https://people.maths.bris.ac.uk/~te20281/"
 	},
 
 	"lehrbackjuha" : {
-		"name" : "Juha Lehrbäck",
-		"shortname" : "J. Lehrbäck",
-		"www" : "http://users.jyu.fi/~juhaleh/"
+		"name"				: "Juha Lehrbäck",
+		"shortname"			: "J. Lehrbäck",
+		"www"				: "http://users.jyu.fi/~juhaleh/"
 	},
 
 	"libing" : {
-		"name" : "Bing Li",
-		"shortname" : "B. Li",
-		"www" : "https://sites.google.com/site/homepagebingli"
+		"name"				: "Bing Li",
+		"shortname"			: "B. Li",
+		"www"				: "https://sites.google.com/site/homepagebingli"
 	},
 
 	"morrisian" : {
-		"name" : "Ian D. Morris",
-		"shortname" : "I. D. Morris",
-		"www" : "https://webspace.maths.qmul.ac.uk/i.morris/"
+		"name"				: "Ian D. Morris",
+		"shortname"			: "I. D. Morris",
+		"www"				: "https://webspace.maths.qmul.ac.uk/i.morris/"
 	},
 
 	"nissinenpetteri" : {
-		"name" : "Petteri Nissinen",
-		"shortname" : "P. Nissinen",
-		"www" : ""
+		"name"				: "Petteri Nissinen",
+		"shortname"			: "P. Nissinen",
+		"www"				: ""
 	},
 
 	"ojalatuomo" : {
-		"name" : "Tuomo Ojala",
-		"shortname" : "T. Ojala",
-		"www" : ""
+		"name"				: "Tuomo Ojala",
+		"shortname"			: "T. Ojala",
+		"www"				: ""
 	},
 
 	"orponentuomas" : {
-		"name" : "Tuomas Orponen",
-		"shortname" : "T. Orponen",
-		"www" : "https://sites.google.com/view/tuomaths/"
+		"name"				: "Tuomas Orponen",
+		"shortname"			: "T. Orponen",
+		"www"				: "https://sites.google.com/view/tuomaths/"
 	},
 
 	"pyoralaaleksi" : {
-		"name" : "Aleksi Pyörälä",
-		"shortname" : "A. Pyörälä",
-		"www" : "https://aleksipyorala.wordpress.com/"
+		"name"				: "Aleksi Pyörälä",
+		"shortname"			: "A. Pyörälä",
+		"www"				: "https://aleksipyorala.wordpress.com/"
 	},
 
 	"rajalatapio" : {
-		"name" : "Tapio Rajala",
-		"shortname" : "T. Rajala",
-		"www" : "http://users.jyu.fi/~tamaraja/"
+		"name"				: "Tapio Rajala",
+		"shortname"			: "T. Rajala",
+		"www"				: "http://users.jyu.fi/~tamaraja/"
 	},
 
 	"ramsmichal" : {
-		"name" : "Michał Rams",
-		"shortname" : "M. Rams",
-		"www" : "https://www.impan.pl/~rams/"
+		"name"				: "Michał Rams",
+		"shortname"			: "M. Rams",
+		"www"				:	"https://www.impan.pl/~rams/"
 	},
 
 	"reevehenry" : {
-		"name" : "Henry W. J. Reeve",
-		"shortname" : "H. W. J. Reeve",
-		"www" : "https://henryreeve.netlify.app/"
+		"name"				: "Henry W. J. Reeve",
+		"shortname"			: "H. W. J. Reeve",
+		"www"				: "https://henryreeve.netlify.app/"
 	},
 
 	"rogovinsari" : {
-		"name" : "Sari Rogovin",
-		"shortname" : "S. Rogovin",
-		"www" : ""
+		"name"				: "Sari Rogovin",
+		"shortname"			: "S. Rogovin",
+		"www"				: ""
 	},
 
 	"rossieino" : {
-		"name" : "Eino Rossi",
-		"shortname" : "E. Rossi",
-		"www" : ""
+		"name"				: "Eino Rossi",
+		"shortname"			: "E. Rossi",
+		"www"				: ""
 	},
 
 	"rutaralex" : {
-		"name" : "Alex Rutar",
-		"shortname" : "A. Rutar",
-		"www" : "https://rutar.org/"
+		"name"				: "Alex Rutar",
+		"shortname"			: "A. Rutar",
+		"www"				: "https://rutar.org/"
 	},
 
 	"sahlstentuomas" : {
-		"name" : "Tuomas Sahlsten",
-		"shortname" : "T. Sahlsten",
-		"www" : "https://www.mv.helsinki.fi/home/sahlsten/"
+		"name"				: "Tuomas Sahlsten",
+		"shortname"			: "T. Sahlsten",
+		"www"				: "https://www.mv.helsinki.fi/home/sahlsten/"
 	},
 
 	"shmerkinpablo" : {
-		"name" : "Pablo Shmerkin",
-		"shortname" : "P. Shmerkin",
-		"www" : "https://www.pabloshmerkin.org/"
+		"name"				: "Pablo Shmerkin",
+		"shortname"			: "P. Shmerkin",
+		"www"				: "https://www.pabloshmerkin.org/"
 	},
 
 	"smirnovstanislav" : {
-		"name" : "Stanislav Smirnov",
-		"shortname" : "S. Smirnov",
-		"www" : "https://www.unige.ch/~smirnov/"
+		"name"				: "Stanislav Smirnov",
+		"shortname"			: "S. Smirnov",
+		"www"				: "https://www.unige.ch/~smirnov/"
 	},
 
 	"stenfloorjan" : {
-		"name" : "Örjan Stenflo",
-		"shortname" : "Ö. Stenflo",
-		"www" : "https://www2.math.uu.se/~orjst288/"
+		"name"				: "Örjan Stenflo",
+		"shortname"			: "Ö. Stenflo",
+		"www"				: "https://www2.math.uu.se/~orjst288/"
 	},
 
 	"suomalaville" : {
-		"name" : "Ville Suomala",
-		"shortname" : "V. Suomala",
-		"www" : "https://cc.oulu.fi/~vsuomala/"
+		"name"				: "Ville Suomala",
+		"shortname"			: "V. Suomala",
+		"www"				: "https://cc.oulu.fi/~vsuomala/"
 	},
 
 	"troscheitsascha" : {
-		"name" : "Sascha Troscheit",
-		"shortname" : "S. Troscheit",
-		"www" : "https://www.troscheit.eu/"
+		"name"				: "Sascha Troscheit",
+		"shortname"			: "S. Troscheit",
+		"www"				: "https://www.troscheit.eu/"
 	},
 
 	"venierilaura" : {
-		"name" : "Laura Venieri",
-		"shortname" : "L. Venieri",
-		"www" : ""
+		"name"				: "Laura Venieri",
+		"shortname"			: "L. Venieri",
+		"www"				: ""
 	},
 
 	"vilppolainenmarkku" : {
-		"name" : "Markku Vilppolainen",
-		"shortname" : "M. Vilppolainen",
-		"www" : ""
+		"name"				: "Markku Vilppolainen",
+		"shortname"			: "M. Vilppolainen",
+		"www"				: ""
 	},
 
 	"vuorinenmatti" : {
-		"name" : "Matti Vuorinen",
-		"shortname" : "M. Vuorinen",
-		"www" : "https://users.utu.fi/vuorinen/"
+		"name"				: "Matti Vuorinen",
+		"shortname"			: "M. Vuorinen",
+		"www"				: "https://users.utu.fi/vuorinen/"
 	},
 
 	"wumeng" : {
-		"name" : "Meng Wu",
-		"shortname" : "M. Wu",
-		"www" : "https://sites.google.com/site/mengwuergodic/home"
+		"name"				: "Meng Wu",
+		"shortname"			: "M. Wu",
+		"www"				: "https://sites.google.com/site/mengwuergodic/home"
 	},
 
 	"wumin" : {
-		"name" : "Min Wu",
-		"shortname" : "M. Wu",
-		"www" : ""
+		"name"				: "Min Wu",
+		"shortname"			: "M. Wu",
+		"www"				: ""
 	},
 
 	"yangjiaojiao" : {
-		"name" : "Jiaojiao Yang",
-		"shortname" : "J. Yang",
-		"www" : ""
+		"name"				: "Jiaojiao Yang",
+		"shortname"			: "J. Yang",
+		"www"				: ""
 	},
 
 	"yuhan" : {
-		"name" : "Han Yu",
-		"shortname" : "H. Yu",
-		"www" : "https://math-hanyu.github.io/"
+		"name"				: "Han Yu",
+		"shortname"			: "H. Yu",
+		"www"				: "https://math-hanyu.github.io/"
 	}
 }
