@@ -1,0 +1,63 @@
+{%- comment -%}
+  USAGE: include atleast.html n=5 filter="coauthor/journal" items="preprint/publication/survey" output="number/names"
+{%- endcomment -%}
+
+{%- if include.n and include.n >= 1 -%}
+  {%- assign n = include.n | plus: 0 -%}
+{%- else -%}
+  {%- assign n = 5 -%}
+{%- endif -%}
+{%- if include.filter -%}
+  {%- assign filter = include.filter -%}
+{%- else -%}
+  {%- assign filter = "coauthor" -%}
+{%- endif -%}
+{%- if include.items -%}
+  {%- assign status = include.items -%}
+{%- else -%}
+  {%- assign status = "" -%}
+{%- endif -%}
+
+{%- if filter == "journal" -%}
+  {%- assign data = site.data.journals -%}
+{%- elsif filter == "coauthor" -%}
+  {%- assign data = site.data.people -%}
+{%- else -%}
+  {%- assign data = site.data.people -%}
+{%- endif -%}
+
+{%- assign atleast-filter = "" -%}
+{%- for element in data -%}
+  {%- assign count = 0 -%}
+  {%- for paper in site.data.papers -%}
+    {%- assign paperdata = paper[1] -%}
+    {%- if status == "" or paperdata.status == status -%}
+      {%- if filter == "journal" -%}
+        {%- assign elementfilter = paperdata.journal -%}
+      {%- elsif filter == "coauthor" -%}
+        {%- assign elementfilter = paperdata.collaborators -%}
+      {%- else -%}
+        {%- assign elementfilter = paperdata.collaborators -%}
+      {%- endif -%}
+      {%- if elementfilter contains element[0] and element[0] != "preprint" -%}
+        {%- assign count = count | plus: 1 -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if count >= n and element[0] != "preprint" -%}
+    {%- assign atleast-filter = atleast-filter | append: element[0] | append: " " -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign atleast-filter = atleast-filter | split: " " | compact -%}
+{%- unless include.output -%}
+  {%- assign include.output = "number" -%}
+{%- endunless -%}
+
+{%- if include.output == "names" -%}
+  {{- atleast-filter | join: ", " -}}
+{%- elsif include.output == "number" -%}
+  {{- atleast-filter.size -}}
+{%- else -%}
+  {{- "Error: Invalid output filter. Use \"number\" or \"names\"." -}}
+{%- endif -%}

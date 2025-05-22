@@ -1,0 +1,45 @@
+{%- comment -%}
+  USAGE: include checkbox.html type="status/coauthor/journal" filters="coauthors/journals separated by comma" text="text" checked="checked"
+{%- endcomment -%}
+
+{%- unless include.type -%}
+  {%- assign include.type = "journal" -%}
+{%- endunless -%}
+{%- unless include.filters -%}
+  {%- assign filters = "" | split: "," -%}
+{%- else -%}
+  {%- assign filters = include.filters | strip | split: "," | compact -%}
+{%- endunless -%}
+{%- unless include.text -%}
+  {%- assign include.text = "" -%}
+{%- endunless -%}
+{%- unless include.checked -%}
+  {%- assign include.checked = "" -%}
+{%- endunless -%}
+
+{%- for filter-tmp in filters -%}
+  {%- assign filter = filter-tmp | strip -%}
+  {%- if forloop.index != 1 %}
+    {%- if filters.size == 2 %} and 
+    {%- elsif forloop.last %}, and 
+    {%- else %}, 
+    {%- endif %}
+    {% comment %} Explicit space after separator {% endcomment %}
+    {{- " " -}}
+    {%- endif -%}
+  {%- if include.type == "status" -%}
+    {%- assign data = filter | capitalize -%}
+    {%- unless data -%}Error: status {{ filter }} not found.{%- endunless -%}
+  {%- elsif include.type == "coauthor" -%}
+    {%- assign data = site.data.people[filter] -%}
+    {%- unless data -%}Error: person {{ filter }} not found.{%- endunless -%}
+  {%- elsif include.type == "journal" -%}
+    {%- assign data = site.data.journals[filter] -%}
+    {%- unless data -%}Error: journal {{ filter }} not found.{%- endunless -%}
+  {%- else -%}
+    Error: type not known.
+  {%- endif -%}
+  {%- if data -%}
+    <label for="{{ include.type }}-{{ filter }}" class="checkbox-label"><span class="javascript"><input type="checkbox" id="{{ include.type }}-{{ filter }}" value="{{ include.type }}-{{ filter }}" class="filter-checkbox"{%- if include.checked %} {{ include.checked }}{%- endif -%}>&thinsp;</span>{% if include.text %}{{ include.text }}{% elsif include.type == "status" %}{{ data }}{% else %}{{ data.name }}{% endif %}</label>
+  {%- endif -%}
+{%- endfor -%}

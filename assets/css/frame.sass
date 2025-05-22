@@ -42,6 +42,11 @@ nav a:hover, nav a.selected:hover
     color-scheme: dark
     background-color: $dark
     color: $lightgreen!important
+  @media (scripting: none)
+    cursor: default
+    color: $dark!important
+    @media (prefers-color-scheme: dark)
+      color: $light!important
 
 .checkbox-label--disabled
   color: var(--checkbox-label-disabled)
@@ -54,8 +59,8 @@ input[type="checkbox"]
   color: $green
   margin: 0
   font: inherit
-  width: 1em
-  height: 1em
+  width: 0.97em
+  height: 0.97em
   border: 0.1em solid $green
   border-radius: 0.2em
   transform: translateY(-0.05em)

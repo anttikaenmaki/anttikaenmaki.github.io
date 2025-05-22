@@ -1,0 +1,39 @@
+{%- comment -%}
+  USAGE: include checkbox-status.html items="preprint/publication/survey" begin="text" middle="text" end="text"
+{%- endcomment -%}
+
+{%- unless include.items -%}
+  {%- assign include.items = "" -%}
+{%- endunless -%}
+{%- unless include.begin -%}
+  {%- assign include.begin = "" -%}
+{%- endunless -%}
+{%- unless include.middle -%}
+  {%- assign include.middle = "" -%}
+{%- endunless -%}
+{%- unless include.middle -%}
+  {%- assign include.end = "" -%}
+{%- endunless -%}
+
+{%- if include.items == "preprint" or include.items == "publication" or include.items == "survey" -%}
+  {%- assign status = include.items -%}
+  {%- capture status-count -%}
+    {%- include count-papers.html items=status -%}
+  {%- endcapture -%}
+  {%- assign status-count = status-count | default: 0 | plus: 0 -%}
+  {%- if status-count != 0 -%}
+    {{- include.begin -}}
+    {%- assign status-text = status-count | append: " " -%}
+    {% if include.middle %}
+      {%- assign status-text = status-text | append: include.middle -%}
+    {% endif %}
+    {%- assign status-text = status-text | append: status -%}
+    {%- if status-count != 1 -%}
+      {%- assign status-text = status-text | append: "s" -%}
+    {%- endif -%}
+    {%- include checkbox.html type="status" filters=status text=status-text checked="checked" -%}
+    {{- include.end -}}
+  {%- endif -%}
+{%- else -%}
+  Error: Invalid items value. Use "preprint", "publication", or "survey".
+{%- endif -%}
