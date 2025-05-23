@@ -40,6 +40,14 @@ $(document).ready(function() {
     updateArticleList();
   });
 
+  // Set up event listener for Escape key to clear search input
+  $('#search-input').on('keydown', function(event) {
+    if (event.key === 'Escape') {
+      $(this).val(''); // Clear the input
+      updateArticleList(); // Update the article list
+    }
+  });
+
   // Initial update to hide all articles if no checkboxes are selected
   updateArticleList();
 });
