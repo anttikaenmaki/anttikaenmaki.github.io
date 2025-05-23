@@ -8,7 +8,7 @@
 {% else %}
   {% assign posts = site.posts %}
 {% endif %}
-<ol reversed>
+<ol reversed id="items">
   {% for post in posts %}
   <li>
     <p><a href="{{ post.url | relative_url }}"><strong>{{ post.title }}</strong></a><br />

@@ -32,6 +32,28 @@ nav a:hover, nav a.selected:hover
 .katex
   font-size: 1.1em !important
 
+#search-input
+  width: 100%
+  background: $light
+  color: lighten($dark, 10%)
+  font-family: $font-family
+  font-weight: $font-weight
+  font-size: $font-size
+  line-height: $line-height
+  margin: 0
+  padding: 1px
+  border: 0.1em solid lighten($dark, 40%)
+  border-radius: 0.2em
+  @media (prefers-color-scheme: dark)
+    color-scheme: dark
+    background-color: $dark
+    color: darken($light, 5%)!important
+    border: 0.1em solid darken($lightgreen,20%)!important
+
+#search-input:focus
+  outline: none
+  border: 0.1em solid lighten($dark, 25%)
+
 *,*:before,*:after
   box-sizing: border-box
 

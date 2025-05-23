@@ -1,0 +1,10 @@
+{%- comment -%}
+  USAGE: include search-bar.html text="text"
+{%- endcomment -%}
+
+{%- if include.text -%}
+  {%- assign text = include.text -%}
+{%- else -%}
+  {%- assign text = "Search..." -%}
+{%- endif -%}
+<br><span class="javascript"><input type="text" id="search-input" placeholder="{{ text }}" autofocus /></span>

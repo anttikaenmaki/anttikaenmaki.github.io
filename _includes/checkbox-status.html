@@ -24,14 +24,14 @@
   {%- if status-count != 0 -%}
     {{- include.begin -}}
     {%- assign status-text = status-count | append: " " -%}
-    {% if include.middle %}
+    {%- if include.middle -%}
       {%- assign status-text = status-text | append: include.middle -%}
-    {% endif %}
+    {%- endif -%}
     {%- assign status-text = status-text | append: status -%}
     {%- if status-count != 1 -%}
       {%- assign status-text = status-text | append: "s" -%}
     {%- endif -%}
-    {%- include checkbox.html type="status" filters=status text=status-text checked="checked" -%}
+    {%- include checkbox.html type="status" filters=status text=status-text checkbox="checked" -%}
     {{- include.end -}}
   {%- endif -%}
 {%- else -%}
