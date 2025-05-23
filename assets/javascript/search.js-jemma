@@ -1,0 +1,53 @@
+$(document).ready(function() {
+  // Function to normalize text by removing diacritics
+  function normalizeText(text) {
+    return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+
+  // Function to update the article list based on selected checkboxes and search terms
+  function updateArticleList() {
+    const articles = document.querySelectorAll('#items li');
+    const checkedFilters = Array.from(document.querySelectorAll('.filter-checkbox:checked')).map(cb => cb.value);
+    const searchInput = $('#search-input').val().toLowerCase().trim();
+    const searchWords = searchInput.split(/\s+/).filter(word => word.length > 0).map(word => normalizeText(word));
+
+    articles.forEach(article => {
+      const articleClasses = Array.from(article.classList);
+      const articleText = normalizeText(article.textContent.toLowerCase());
+
+      // Check if the article matches any selected filters (or no filters are selected)
+      const matchesFilter = checkedFilters.length > 0 && checkedFilters.some(filter => articleClasses.includes(filter));
+
+      // Check if the article matches all search words
+      const matchesSearch = searchWords.length === 0 || searchWords.every(word => articleText.includes(word));
+
+      // Show article only if it matches both filter and search criteria
+      article.style.display = (matchesFilter && matchesSearch) ? 'list-item' : 'none';
+    });
+  }
+
+  // Set up event listeners for checkboxes
+  $('.filter-checkbox').on('change', function() {
+    // Sync checkboxes with the same value
+    $("input[value='" + $(this).val() + "'][type='checkbox']").prop('checked', $(this).prop('checked'));
+    // Update article list
+    updateArticleList();
+  });
+
+  // Set up event listener for search input
+  $('#search-input').on('input', function() {
+    // Update article list on every keystroke
+    updateArticleList();
+  });
+
+  // Set up event listener for Escape key to clear search input
+  $('#search-input').on('keydown', function(event) {
+    if (event.key === 'Escape') {
+      $(this).val(''); // Clear the input
+      updateArticleList(); // Update the article list
+    }
+  });
+
+  // Initial update to hide all articles if no checkboxes are selected
+  updateArticleList();
+});
