@@ -42,8 +42,8 @@ nav a:hover, nav a.selected:hover
   line-height: $line-height
   margin: 0
   padding: 1px
-  border: 0.1em solid lighten($dark, 40%)
-  border-radius: 0.2em
+  border: none
+  border-bottom: 0.1em solid lighten($dark, 30%)
   @media (prefers-color-scheme: dark)
     color-scheme: dark
     background-color: $dark
@@ -52,7 +52,7 @@ nav a:hover, nav a.selected:hover
 
 #search-input:focus
   outline: none
-  border: 0.1em solid lighten($dark, 25%)
+  border-bottom: 0.1em solid lighten($dark, 50%)
 
 *,*:before,*:after
   box-sizing: border-box
