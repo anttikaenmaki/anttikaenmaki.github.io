@@ -7,6 +7,7 @@ $(document).ready(function() {
   // Function to update the article list based on selected checkboxes and search terms
   function updateArticleList() {
     const articles = document.querySelectorAll('#items li');
+    const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
     const checkedFilters = Array.from(document.querySelectorAll('.filter-checkbox:checked')).map(cb => cb.value);
     const searchInput = $('#search-input').length ? $('#search-input').val().toLowerCase().trim() : '';
 
@@ -49,8 +50,9 @@ $(document).ready(function() {
       const articleClasses = Array.from(article.classList);
       const articleText = normalizeText(article.textContent.toLowerCase());
 
-      // Check category filters; hide all if no filters are selected
-      const matchesFilter = checkedFilters.length > 0 && checkedFilters.some(filter => articleClasses.includes(filter));
+      // Check category filters; allow all if no checkboxes exist, otherwise require checked filters
+      const matchesFilter = filterCheckboxes.length === 0 || 
+                           (checkedFilters.length > 0 && checkedFilters.some(filter => articleClasses.includes(filter)));
       
       // Check search terms: match if any OR group has all its terms present
       const matchesSearch = orGroups.length === 0 || orGroups.some(terms => terms.every(term => articleText.includes(term)));
