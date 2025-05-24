@@ -6,7 +6,7 @@
 		"attachment"		: "",
 		"attachmentfile"	: "",
 		"collaborators"		: "baranybalazs ramsmichal",
-		"topic"				: "",
+		"topic"				: "fg",
 		"journal"			: "preprint",
 		"journaldata"		: "2025",
 		"doi"				: ""
@@ -19,7 +19,7 @@
 		"attachment"		: "",
 		"attachmentfile"	: "",
 		"collaborators"		: "rutaralex",
-		"topic"				: "",
+		"topic"				: "fg gmt",
 		"journal"			: "preprint",
 		"journaldata"		: "2024",
 		"doi"				: ""
@@ -32,7 +32,7 @@
 		"attachment"		: "",
 		"attachmentfile"	: "",
 		"collaborators"		: "rutaralex",
-		"topic"				: "",
+		"topic"				: "fg",
 		"journal"			: "mathproccambridgephilossoc",
 		"journaldata"		: "to appear",
 		"doi"				: ""
@@ -45,7 +45,7 @@
 	    "attachment"		: "" ,
 	    "attachmentfile"	: "",
 	    "collaborators"		: "morrisian" ,
-		"topic"				: "",
+		"topic"				: "et fg",
 	    "journal"			: "transamermathsoc" ,
 		"journaldata"		: "to appear",
 	    "doi"				: ""
@@ -58,7 +58,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "anttilaroope baranybalazs",
-		"topic"				: "",
+		"topic"				: "gmt",
 	    "journal"			: "procamermathsoc",
 		"journaldata"		: "153 (2025), no. 5, 2023-2035",
 	    "doi"				: "https://doi.org/10.1090/proc/17045"
@@ -71,7 +71,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "batsisalex kemptontom",
-		"topic"				: "",
+		"topic"				: "et fg",
 	    "journal"			: "preprint",
 		"journaldata"		: "2024",
 	    "doi"				: ""
@@ -84,7 +84,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "rutaralex",
-		"topic"				: "",
+		"topic"				: "gmt",
 	    "journal"			: "preprint",
 		"journaldata"		: "2023",
 	    "doi"				: ""
@@ -97,7 +97,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "baranybalazs pyoralaaleksi wumeng",
-		"topic"				: "",
+		"topic"				: "et fg gmt",
 	    "journal"			: "preprint",
 		"journaldata"		: "2023",
 	    "doi"				: ""
@@ -110,7 +110,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "baranybalazs",
-		"topic"				: "",
+		"topic"				: "fg",
 	    "journal"			: "commmathphys",
 		"journaldata"		: "405 (2024), no. 11, Paper No. 256",
 	    "doi"				: "https://doi.org/10.1007/s00220-024-05131-2"
@@ -123,7 +123,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "baranybalazs nissinenpetteri",
-		"topic"				: "",
+		"topic"				: "fg",
 	    "journal"			: "preprint",
 		"journaldata"		: "2023",
 	    "doi"				: "" 
@@ -136,7 +136,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "anttilaroope baranybalazs",
-		"topic"				: "",
+		"topic"				: "fg gmt",
 	    "journal"			: "ergodictheorydynamsystems",
 		"journaldata"		: "44 (2024), no. 9, 2361-2398",
 	    "doi"				: "https://doi.org/10.1017/etds.2023.117"
@@ -149,7 +149,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "nissinenpetteri",
-		"topic"				: "",
+		"topic"				: "et fg",
 	    "journal"			: "mathproccambridgephilossoc",
 		"journaldata"		: "177 (2024), no. 1, 49-65",
 	    "doi"				: "https://doi.org/10.1017/S0305004124000136"
@@ -162,7 +162,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "baranybalazs yuhan",
-		"topic"				: "",
+		"topic"				: "fg gmt",
 	    "journal"			: "preprint",
 		"journaldata"		: "2021",
 	    "doi"				: ""
@@ -175,7 +175,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "falconerkenneth fraserjonathan",
-		"topic"				: "",
+		"topic"				: "gmt",
 	    "journal"			: "procamermathsoc",
 		"journaldata"		: "151 (2023), no. 2, 779-794",
 	    "doi"				: "https://doi.org/10.1090/proc/16174"
@@ -188,7 +188,7 @@
 	    "attachment"		: "Numerical calculations",
 	    "attachmentfile"	: "mathematica/50-numerical-calculations.nb",
 	    "collaborators"		: "baranybalazs",
-		"topic"				: "",
+		"topic"				: "fg",
 	    "journal"			: "advmath",
 		"journaldata"		: "379 (2021), Paper No. 107549",
 	    "doi"				: "https://doi.org/10.1016/j.aim.2020.107549"
@@ -201,7 +201,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "baranybalazs rossieino",
-		"topic"				: "",
+		"topic"				: "fg",
 	    "journal"			: "transamermathsoc",
 		"journaldata"		: "374 (2021), no. 2, 1297-1326",
 	    "doi"				: "https://doi.org/10.1090/tran/8224"
@@ -214,7 +214,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "orponentuomas",
-		"topic"				: "",
+		"topic"				: "fg",
 	    "journal"			: "jfractalgeom",
 		"journaldata"		: "10 (2023), no. 1, 169-207",
 	    "doi"				: "https://doi.org/10.4171/jfg/127"
@@ -227,7 +227,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "fraserjonathan",
-		"topic"				: "",
+		"topic"				: "gmt",
 	    "journal"			: "procamermathsoc",
 		"journaldata"		: "148 (2020), no. 8, 3393-3405",
 	    "doi"				: "https://doi.org/10.1090/proc/14999"
@@ -240,7 +240,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "fraserjonathan howroyddouglas yuhan",
-		"topic"				: "",
+		"topic"				: "gmt",
 	    "journal"			: "procamermathsoc",
 		"journaldata"		: "147 (2019), no. 11, 4921-4936",
 	    "doi"				: "https://doi.org/10.1090/proc/14613"
@@ -253,7 +253,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "baranybalazs jordanthomas ramsmichal",
-		"topic"				: "",
+		"topic"				: "fg",
 	    "journal"			: "intmathresnotimrn",
 		"journaldata"		: "IMRN 2021, no. 10, 7966-8005",
 	    "doi"				: "https://doi.org/10.1093/imrn/rnz359"
@@ -266,7 +266,7 @@
 	    "attachment"		: "Numerical calculations",
 	    "attachmentfile"	: "mathematica/44-numerical-calculations-for-example-76.cdf",
 	    "collaborators"		: "angelevskajasmina troscheitsascha",
-		"topic"				: "",
+		"topic"				: "fg",
 	    "journal"			: "bulllondmathsoc",
 		"journaldata"		: "52 (2020), no. 1, 200-223",
 	    "doi"				: "https://doi.org/10.1112/blms.12320"
@@ -279,7 +279,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "baranybalazs morrisian",
-		"topic"				: "",
+		"topic"				: "et",
 	    "journal"			: "israeljmath",
 		"journaldata"		: "239 (2020), no. 1, 173-214",
 	    "doi"				: "https://doi.org/10.1007/s11856-020-2054-4"
@@ -292,7 +292,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "orponentuomas venierilaura",
-		"topic"				: "",
+		"topic"				: "gmt",
 	    "journal"			: "amerjmath",
 		"journaldata"		: "147 (2025), no. 1, 81-123",
 	    "doi"				: "https://doi.org/10.1353/ajm.2025.a950274"
@@ -305,7 +305,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "",
-		"topic"				: "",
+		"topic"				: "et gmt",
 	    "journal"			: "banachcenterpubl",
 		"journaldata"		: "115 (2018), 99-143",
 	    "doi"				: "https://doi.org/10.4064/bc115-4"
@@ -318,7 +318,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "fengdejun",
-		"topic"				: "",
+		"topic"				: "fg gmt",
 	    "journal"			: "annacadscifennmath",
 		"journaldata"		: "43 (2018), no. 1, 109-119",
 	    "doi"				: "https://doi.org/10.5186/aasfm.2018.4306"
@@ -331,7 +331,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "baranybalazs koivusalohenna",
-		"topic"				: "",
+		"topic"				: "fg",
 	    "journal"			: "jlondmathsoc",
 		"journaldata"		: "98 (2018), no. 1, 223-252",
 	    "doi"				: "https://doi.org/10.1112/jlms.12132"
@@ -344,7 +344,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "libing",
-		"topic"				: "",
+		"topic"				: "et fg",
 	    "journal"			: "statistprobablett",
 		"journaldata"		: "126 (2017), 18-25",
 	    "doi"				: "https://dx.doi.org/10.1016/j.spl.2017.02.028"
@@ -357,7 +357,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "morrisian",
-		"topic"				: "",
+		"topic"				: "et fg",
 	    "journal"			: "proclondmathsoc",
 		"journaldata"		: "116 (2018), no. 4, 929-956",
 	    "doi"				: "https://doi.org/10.1112/plms.12089"
@@ -370,7 +370,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "lehrbackjuha",
-		"topic"				: "",
+		"topic"				: "fg gmt",
 	    "journal"			: "arkmat",
 		"journaldata"		: "55 (2017), no. 1, 165-184",
 	    "doi"				: "https://dx.doi.org/10.4310/ARKIV.2017.v55.n1.a8"
@@ -383,7 +383,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "ojalatuomo rossieino",
-		"topic"				: "",
+		"topic"				: "fg gmt",
 	    "journal"			: "intmathresnotimrn",
 		"journaldata"		: "IMRN 2018, no. 12, 3769-3799",
 	    "doi"				: "https://dx.doi.org/10.1093/imrn/rnw336"
@@ -396,7 +396,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "yangjiaojiao wumin",
-		"topic"				: "",
+		"topic"				: "fg gmt",
 	    "journal"			: "chaossolitonsfractals",
 		"journaldata"		: "97 (2017), 39-43",
 	    "doi"				: "https://dx.doi.org/10.1016/j.chaos.2017.02.004"
@@ -409,7 +409,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "baranybalazs",
-		"topic"				: "",
+		"topic"				: "fg",
 	    "journal"			: "advmath",
 		"journaldata"		: "318 (2017), 88-129",
 	    "doi"				: "https://dx.doi.org/10.1016/j.aim.2017.07.015"
@@ -422,7 +422,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "rossieino",
-		"topic"				: "",
+		"topic"				: "et fg",
 	    "journal"			: "annacadscifennmath",
 		"journaldata"		: "41 (2016), no. 1, 465-490",
 	    "doi"				: "https://dx.doi.org/10.5186/aasfm.2016.4133"
@@ -435,7 +435,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "koivusalohenna rossieino",
-		"topic"				: "",
+		"topic"				: "fg",
 	    "journal"			: "ergodictheorydynamsystems",
 		"journaldata"		: "37 (2017), no. 6, 1915-1934",
 	    "doi"				: "https://dx.doi.org/10.1017/etds.2015.130"
@@ -448,7 +448,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "libing suomalaville",
-		"topic"				: "",
+		"topic"				: "fg",
 	    "journal"			: "nonlinearity",
 		"journaldata"		: "29 (2016), no. 3, 807-822",
 	    "doi"				: "https://dx.doi.org/10.1088/0951-7715/29/3/807"
@@ -461,7 +461,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "",
-		"topic"				: "",
+		"topic"				: "et gmt",
 	    "journal"			: "fractalgeometryandstochasticsv",
 		"journaldata"		: "2015, 27-38",
 	    "doi"				: "https://dx.doi.org/10.1007/978-3-319-18660-3_2"
@@ -474,7 +474,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "sahlstentuomas shmerkinpablo",
-		"topic"				: "",
+		"topic"				: "et gmt",
 	    "journal"			: "proclondmathsoc",
 		"journaldata"		: "110 (2015), no. 5, 1248-1280",
 	    "doi"				: "https://dx.doi.org/10.1112/plms/pdv003"
@@ -487,7 +487,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "sahlstentuomas shmerkinpablo",
-		"topic"				: "",
+		"topic"				: "et",
 	    "journal"			: "jlondmathsoc",
 		"journaldata"		: "91 (2015), no. 2, 464-494",
 	    "doi"				: "https://dx.doi.org/10.1112/jlms/jdu076"
@@ -500,7 +500,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "reevehenry",
-		"topic"				: "",
+		"topic"				: "et fg",
 	    "journal"			: "jfractalgeom",
 		"journaldata"		: "1 (2014), no. 1, 83-152",
 	    "doi"				: "https://dx.doi.org/10.4171/JFG/3"
@@ -513,7 +513,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "lehrbackjuha vuorinenmatti",
-		"topic"				: "",
+		"topic"				: "gmt",
 	    "journal"			: "indianaunivmathj",
 		"journaldata"		: "62 (2013), no. 6, 1861-1889",
 	    "doi"				: "https://dx.doi.org/10.1512/iumj.2013.62.5155"
@@ -526,7 +526,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "fengdejun suomalaville",
-		"topic"				: "",
+		"topic"				: "gmt",
 	    "journal"			: "mathproccambridgephilossoc",
 		"journaldata"		: "154 (2013), no. 3, 465-479",
 	    "doi"				: "https://dx.doi.org/10.1017/S0305004113000066"
@@ -539,7 +539,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "jarvenpaaesa jarvenpaamaarit koivusalohenna stenfloorjan suomalaville",
-		"topic"				: "",
+		"topic"				: "fg",
 	    "journal"			: "ergodictheorydynamsystems",
 		"journaldata"		: "34 (2014), no. 3, 854-875",
 	    "doi"				: "https://dx.doi.org/10.1017/etds.2012.168"
@@ -552,7 +552,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "bandtchristoph",
-		"topic"				: "",
+		"topic"				: "fg",
 	    "journal"			: "ergodictheorydynamsystems",
 		"journaldata"		: "33 (2013), no. 5, 1326-1337",
 	    "doi"				: "https://dx.doi.org/10.1017/S0143385712000326"
@@ -565,7 +565,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "rajalatapio suomalaville",
-		"topic"				: "",
+		"topic"				: "gmt",
 	    "journal"			: "procamermathsoc",
 		"journaldata"		: "140 (2012), no. 9, 3275-3281",
 	    "doi"				: "https://dx.doi.org/10.1090/S0002-9939-2012-11161-X"
@@ -578,7 +578,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "rajalatapio suomalaville",
-		"topic"				: "",
+		"topic"				: "fg gmt",
 	    "journal"			: "nonlinearity",
 		"journaldata"		: "26 (2013), no. 8, 2157-2173",
 	    "doi"				: "https://dx.doi.org/10.1088/0951-7715/26/8/2157"
@@ -591,7 +591,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "rajalatapio suomalaville",
-		"topic"				: "",
+		"topic"				: "gmt",
 	    "journal"			: "annscnormsuperpisaclsci",
 		"journaldata"		: "16 (2016), no. 4, 1315-1351",
 	    "doi"				: "https://dx.doi.org/10.2422/2036-2145.201504_001"
@@ -604,7 +604,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "fengdejun",
-		"topic"				: "",
+		"topic"				: "et",
 	    "journal"			: "discretecontindynsyst",
 		"journaldata"		: "30 (2011), no. 3, 699-704",
 	    "doi"				: "https://dx.doi.org/10.3934/dcds.2011.30.699"
@@ -617,7 +617,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "vilppolainenmarkku",
-		"topic"				: "",
+		"topic"				: "fg",
 	    "journal"			: "monatshmath",
 		"journaldata"		: "161 (2010), no. 3, 271-293",
 	    "doi"				: "https://dx.doi.org/10.1007/s00605-009-0144-9"
@@ -630,7 +630,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "",
-		"topic"				: "",
+		"topic"				: "gmt",
 	    "journal"			: "recentdevelopmentsinfractalsandrelatedfields",
 		"journaldata"		: "2010, 45-54",
 	    "doi"				: "https://dx.doi.org/10.1007/978-0-8176-4888-6_4"
@@ -643,7 +643,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "csornyeimarianna rajalatapio suomalaville",
-		"topic"				: "",
+		"topic"				: "gmt",
 	    "journal"			: "procedinburghmathsoc",
 		"journaldata"		: "53 (2010), no. 2, 311-331",
 	    "doi"				: "https://dx.doi.org/10.1017/S0013091508001156"
@@ -656,7 +656,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "",
-		"topic"				: "",
+		"topic"				: "fg",
 	    "journal"			: "arkhimedes",
 		"journaldata"		: "(2008), no. 2, 17-20",
 	    "doi"				: ""
@@ -669,7 +669,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "",
-		"topic"				: "",
+		"topic"				: "gmt",
 	    "journal"			: "realanalexchange2007",
 		"journaldata"		: "245-250",
 	    "doi"				: ""
@@ -682,7 +682,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "jarvenpaaesa jarvenpaamaarit rajalatapio rogovinsari suomalaville",
-		"topic"				: "",
+		"topic"				: "gmt",
 	    "journal"			: "mathz",
 		"journaldata"		: "266 (2010), no. 1, 83-105",
 	    "doi"				: "https://dx.doi.org/10.1007/s00209-009-0555-2"
@@ -695,7 +695,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "shmerkinpablo",
-		"topic"				: "",
+		"topic"				: "fg",
 	    "journal"			: "ergodictheorydynamsystems",
 		"journaldata"		: "29 (2009), no. 3, 941-965",
 	    "doi"				: "https://dx.doi.org/10.1017/S0143385708080474"
@@ -708,7 +708,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "beliaevdmitry jarvenpaaesa jarvenpaamaarit rajalatapio smirnovstanislav suomalaville",
-		"topic"				: "",
+		"topic"				: "gmt",
 	    "journal"			: "jlondmathsoc",
 		"journaldata"		: "80 (2009), no. 2, 514-530",
 	    "doi"				: "https://dx.doi.org/10.1112/jlms/jdp040"
@@ -721,7 +721,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "vilppolainenmarkku",
-		"topic"				: "",
+		"topic"				: "fg",
 	    "journal"			: "fundmath",
 		"journaldata"		: "200 (2008), no. 1, 69-100",
 	    "doi"				: "https://dx.doi.org/10.4064/fm200-1-2"
@@ -734,7 +734,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "suomalaville",
-		"topic"				: "",
+		"topic"				: "gmt",
 	    "journal"			: "advmath",
 		"journaldata"		: "217 (2008), no. 3, 952-966",
 	    "doi"				: "https://dx.doi.org/10.1016/j.aim.2007.07.003"
@@ -747,7 +747,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "",
-		"topic"				: "",
+		"topic"				: "fg gmt",
 	    "journal"			: "mathnachr",
 		"journaldata"		: "279 (2006), no. 1-2, 179-187",
 	    "doi"				: "https://dx.doi.org/10.1002/mana.200510354"
@@ -760,7 +760,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "jarvenpaaesa jarvenpaamaarit suomalaville",
-		"topic"				: "",
+		"topic"				: "gmt",
 	    "journal"			: "mathscand",
 		"journaldata"		: "97 (2005), no. 2, 309-318",
 	    "doi"				: "https://dx.doi.org/10.7146/math.scand.a-14978"
@@ -773,7 +773,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "",
-		"topic"				: "",
+		"topic"				: "et fg",
 	    "journal"			: "actaunivcarolinmathphys",
 		"journaldata"		: "45 (2004), no. 2, 45-53",
 	    "doi"				: "https://dml.cz/handle/10338.dmlcz/702096"
@@ -786,7 +786,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "suomalaville",
-		"topic"				: "",
+		"topic"				: "gmt",
 	    "journal"			: "transamermathsoc",
 		"journaldata"		: "363 (2011), no. 3, 1183-1195",
 	    "doi"				: "https://dx.doi.org/10.1090/S0002-9947-2010-04869-X"
@@ -799,7 +799,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "",
-		"topic"				: "",
+		"topic"				: "et fg gmt",
 	    "journal"			: "repunivjyvaskyladeptmathstat",
 		"journaldata"		: "93 (2003)",
 	    "doi"				: "http://www.math.jyu.fi/research/reports/rep93.pdf"
@@ -812,7 +812,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "",
-		"topic"				: "",
+		"topic"				: "et fg",
 	    "journal"			: "annacadscifennmath",
 		"journaldata"		: "29 (2004), no. 2, 419-458",
 	    "doi"				: "https://dx.doi.org/10.5186/aasfm.00"
@@ -825,7 +825,7 @@
 	    "attachment"		: "",
 	    "attachmentfile"	: "",
 	    "collaborators"		: "",
-		"topic"				: "",
+		"topic"				: "fg gmt",
 	    "journal"			: "publmat",
 		"journaldata"		: "47 (2003), no. 1, 133-141",
 	    "doi"				: "https://dx.doi.org/10.5565/PUBLMAT_47103_06"

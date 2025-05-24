@@ -1,5 +1,5 @@
 {%- comment -%}
-  USAGE: include checkbox.html type="status/coauthor/journal" filters="coauthors/journals separated by comma" text="text" checkbox="no/checked"
+  USAGE: include checkbox.html type="status/coauthor/topic/journal" filters="coauthors/journals separated by comma" text="text" checkbox="no/checked"
 {%- endcomment -%}
 
 {%- unless include.type -%}
@@ -30,6 +30,9 @@
   {%- if include.type == "status" -%}
     {%- assign data = filter | capitalize -%}
     {%- unless data -%}Error: status {{ filter }} not found.{%- endunless -%}
+  {%- elsif include.type == "topic" -%}
+    {%- assign data = filter | capitalize -%}
+    {%- unless data -%}Error: journal {{ filter }} not found.{%- endunless -%}
   {%- elsif include.type == "coauthor" -%}
     {%- assign data = site.data.people[filter] -%}
     {%- unless data -%}Error: person {{ filter }} not found.{%- endunless -%}

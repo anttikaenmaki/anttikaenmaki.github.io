@@ -1,7 +1,12 @@
 {%- comment -%}
-  USAGE: include count-papers.html items="preprint/publication/survey/journals separated by comma"
+  USAGE: include count-papers.html type="status/topic" items="preprint/publication/survey/journals separated by comma"
 {%- endcomment -%}
 
+{%- if include.type and include.type != "" -%}
+  {%- assign type = include.type -%}
+{%- else -%}
+  {%- assign type = "status" -%}
+{%- endif -%}
 {%- if include.items and include.items != "" -%}
   {%- assign items = include.items | split: "," -%}
 {%- else -%}
@@ -11,19 +16,32 @@
 {%- assign preprintcount = 0 -%}
 {%- assign publicationcount = 0 -%}
 {%- assign surveycount = 0 -%}
+{%- assign etcount = 0 -%}
+{%- assign fgcount = 0 -%}
+{%- assign gmtcount = 0 -%}
 {%- assign journalcount = 0 -%}
 
 {%- for paper in site.data.papers -%}
   {%- assign paperdata = paper[1] -%}
-  {%- if paperdata.journal and items[0] != "preprint" and items[0] != "publication" and items[0] != "survey" and items contains paperdata.journal -%}
+  {%- if paperdata.journal and items[0] != "preprint" and items[0] != "publication" and items[0] != "survey" and items[0] != "et" and items[0] != "fg" and items[0] != "gmt" and items contains paperdata.journal -%}
     {%- assign journalcount = journalcount | plus: 1 -%}
-  {%- elsif paperdata.status -%}
+  {%- elsif paperdata.status and type == "status" -%}
     {%- if paperdata.status contains "preprint" -%}
       {%- assign preprintcount = preprintcount | plus: 1 -%}
     {%- elsif paperdata.status contains "publication" -%}
       {%- assign publicationcount = publicationcount | plus: 1 -%}
     {%- elsif paperdata.status contains "survey" -%}
       {%- assign surveycount = surveycount | plus: 1 -%}
+    {%- endif -%}
+  {%- elsif paperdata.topic and type == "topic" -%}
+    {%- if paperdata.topic contains "et" -%}
+      {%- assign etcount = etcount | plus: 1 -%}
+    {%- endif -%}
+    {%- if paperdata.topic contains "fg" -%}
+      {%- assign fgcount = fgcount | plus: 1 -%}
+    {%- endif -%}
+    {%- if paperdata.topic contains "gmt" -%}
+      {%- assign gmtcount = gmtcount | plus: 1 -%}
     {%- endif -%}
   {%- endif -%}
 {%- endfor -%}
@@ -34,6 +52,12 @@
   {{- publicationcount -}}
 {%- elsif items[0] and items[0] == "survey" and surveycount >= 1 -%}
   {{- surveycount -}}
+{%- elsif items[0] and items[0] == "et" and etcount >= 1 -%}
+  {{- etcount -}}
+{%- elsif items[0] and items[0] == "fg" and fgcount >= 1 -%}
+  {{- fgcount -}}
+{%- elsif items[0] and items[0] == "gmt" and gmtcount >= 1 -%}
+  {{- gmtcount -}}
 {%- elsif journalcount >= 1 -%}
   {{- journalcount -}}
 {%- else -%}

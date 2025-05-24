@@ -1,9 +1,21 @@
 {%- comment -%}
-  USAGE: include checkbox-status.html items="preprint/publication/survey" begin="text" middle="text" end="text"
+  USAGE: include checkbox-status.html type="status/topic" items="preprint/publication/survey/et/fg/gmt" count="no" begin="text" middle="text" end="text"  checkbox="no/checked"
+  - type: "status" for status filters, "topic" for topic filters.
+  - items: Single category (preprint, publication, survey, et, fg, gmt).
+  - middle: Optional display text (e.g., "ergodic theory" for "et").
+  - Outputs: Checkbox with count and text (e.g., "5 preprints" or "3 ergodic theory").
 {%- endcomment -%}
 
+{%- if include.type -%}
+  {%- assign type = include.type -%}
+{%- else -%}
+  {%- assign type = "status" -%}
+{%- endif -%}
 {%- unless include.items -%}
   {%- assign include.items = "" -%}
+{%- endunless -%}
+{%- unless include.count -%}
+  {%- assign include.count = "" -%}
 {%- endunless -%}
 {%- unless include.begin -%}
   {%- assign include.begin = "" -%}
@@ -11,29 +23,37 @@
 {%- unless include.middle -%}
   {%- assign include.middle = "" -%}
 {%- endunless -%}
-{%- unless include.middle -%}
+{%- unless include.end -%}
   {%- assign include.end = "" -%}
 {%- endunless -%}
+{%- unless include.checkbox -%}
+  {%- assign include.checkbox = "" -%}
+{%- endunless -%}
 
-{%- if include.items == "preprint" or include.items == "publication" or include.items == "survey" -%}
+{%- assign valid-items = "preprint,publication,survey,et,fg,gmt" | split: "," -%}
+{%- if valid-items contains include.items -%}
   {%- assign status = include.items -%}
   {%- capture status-count -%}
-    {%- include count-papers.html items=status -%}
+    {%- include count-papers.html type=type items=status -%}
   {%- endcapture -%}
   {%- assign status-count = status-count | default: 0 | plus: 0 -%}
   {%- if status-count != 0 -%}
     {{- include.begin -}}
-    {%- assign status-text = status-count | append: " " -%}
+    {%- assign status-text = "" -%}
+    {%- if include.count != "no" -%}
+      {%- assign status-text = status-count | append: " " -%}
+    {%- endif -%}
     {%- if include.middle -%}
       {%- assign status-text = status-text | append: include.middle -%}
+    {%- else -%}
+      {%- assign status-text = status-text | append: status -%}
+      {%- if status-count != 1 -%}
+        {%- assign status-text = status-text | append: "s" -%}
+      {%- endif -%}
     {%- endif -%}
-    {%- assign status-text = status-text | append: status -%}
-    {%- if status-count != 1 -%}
-      {%- assign status-text = status-text | append: "s" -%}
-    {%- endif -%}
-    {%- include checkbox.html type="status" filters=status text=status-text checkbox="checked" -%}
+    {%- include checkbox.html type=type filters=status text=status-text checkbox=include.checked -%}
     {{- include.end -}}
   {%- endif -%}
 {%- else -%}
-  Error: Invalid items value. Use "preprint", "publication", or "survey".
+  Error: Invalid items value. Use "preprint", "publication", "survey", "et", "fg", or "gmt".
 {%- endif -%}
