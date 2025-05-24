@@ -43,7 +43,7 @@
     {%- if include.checkbox == "no" -%}
       [
     {%- else -%}
-      <label for="{{ include.type }}-{{ filter }}" class="checkbox-label"><span class="javascript"><input type="checkbox" id="{{ include.type }}-{{ filter }}" value="{{ include.type }}-{{ filter }}" class="filter-checkbox"{%- if include.checkbox %} {{ include.checkbox }}{%- endif -%}>&thinsp;</span>
+      <label for="{{ include.type }}-{{ filter }}" class="checkbox-label"><span class="javascript"><input type="checkbox" id="{{ include.type }}-{{ filter }}" value="{{ include.type }}-{{ filter | slugify }}" class="filter-checkbox"{%- if include.checkbox %} {{ include.checkbox }}{%- endif -%}>&thinsp;</span>
     {%- endif -%}
     {% if include.text %}{{ include.text }}{% elsif include.type == "status" %}{{ data }}{% elsif include.type == "coauthor" %}{{ data.firstname }} {{ data.name }}{% else %}{{ data.name }}{% endif %}
     {%- if include.checkbox == "no" -%}

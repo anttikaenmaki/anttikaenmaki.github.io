@@ -83,6 +83,14 @@ $(document).ready(function() {
     }
   });
 
-  // Initial update to hide all articles if no checkboxes are selected
-  updateArticleList();
+  // Handle search query from URL parameter
+  const urlParams = new URLSearchParams(window.location.search);
+  const searchQuery = urlParams.get('search');
+  if (searchQuery && $('#search-input').length) {
+    $('#search-input').val(decodeURIComponent(searchQuery));
+    updateArticleList();
+  } else {
+    // Initial update to hide all articles if no checkboxes are selected
+    updateArticleList();
+  }
 });
