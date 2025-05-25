@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (event.key === 'Escape') {
             searchInput.value = '';
             searchArticles('', articles, document.querySelectorAll('.filter-checkbox'));
-            searchInput.blur();
+            searchInput.focus();
         }
     });
 
