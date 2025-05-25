@@ -1,98 +1,139 @@
-$(document).ready(function() {
-  // Function to normalize text by removing diacritics
-  function normalizeText(text) {
-    return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  }
+function normalizeText(text) {
+    return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
 
-  // Function to update the article list based on selected checkboxes and search terms
-  function updateArticleList() {
-    const articles = document.querySelectorAll('#items li');
-    const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
-    const checkedFilters = Array.from(document.querySelectorAll('.filter-checkbox:checked')).map(cb => cb.value);
-    const searchInput = $('#search-input').length ? $('#search-input').val().toLowerCase().trim() : '';
+function parseQuery(query) {
+    let terms = [];
+    let currentTerm = '';
+    let inQuotes = false;
+    let quoteChar = null;
 
-    // Parse search input for quoted phrases and unquoted terms, split by OR/||
-    const orGroups = [];
-    let currentInput = searchInput;
-    const quoteRegex = /"([^"]*)"/g; // Match quoted phrases
-    let match;
+    for (let i = 0; i < query.length; i++) {
+        let char = query[i];
+        let isQuote = char === '"' || char === "'" || char === '“' || char === '”';
 
-    // Extract quoted phrases and replace them with placeholders
-    const placeholders = [];
-    while ((match = quoteRegex.exec(searchInput)) !== null) {
-      const phrase = match[1].trim();
-      if (phrase.length > 0) {
-        placeholders.push(normalizeText(phrase));
-        currentInput = currentInput.replace(match[0], `__PHRASE_${placeholders.length - 1}__`);
-      }
+        if (isQuote) {
+            if (inQuotes && (char === quoteChar || (char === '”' && quoteChar === '“') || (char === '“' && quoteChar === '”'))) {
+                if (currentTerm.trim()) {
+                    terms.push({ type: 'phrase', value: currentTerm.trim() });
+                    currentTerm = '';
+                }
+                inQuotes = false;
+                quoteChar = null;
+            } else if (!inQuotes) {
+                if (currentTerm.trim()) {
+                    terms.push({ type: 'word', value: currentTerm.trim() });
+                    currentTerm = '';
+                }
+                inQuotes = true;
+                quoteChar = char;
+            } else {
+                currentTerm += char;
+            }
+        } else if (char === ' ' && !inQuotes) {
+            if (currentTerm.trim()) {
+                terms.push({ type: 'word', value: currentTerm.trim() });
+                currentTerm = '';
+            }
+        } else {
+            currentTerm += char;
+        }
     }
 
-    // Split by OR/|| and process each group
-    currentInput.split(/\s*(?:\bOR\b|\|\|)\s*/i)
-      .map(group => group.trim())
-      .filter(group => group.length > 0)
-      .forEach(group => {
-        const terms = [];
-        group.split(/\s+/).forEach(word => {
-          if (word.startsWith('__PHRASE_') && word.endsWith('__')) {
-            const index = parseInt(word.match(/__PHRASE_(\d+)__/)[1]);
-            terms.push(placeholders[index]); // Restore quoted phrase
-          } else if (word.length > 0) {
-            terms.push(normalizeText(word)); // Unquoted word
-          }
-        });
-        if (terms.length > 0) {
-          orGroups.push(terms);
+    if (currentTerm.trim()) {
+        terms.push({ type: inQuotes ? 'phrase' : 'word', value: currentTerm.trim() });
+    }
+
+    return terms;
+}
+
+function matchesTerm(text, term) {
+    let normalizedText = normalizeText(text);
+    let normalizedValue = normalizeText(term.value);
+
+    if (term.type === 'phrase') {
+        return normalizedText.includes(normalizedValue);
+    } else {
+        return normalizedText.split(/\s+/).some(word => word.includes(normalizedValue));
+    }
+}
+
+function searchArticles(query, articles, filterCheckboxes) {
+    let terms = parseQuery(query);
+    let checkedFilters = Array.from(filterCheckboxes)
+        .filter(checkbox => checkbox.checked)
+        .map(checkbox => checkbox.value);
+
+    let orGroups = [];
+    let currentGroup = [];
+
+    for (let i = 0; i < terms.length; i++) {
+        let term = terms[i];
+        if (term.value === 'OR' || term.value === '||') {
+            if (currentGroup.length > 0) {
+                orGroups.push(currentGroup);
+                currentGroup = [];
+            }
+        } else {
+            currentGroup.push(term);
         }
-      });
+    }
+    if (currentGroup.length > 0) {
+        orGroups.push(currentGroup);
+    }
+
+    if (orGroups.length === 0) {
+        orGroups = [[]];
+    }
 
     articles.forEach(article => {
-      const articleClasses = Array.from(article.classList);
-      const articleText = normalizeText(article.textContent.toLowerCase());
+        let articleText = article.textContent;
+        let articleClasses = Array.from(article.classList);
+        let matchesFilter = checkedFilters.length > 0 &&
+                           checkedFilters.some(filter => articleClasses.includes(filter));
 
-      // Check category filters; allow all if no checkboxes exist, otherwise require checked filters
-      const matchesFilter = filterCheckboxes.length === 0 || 
-                           (checkedFilters.length > 0 && checkedFilters.some(filter => articleClasses.includes(filter)));
-      
-      // Check search terms: match if any OR group has all its terms present
-      const matchesSearch = orGroups.length === 0 || orGroups.some(terms => terms.every(term => articleText.includes(term)));
+        if (!matchesFilter) {
+            article.style.display = 'none';
+            return;
+        }
 
-      // Show article only if it matches both filter and search criteria
-      article.style.display = (matchesFilter && matchesSearch) ? 'list-item' : 'none';
+        if (terms.length === 0 || (terms.length === 1 && terms[0].value === '')) {
+            article.style.display = '';
+            return;
+        }
+
+        let matchesQuery = orGroups.some(group => {
+            if (group.length === 0) return false;
+            return group.every(term => {
+                if (term.value === 'AND') return true;
+                return matchesTerm(articleText, term);
+            });
+        });
+
+        article.style.display = matchesQuery ? '' : 'none';
     });
-  }
+}
 
-  // Set up event listeners for checkboxes
-  $('.filter-checkbox').on('change', function() {
-    // Sync checkboxes with the same value, escaping special characters
-    $("input[value='" + $.escapeSelector($(this).val()) + "'][type='checkbox']").prop('checked', $(this).prop('checked'));
-    // Update article list
-    updateArticleList();
-  });
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('search-input');
+    const articles = document.querySelectorAll('#items li');
+    const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
 
-  // Set up event listener for search input with debouncing
-  let timeout;
-  $('#search-input').on('input', function() {
-    clearTimeout(timeout);
-    timeout = setTimeout(updateArticleList, 200); // 200ms delay
-  });
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchQuery = urlParams.get('search') || '';
 
-  // Set up event listener for Escape key to clear search input
-  $('#search-input').on('keydown', function(event) {
-    if (event.key === 'Escape') {
-      $(this).val(''); // Clear the input
-      updateArticleList(); // Update the article list
-    }
-  });
+    searchInput.value = searchQuery;
 
-  // Handle search query from URL parameter
-  const urlParams = new URLSearchParams(window.location.search);
-  const searchQuery = urlParams.get('search');
-  if (searchQuery && $('#search-input').length) {
-    $('#search-input').val(decodeURIComponent(searchQuery));
-    updateArticleList();
-  } else {
-    // Initial update to hide all articles if no checkboxes are selected
-    updateArticleList();
-  }
+    searchArticles(searchQuery, articles, filterCheckboxes);
+
+    searchInput.addEventListener('input', () => {
+        searchArticles(searchInput.value, articles, filterCheckboxes);
+    });
+
+    // Event delegation for checkbox changes
+    document.addEventListener('change', (event) => {
+        if (event.target.matches('.filter-checkbox')) {
+            searchArticles(searchInput.value, articles, document.querySelectorAll('.filter-checkbox'));
+        }
+    });
 });

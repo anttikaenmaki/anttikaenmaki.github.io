@@ -1,11 +1,19 @@
-{% if include.n >= 0 and include.n <= 3 %}{% assign n = include.n %}{% else %}{% assign n = 3 %}{% endif %}
+{%- if include.n >= 0 and include.n <= 3 -%}
+  {%- assign n = include.n -%}
+{%- else -%}
+  {%- assign n = 3 -%}
+{%- endif -%}
 
-{% assign count = 0 %}{% for paper in site.data.papers %}{% assign journal = paper[1].journal %}
-{% assign jufo = site.data.journals[journal].jufo | plus: 0 %}
+{%- assign count = 0 -%}
+{%- for paper in site.data.papers -%}
+  {%- assign journal = paper[1].journal -%}
+  {%- assign jufo = site.data.journals[journal].jufo | plus: 0 -%}
+  {%- if jufo >= n -%}
+    {%- assign count = count | plus: 1 -%}
+  {%- endif -%}
+{%- endfor -%}
 
-{% if jufo >= n %}{% assign count = count | plus: 1 %}{% endif %}{% endfor %}
-
-{{ count }}
+{{- count -}}
 
 
 {% comment %}
