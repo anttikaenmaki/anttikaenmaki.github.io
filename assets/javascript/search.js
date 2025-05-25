@@ -114,11 +114,21 @@ function searchArticles(query, articles, filterCheckboxes) {
     });
 }
 
+// Debounce function to limit function calls
+function debounce(func, delay) {
+    let timeoutId;
+    return function (...args) {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => {
+            func(...args);
+        }, delay);
+    };
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     const articles = document.querySelectorAll('#items li');
     const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
-
     const urlParams = new URLSearchParams(window.location.search);
     const searchQuery = urlParams.get('search') || '';
 
@@ -126,13 +136,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
     searchArticles(searchQuery, articles, filterCheckboxes);
 
+    // Apply debouncing to input event
+    const debouncedSearch = debounce((query) => {
+        searchArticles(query, articles, document.querySelectorAll('.filter-checkbox'));
+    }, 200);
+
     searchInput.addEventListener('input', () => {
-        searchArticles(searchInput.value, articles, filterCheckboxes);
+        debouncedSearch(searchInput.value);
     });
 
-    // Event delegation for checkbox changes
+    // Clear search input on ESC key
+    searchInput.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            searchInput.value = '';
+            searchArticles('', articles, document.querySelectorAll('.filter-checkbox'));
+            searchInput.blur();
+        }
+    });
+
+    // Event delegation for checkbox changes with synchronization
     document.addEventListener('change', (event) => {
         if (event.target.matches('.filter-checkbox')) {
+            const value = event.target.value;
+            const isChecked = event.target.checked;
+
+            // Synchronize checkboxes with the same value
+            document.querySelectorAll(`.filter-checkbox[value="${value}"]`).forEach(checkbox => {
+                if (checkbox !== event.target) {
+                    checkbox.checked = isChecked;
+                }
+            });
+
             searchArticles(searchInput.value, articles, document.querySelectorAll('.filter-checkbox'));
         }
     });
