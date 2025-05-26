@@ -18,6 +18,9 @@ show_description: false    # show the site description in the sidebar
 show_excerpts: false       # show excerpts of the blog posts
 minimal: false              # use a dark header
 mathjax: true
+markdown: kramdown
+kramdown:
+  input: GFM
 
 # Menu
 
