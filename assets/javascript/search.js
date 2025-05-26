@@ -89,8 +89,8 @@ function searchArticles(query, articles, filterCheckboxes) {
     articles.forEach(article => {
         let articleText = article.textContent;
         let articleClasses = Array.from(article.classList);
-        let matchesFilter = checkedFilters.length > 0 &&
-                           checkedFilters.some(filter => articleClasses.includes(filter));
+        let matchesFilter = filterCheckboxes.length === 0 || 
+                   (checkedFilters.length > 0 && checkedFilters.some(filter => articleClasses.includes(filter)));
 
         if (!matchesFilter) {
             article.style.display = 'none';
