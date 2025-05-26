@@ -1,3 +1,50 @@
+/*
+ * search.js by Antti Käenmäki
+ *
+ * USAGE:
+ * 
+ * Purpose:
+ *   Enables client-side search and filtering of publication list items (<li>) in a Jekyll-based website.
+ *   Supports text search with OR logic, quote handling, checkbox-based filtering, and dynamic updates.
+ *
+ * HTML Requirements:
+ *   - <input id="search-input"> for search queries.
+ *   - <ol id="items"> containing <li> elements for publications, with classes for filters (e.g., topic-et, status-preprint).
+ *   - Optional <input type="checkbox" class="filter-checkbox" value="topic-et"> for filter controls.
+ *
+ * Functionality:
+ *   - Search: Filters publications based on #search-input value, supporting:
+ *     - OR logic with 'OR' or '||' (e.g., 'self-affine OR dimension').
+ *     - Phrase searches with quotes (", ', “, ”, e.g., '"self-affine measure"').
+ *     - Case-insensitive, diacritic-normalized matching.
+ *   - Checkboxes:
+ *     - On pages with .filter-checkbox elements, only publications matching checked filters are shown.
+ *     - Checkboxes with the same value (e.g., topic-et) are synchronized (checking one checks all).
+ *   - No Checkboxes: On pages without .filter-checkbox, all publications matching the query are shown.
+ *   - ESC Key: Clears #search-input, triggers search, and refocuses input.
+ *   - Debouncing: 200ms delay on input events to optimize performance.
+ *
+ * Integration:
+ *   - Include in Jekyll site via <script src="path/to/search.js"></script> in HTML.
+ *   - No external dependencies (pure JavaScript).
+ *   - Ensure Jekyll generates <li> elements with appropriate classes in #items.
+ *
+ * Example:
+ *   HTML:
+ *     <input id="search-input" type="text">
+ *     <input type="checkbox" class="filter-checkbox" value="status-publication" checked> Publications
+ *     <ol id="items">
+ *       <li class="status-preprint">Self-affine sponges...</li>
+ *       <li class="status-publication">Dimension spectrum...</li>
+ *     </ol>
+ * 
+ * Usage:
+ *     - Type 'self-affine' with status-publication checked -> Shows second <li>.
+ *     - Type 'self-affine OR dimension' -> Shows both <li> if status-publication and status-preprint checked.
+ *     - Press ESC -> Clears input, refocuses, shows all items.
+ *     - On a page without checkboxes, 'self-affine' shows matching items.
+ */
+
 function normalizeText(text) {
     return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
