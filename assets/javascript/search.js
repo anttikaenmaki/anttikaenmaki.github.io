@@ -4,30 +4,34 @@
  * USAGE:
  * 
  * Purpose:
- *   Enables client-side search and filtering of publication list items (<li>) in a Jekyll-based website.
+ *   Enables client-side search and filtering of list items (e.g. publications) in a website.
  *   Supports text search with OR logic, quote handling, checkbox-based filtering, and dynamic updates.
  *
  * HTML Requirements:
  *   - <input id="search-input"> for search queries.
- *   - <ol id="items"> containing <li> elements for publications, with classes for filters (e.g., topic-et, status-preprint).
+ *   - <ol id="items"> containing <li> elements for items (e.g. publications), with classes for filters (e.g., topic-et, status-preprint).
  *   - Optional <input type="checkbox" class="filter-checkbox" value="topic-et"> for filter controls.
  *
  * Functionality:
  *   - Search: Filters publications based on #search-input value, supporting:
+ *     - Search query can be given also as URL query parameter ?search=self-affine
  *     - OR logic with 'OR' or '||' (e.g., 'self-affine OR dimension').
  *     - Phrase searches with quotes (", ', “, ”, e.g., '"self-affine measure"').
- *     - Case-insensitive, diacritic-normalized matching.
+ *     - Case-insensitive and diacritic-insensitive matching (e.g., 'kaenmaki' and 'Käenmäki' are the same).
  *   - Checkboxes:
  *     - On pages with .filter-checkbox elements, only publications matching checked filters are shown.
- *     - Checkboxes with the same value (e.g., topic-et) are synchronized (checking one checks all).
- *   - No Checkboxes: On pages without .filter-checkbox, all publications matching the query are shown.
- *   - ESC Key: Clears #search-input, triggers search, and refocuses input.
- *   - Debouncing: 200ms delay on input events to optimize performance.
+ *     - Checkboxes with the same value (e.g., status-publication) are synchronized (checking one checks all).
+ *   - No Checkboxes:
+ *     - On pages without .filter-checkbox, all publications matching the query are shown.
+ *   - ESC Key:
+ *     - Clears #search-input, triggers search, and refocuses input.
+ *   - Debouncing:
+ *     - 200ms delay on input events to optimize performance.
  *
  * Integration:
- *   - Include in Jekyll site via <script src="path/to/search.js"></script> in HTML.
+ *   - Include in site via <script src="path/to/search.js"></script> in HTML.
  *   - No external dependencies (pure JavaScript).
- *   - Ensure Jekyll generates <li> elements with appropriate classes in #items.
+ *   - Ensure there are <li> elements with appropriate classes in #items.
  *
  * Example:
  *   HTML:
