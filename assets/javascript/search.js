@@ -1,7 +1,7 @@
 /*
  * search.js by Antti Käenmäki
  *
- * USAGE:
+ * USAGE: <script defer src="/assets/javascript/search.js"></script>
  * 
  * Purpose:
  *   Enables client-side search and filtering of list items (e.g. publications) in a website.
@@ -13,11 +13,12 @@
  *   - Optional <input type="checkbox" class="filter-checkbox" value="topic-et"> for filter controls.
  *
  * Functionality:
- *   - Search: Filters publications based on #search-input value, supporting:
- *     - Search query can be given also as URL query parameter ?search=self-affine
+ *   - Search:
+ *     - Filters publications based on #search-input value
+ *     - Search query can be given also as URL parameter ?search=self-affine
  *     - OR logic with 'OR' or '||' (e.g., 'self-affine OR dimension').
  *     - Phrase searches with quotes (", ', “, ”, e.g., '"self-affine measure"').
- *     - Case-insensitive and diacritic-insensitive matching (e.g., 'kaenmaki' and 'Käenmäki' are the same).
+ *     - Case-insensitive and diacritic-insensitive matching (e.g., 'kaenmaki' is 'Käenmäki').
  *   - Checkboxes:
  *     - On pages with .filter-checkbox elements, only publications matching checked filters are shown.
  *     - Checkboxes with the same value (e.g., status-publication) are synchronized (checking one checks all).
@@ -42,7 +43,7 @@
  *       <li class="status-publication">Dimension spectrum...</li>
  *     </ol>
  * 
- * Usage:
+ *   Test:
  *     - Type 'self-affine' with status-publication checked -> Shows second <li>.
  *     - Type 'self-affine OR dimension' -> Shows both <li> if status-publication and status-preprint checked.
  *     - Press ESC -> Clears input, refocuses, shows all items.
