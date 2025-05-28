@@ -1,7 +1,7 @@
 /*
  * search.js by Antti Käenmäki
  *
- * USAGE: <script defer src="/assets/javascript/search.js"></script>
+ * USAGE: <script defer src="/path/to/search.js"></script>
  * 
  * Purpose:
  *   Enables client-side search and filtering of list items (e.g. publications) in a website.
@@ -14,14 +14,14 @@
  *
  * Functionality:
  *   - Search:
- *     - Filters publications based on #search-input value
+ *     - Searches publications based on #search-input value
  *     - Search query can be given also as URL parameter ?search=self-affine
- *     - OR logic with 'OR' or '||' (e.g., 'self-affine OR dimension').
- *     - Phrase searches with quotes (", ', “, ”, e.g., '"self-affine measure"').
- *     - Case-insensitive and diacritic-insensitive matching (e.g., 'kaenmaki' is 'Käenmäki').
+ *     - OR logic with 'OR' or '||' (e.g. 'self-affine OR dimension').
+ *     - Phrase searches with quotes (", ', “, ”, e.g. '"self-affine measure"').
+ *     - Case-insensitive and diacritic-insensitive matching (e.g. 'kaenmaki' is 'Käenmäki').
  *   - Checkboxes:
  *     - On pages with .filter-checkbox elements, only publications matching checked filters are shown.
- *     - Checkboxes with the same value (e.g., status-publication) are synchronized (checking one checks all).
+ *     - Checkboxes with the same value (e.g. status-publication) are synchronized (checking one checks all).
  *   - No Checkboxes:
  *     - On pages without .filter-checkbox, all publications matching the query are shown.
  *   - ESC Key:
@@ -30,7 +30,7 @@
  *     - 200ms delay on input events to optimize performance.
  *
  * Integration:
- *   - Include in site via <script src="path/to/search.js"></script> in HTML.
+ *   - Include in site via <script defer src="path/to/search.js"></script> in HTML.
  *   - No external dependencies (pure JavaScript).
  *   - Ensure there are <li> elements with appropriate classes in #items.
  *
@@ -41,11 +41,12 @@
  *     <ol id="items">
  *       <li class="status-preprint">Self-affine sponges...</li>
  *       <li class="status-publication">Dimension spectrum...</li>
+ *       <li class="status-publication">Measures on self-affine...</li>
  *     </ol>
  * 
  *   Test:
- *     - Type 'self-affine' with status-publication checked -> Shows second <li>.
- *     - Type 'self-affine OR dimension' -> Shows both <li> if status-publication and status-preprint checked.
+ *     - Type 'dimension' with status-publication checked -> Shows second <li>.
+ *     - Type 'self-affine OR dimension' with status-publication checked -> Shows last two <li>.
  *     - Press ESC -> Clears input, refocuses, shows all items.
  *     - On a page without checkboxes, 'self-affine' shows matching items.
  */
