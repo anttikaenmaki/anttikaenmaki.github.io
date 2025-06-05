@@ -4,8 +4,8 @@
  * USAGE: <script defer src="/path/to/search.js"></script>
  * 
  * Purpose:
- *   Enables client-side search and filtering of list items (e.g. publications) in a website.
- *   Supports text search with OR logic, quote handling, checkbox-based filtering, and dynamic updates.
+ *   - Enables client-side search and filtering of list items (e.g. publications) in a website.
+ *   - Supports text search with OR logic, quote handling, checkbox-based filtering, and dynamic updates.
  *
  * HTML Requirements:
  *   - <input id="search-input"> for search queries.
@@ -158,7 +158,7 @@ function searchArticles(query, articles, filterCheckboxes) {
         let matchesQuery = orGroups.some(group => {
             if (group.length === 0) return false;
             return group.every(term => {
-                if (term.value === 'AND') return true;
+                if (term.value === 'AND' || term.value === '&&') return true;
                 return matchesTerm(articleText, term);
             });
         });
