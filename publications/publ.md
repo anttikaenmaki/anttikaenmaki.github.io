@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Publications
-permalink: /test/
+permalink: /stat/
 ---
 
 I have published in {% include atleast.html n=1 filter="journal" items="publication" output="number" %} journals and at least 3 times in {% capture pop-journals %}{% include atleast.html n=3 filter="journal" items="publication" output="names" %}{% endcapture %}{% include checkbox.html type="journal" filters=pop-journals checkbox="no" %}.
