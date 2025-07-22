@@ -41,6 +41,13 @@
 		"www"				: "https://people.maths.ox.ac.uk/belyaev/"
 	},
 
+	"buczolichzoltan" : {
+		"name"				: "Buczolich",
+		"firstname"			: "Zoltán",
+		"shortname"			: "Z. Buczolich",
+		"www"				: "https://buczo.web.elte.hu/"
+	},
+
 	"csornyeimarianna" : {
 		"name"				: "Csörnyei",
 		"firstname"			: "Marianna",
@@ -123,6 +130,13 @@
 		"firstname"			: "Bing",
 		"shortname"			: "B. Li",
 		"www"				: "https://sites.google.com/site/homepagebingli"
+	},
+
+	"magabalazs" : {
+		"name"				: "Maga",
+		"firstname"			: "Balázs",
+		"shortname"			: "B. Maga",
+		"www"				: "https://magab.web.elte.hu/"
 	},
 
 	"morrisian" : {

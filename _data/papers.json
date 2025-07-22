@@ -1,4 +1,17 @@
 {
+	"65" : {
+		"status"			: "preprint",
+		"papername"			: "Level sets of prevalent Weierstrass functions",
+		"arxiv"				: "https://arxiv.org/abs/2507.15591",
+		"attachment"		: "",
+		"attachmentfile"	: "",
+		"collaborators"		: "buczolichzoltan magabalazs",
+		"topic"				: "fg gmt",
+		"journal"			: "preprint",
+		"journaldata"		: "2025",
+		"doi"				: ""
+	},
+
 	"64" : {
 		"status"			: "preprint",
 		"papername"			: "Self-affine sponges with random contractions",
