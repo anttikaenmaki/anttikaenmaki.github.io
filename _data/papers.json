@@ -6,7 +6,7 @@
 		"attachment"		: "",
 		"attachmentfile"	: "",
 		"collaborators"		: "buczolichzoltan magabalazs",
-		"topic"				: "fg gmt",
+		"topic"				: "gmt",
 		"journal"			: "preprint",
 		"journaldata"		: "2025",
 		"doi"				: ""
@@ -48,7 +48,7 @@
 		"topic"				: "fg",
 		"journal"			: "mathproccambridgephilossoc",
 		"journaldata"		: "to appear",
-		"doi"				: ""
+		"doi"				: "https://doi.org/10.1017/S0305004125000416"
 	},
 
 	"61" : {
