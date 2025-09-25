@@ -56,22 +56,22 @@ A tuple $$\mathsf{A}=(A_i)_{i \in \mathcal{I}} \in \mathrm{GL}_d(\mathbb{R})^\ma
 
 {% include theorem.html no="1" theorem="Lemma" %}
 *Let $$\mathsf{A}=(A_i)_{i \in \mathcal{I}} \in \mathrm{GL}_d(\mathbb{R})^\mathcal{I}$$. Then the following two assertions hold:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;(1) The set $$\mathscr{I}_\mathsf{A}$$ is equal to either $$[\theta_\mathsf{A},\infty)$$ or $$(\theta_\mathsf{A},\infty)$$, and satisfies the alternative characterisation*
+<span style="margin-left: 20px;">(1) The set $$\mathscr{I}_\mathsf{A}$$ is equal to either $$[\theta_\mathsf{A},\infty)$$ or $$(\theta_\mathsf{A},\infty)$$, and satisfies the alternative characterisation</span>*
 
 $$ \mathscr{I}_\mathsf{A}=\Bigl\{s \geq 0 \colon \sum_{i \in \mathcal{I}} \varphi^s(A_i)<\infty\Bigr\}. $$
 
 *In particular, if $$\mathcal{I}$$ is finite then we have $$\mathscr{I}_\mathsf{A}=[0,\infty)$$.<br />
-&nbsp;&nbsp;&nbsp;&nbsp;(2) If $$\sup_{i \in \mathcal{I}} \|A_i\|<1$$, then $$s \mapsto P(\mathsf{A},s)$$ defined on $$\mathscr{I}_\mathsf{A}$$ is strictly decreasing with $$\lim_{s\to \infty} P(\mathsf{A},s)=-\infty$$.*
+<span style="margin-left: 20px;">(2) If $$\sup_{i \in \mathcal{I}} \|A_i\|<1$$, then $$s \mapsto P(\mathsf{A},s)$$ defined on $$\mathscr{I}_\mathsf{A}$$ is strictly decreasing with $$\lim_{s\to \infty} P(\mathsf{A},s)=-\infty$$.</span>*
 
 The above clauses are direct and straightforward to prove. The following theorem introduces more properties for the pressure. Its proof is surprisingly involved.
 
 {% include theorem.html no="2" theorem="Theorem" info="[K-Morris (2024+)](https://doi.org/10.48550/arXiv.2405.00520)" %}
 *Let $$\mathsf{A}=(A_i)_{i \in \mathcal{I}} \in \mathrm{GL}_d(\mathbb{R})^\mathcal{I}$$, where $$\mathcal{I}$$ is either finite or countably infinite. Then the following two assertions hold:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;(1) The pressure function $$s \mapsto P(\mathsf{A},s)$$ defined on $$\mathscr{I}_\mathsf{A}$$ is continuous, and is convex when restricted to the intervals $$[k,k+1] \cap \mathscr{I}_\mathsf{A}$$ for all $$k \in \{0,\ldots,d-1\}$$ and when restricted to the interval $$[d,\infty) \cap \mathscr{I}_\mathsf{A}$$. In particular, if $$P(\mathsf{A},\theta_\mathsf{A})<\infty$$, then*
+<span style="margin-left: 20px;">(1) The pressure function $$s \mapsto P(\mathsf{A},s)$$ defined on $$\mathscr{I}_\mathsf{A}$$ is continuous, and is convex when restricted to the intervals $$[k,k+1] \cap \mathscr{I}_\mathsf{A}$$ for all $$k \in \{0,\ldots,d-1\}$$ and when restricted to the interval $$[d,\infty) \cap \mathscr{I}_\mathsf{A}$$. In particular, if $$P(\mathsf{A},\theta_\mathsf{A})<\infty$$, then</span>*
 
 $$ \lim_{s \downarrow \theta_\mathsf{A}} P(\mathsf{A},s)=P(\mathsf{A},\theta_\mathsf{A}). $$
 
-*&nbsp;&nbsp;&nbsp;&nbsp;(2) For all $$s \in \mathscr{I}_\mathsf{A}$$ we have*
+*<span style="margin-left: 20px;">(2) For all $$s \in \mathscr{I}_\mathsf{A}$$ we have</span>*
 
 $$ P(\mathsf{A},s) = \sup\{ P((A_i)_{i \in \mathcal{J}} ,s) \colon \mathcal{J} \text{ is a finite subset of }\mathcal{I}\} $$
 
@@ -112,17 +112,17 @@ The theorem extends earlier work of [K-Morris (2018)](https://doi.org/10.48550/a
 
 {% include theorem.html no="4" theorem="Theorem" info="[K-Morris (2024+)](https://doi.org/10.48550/arXiv.2405.00520)" %}
 *Let $$(A_i)_{i \in \mathcal{I}} \in \mathrm{GL}_d(\mathbb{R})^\mathcal{I}$$ be completely reducible. Then for each integer $$k \in \{0,\ldots,d-1\}$$ there exist functions $$\Phi^{(1)}_{(\cdot)},\ldots,\Phi^{(p)}_{(\cdot)} \colon [k,k+1]\times \mathcal{I}^* \to (0,\infty)$$, a constant $$K>0$$, a finite set $$F \subset \mathcal{I}^*$$, and an integer $$p$$ with $$1 \le p \le \binom{d}{k}$$ if $$s=k$$ and $$1 \le p \le \binom{d}{k}\binom{d}{k+1}$$ if $$s \in (k,k+1]$$ such that the following three properties hold:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;(1) For every $$s \in [k,k+1]$$ we have*
+<span style="margin-left: 20px;">(1) For every $$s \in [k,k+1]$$ we have</span>*
 
 $$ K^{-1}\varphi^s(A_\mathtt{i}) \leq \max_{j \in \{1,\ldots,p\}} \Phi_s^{(j)}(\mathtt{i}) \leq K\varphi^s(A_\mathtt{i}) $$
 
 *for all $$\mathtt{i} \in \mathcal{I}^*$$.<br />
-&nbsp;&nbsp;&nbsp;&nbsp;(2) For every $$s \in [k,k+1]$$ and $$j \in \{1,\ldots,p\}$$ we have*
+<span style="margin-left: 20px;">(2) For every $$s \in [k,k+1]$$ and $$j \in \{1,\ldots,p\}$$ we have</span>*
 
 $$ \Phi_s^{(j)}(\mathtt{i}\mathtt{j}) \leq \Phi_s^{(j)}(\mathtt{i})\Phi_s^{(j)}(\mathtt{j}) \leq K\max_{\mathtt{k} \in F}  \Phi_s^{(j)}(\mathtt{i}\mathtt{k}\mathtt{j}) $$
 
 *for all $$\mathtt{i},\mathtt{j} \in \mathcal{I}^*$$. This is* quasi-multiplicativity.<br />
-*&nbsp;&nbsp;&nbsp;&nbsp;(3) For every $$j \in \{1,\ldots,p\}$$ and $$\mathtt{i} \in \mathcal{I}^*$$ the function $$s \mapsto \Phi_s^{(j)}(\mathtt{i})$$ defined on $$[k,k+1]$$ is continuous.*
+*<span style="margin-left: 20px;">(3) For every $$j \in \{1,\ldots,p\}$$ and $$\mathtt{i} \in \mathcal{I}^*$$ the function $$s \mapsto \Phi_s^{(j)}(\mathtt{i})$$ defined on $$[k,k+1]$$ is continuous.</span>*
 
 If $$s=k$$ and $$\mathsf{A}^{\wedge k}$$ is irreducible then we may take $$p=1$$. We may do so also if $$s \in (k,k+1]$$ and both $$\mathsf{A}^{\wedge k}$$ and $$\mathsf{A}^{\wedge(k+1)}$$ are irreducible and at least one of them is strongly irreducible. For each $$j \in \{1,\ldots,p\}$$ and $$s \in [k,k+1]$$, we define
 
@@ -150,10 +150,10 @@ and if $$\underline{\mathrm{dim}}_{\mathrm{aff}} \mathsf{A} = \overline{\mathrm{
 
 {% include theorem.html no="5" theorem="Proposition" %}
 *If $$\mathsf{A}=(A_i)_{i \in \mathcal{I}} \in \mathrm{GL}_d(\mathbb{R})^\mathcal{I}$$ and at least one of the following four assumptions,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;(1) $$0 \leq P(\mathsf{A},\overline{\mathrm{dim}}_{\mathrm{aff}}\mathsf{A})<\infty$$,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;(2) $$\theta_\mathsf{A}<\overline{\mathrm{dim}}_{\mathrm{aff}}\mathsf{A}$$,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;(3) $$\mathsf{A}$$ is completely reducible,<br />
-&nbsp;&nbsp;&nbsp;&nbsp;(4) $$\mathcal{I}$$ is finite,<br />
+<span style="margin-left: 20px;">(1) $$0 \leq P(\mathsf{A},\overline{\mathrm{dim}}_{\mathrm{aff}}\mathsf{A})<\infty$$,</span><br />
+<span style="margin-left: 20px;">(2) $$\theta_\mathsf{A}<\overline{\mathrm{dim}}_{\mathrm{aff}}\mathsf{A}$$,</span><br />
+<span style="margin-left: 20px;">(3) $$\mathsf{A}$$ is completely reducible,</span><br />
+<span style="margin-left: 20px;">(4) $$\mathcal{I}$$ is finite,</span><br />
 holds, then $$\underline{\mathrm{dim}}_{\mathrm{aff}}\mathsf{A}=\overline{\mathrm{dim}}_{\mathrm{aff}}\mathsf{A}$$.*
 
 We also demonstrate that the affinity dimension does not necessarily exist.
@@ -243,9 +243,9 @@ Nevertheless, we prove the existence of an $$\varphi^s$$-equilibrium state and m
 
 {% include theorem.html no="12" theorem="Theorem" info="[K-Morris (2024+)](https://doi.org/10.48550/arXiv.2405.00520)" %}
 *Let $$\mathsf{A}=(A_i)_{i \in \mathcal{I}} \in \mathrm{GL}_d(\mathbb{R})^\mathcal{I}$$ be such that $$\sup_{i \in \mathcal{I}} \|A_i\| < \infty$$, where $$\mathcal{I}$$ is either finite or countably infinite. If $$s > \theta_\mathsf{A}$$, then the following three assertions hold:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;(1) If $$s \geq d$$ then there is a unique $$\varphi^s$$-equilibrium state for $$\mathsf{A}$$ and it is a Bernoulli measure.<br />
-&nbsp;&nbsp;&nbsp;&nbsp;(2) If $$s \in (0,d) \cap \Z$$ then the number of distinct ergodic $$\varphi^s$$-equilibrium states for $$\mathsf{A}$$ is at least one and is not more than $$\binom{d}{s}$$. If $$\mathsf{A}^{\wedge s}$$ is irreducible then there is a unique $$\varphi^s$$-equilibrium state for $$\mathsf{A}$$.<br />
-&nbsp;&nbsp;&nbsp;&nbsp;(3) If $$s \in (0,d) \setminus \Z$$ then the number of distinct ergodic $$\varphi^s$$-equilibrium states for $$\mathsf{A}$$ is at least one and is not more than $$\binom{d}{\lfloor s \rfloor}\binom{d}{\lceil s \rceil}$$. If one of $$\mathsf{A}^{\wedge \lfloor s\rfloor}$$ and $$\mathsf{A}^{\wedge \lceil s\rceil}$$ is irreducible and the other is strongly irreducible then there is a unique $$\varphi^s$$-equilibrium state for $$\mathsf{A}$$.<br />
+<span style="margin-left: 20px;">(1) If $$s \geq d$$ then there is a unique $$\varphi^s$$-equilibrium state for $$\mathsf{A}$$ and it is a Bernoulli measure.</span><br />
+<span style="margin-left: 20px;">(2) If $$s \in (0,d) \cap \Z$$ then the number of distinct ergodic $$\varphi^s$$-equilibrium states for $$\mathsf{A}$$ is at least one and is not more than $$\binom{d}{s}$$. If $$\mathsf{A}^{\wedge s}$$ is irreducible then there is a unique $$\varphi^s$$-equilibrium state for $$\mathsf{A}$$.</span><br />
+<span style="margin-left: 20px;">(3) If $$s \in (0,d) \setminus \Z$$ then the number of distinct ergodic $$\varphi^s$$-equilibrium states for $$\mathsf{A}$$ is at least one and is not more than $$\binom{d}{\lfloor s \rfloor}\binom{d}{\lceil s \rceil}$$. If one of $$\mathsf{A}^{\wedge \lfloor s\rfloor}$$ and $$\mathsf{A}^{\wedge \lceil s\rceil}$$ is irreducible and the other is strongly irreducible then there is a unique $$\varphi^s$$-equilibrium state for $$\mathsf{A}$$.</span><br />
 In all cases every equilibrium state is fully supported on $$\mathcal{I}^\mathbb{N}$$.*
 
 The proof of the theorem also relies on the reduction to completely reducible matrices and quasi-multiplicativity of $$\Phi_s^{(j)}$$. We define for each $$s \in [k,k+1] \cap \mathscr{I}_\mathsf{A}$$ and $$j \in \{1,\ldots,p\}$$ the *measure-theoretical pressure* of $$\mathsf{A}$$ at $$s$$ with respect to $$\mu \in \mathcal{M}_\sigma(\mathcal{I}^\mathbb{N})$$ by setting
