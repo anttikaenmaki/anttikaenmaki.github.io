@@ -142,10 +142,10 @@ $$
 
 proving part (1). 
 
-To prove (2), the idea in [Anttila-Bárány-K (2025)](https://zbmath.org/8015184) was to look at *$$\theta$$-oblique occupation measures* defined as $$\mu_{\mathbf{t}}^\theta = (\mathrm{proj}_\theta)_*\lambda_{\mathbf{t}}$$, where $$\lambda_{\mathbf{t}}$$ is the lift of the Lebesgue measure from the unit interval onto the graph of $$f_{\mathbf{t}}$$ and $$\mathrm{proj}_\theta(x,y) = x\cos(\theta)+y\sin(\theta)$$ is the orthogonal projection onto direction $$\theta$$. The occupation measure $$\mu_{\mathbf{t}}$$ is thus the $$\frac{\pi}{2}$$-oblique occupation measure $$\mu_{\mathbf{t}}^{\frac{\pi}{2}}$$. The task is to show that $$\mu_{\mathbf{t}}^\theta \ll \mathcal{L}^1$$, which by the Marstrand's slicing theorem then allows us to prove that
+To prove (2), the idea in [Anttila-Bárány-K (2025)](https://zbmath.org/8015184) was to look at *$$\theta$$-oblique occupation measures* defined as $$\mu_{\mathbf{t}}^\theta = (\mathrm{proj}_\theta)_*\lambda_{\mathbf{t}}$$, where $$\lambda_{\mathbf{t}}$$ is the lift of the Lebesgue measure from the unit interval onto the graph of $$f_{\mathbf{t}}$$ and $$\mathrm{proj}_\theta(x,y) = x\cos(\theta)+y\sin(\theta)$$ is the orthogonal projection onto direction $$\theta$$. The occupation measure $$\mu_{\mathbf{t}}$$ is thus the $$\frac{\pi}{2}$$-oblique occupation measure $$\mu_{\mathbf{t}}^{\frac{\pi}{2}}$$. The task is to show that $$\mu_{\mathbf{t}}^\theta \ll \mathcal{L}^1$$ and, relying on the Marstrand's slicing theorem,
 
 $$
-  \dim_{\mathrm{H}}(\mathrm{graph}(f_{\mathbf{t}}) \cap \mathrm{proj}_\theta^{-1}(\{y\}))
+  \dim_{\mathrm{H}}(\mathrm{graph}(f_{\mathbf{t}}) \cap \mathrm{proj}_\theta^{-1}(\{y\})) \ge 1-\alpha 
 $$
 
 for $$\mathcal{L}^d$$-almost all $$\mathbf{t} \in \mathbb{R}^d$$, $$\mathcal{L}^1$$-almost all $$\theta \in [0,2\pi]$$, and $$\mu_{\mathbf{t}}^\theta$$-almost all $$y \in \mathrm{proj}_\theta(\mathrm{graph}(f_\mathbf{t}))$$. There is a priori no reason that this observation holds for the slice with $$\theta = \frac{\pi}{2}$$ corresponding to the level sets. However, by increasing the dimension
