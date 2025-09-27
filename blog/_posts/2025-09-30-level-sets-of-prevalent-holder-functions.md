@@ -128,17 +128,26 @@ $$
   \int_{|\xi|>1} |\hat{\mu}_{\mathbf{t}}| \, \mathrm{d}\xi \le \biggl( \int_{|\xi|>1} |\xi|^{s-1} |\hat{\mu}_{\mathbf{t}}(\xi)|^2 \, \mathrm{d}\xi \biggr)^{1/2} \biggl( \int_{|\xi|>1} |\xi|^{-(s-1)} \, \mathrm{d}\xi \biggr)^{1/2} < \infty
 $$
 
-for $$\mathcal{L}^d$$-almost all $$\mathbf{t} \in \mathbb{R}^d$$. The second integral converges precisely when $$s-1 > 1$$, and the first is finite by assumption. The integral over $$\vert\xi\vert \leq 1$$ is finite since $$\hat{\mu}_{\mathbf{t}}$$ is bounded. It follows that $$\hat{\mu}_{\mathbf{t}} \in L^1(\mathbb{R})$$ and hence, the [Fourier inversion theorem](https://en.wikipedia.org/wiki/Fourier_inversion_theorem) implies that $$\mu_{\mathbf{t}}$$ has a density $$g(x) = \frac{1}{2\pi} \int \hat{\mu}_{\mathbf{t}}(\xi) e^{i x \xi} \, \mathbb{d}\xi$$. The inverse Fourier transform of an $$L^1$$ function is continuous, so the density $$g$$ is continuous. It is also bounded, because $$\vert g(x) \vert \leq \frac{1}{2\pi} \Vert\hat{\mu}_{\mathbf{t}}\Vert_{L^1} < \infty$$. By the [Radon-Nikodym theorem](https://en.wikipedia.org/wiki/Radon%E2%80%93Nikodym_theorem), we have $$\mu_{\mathbf{t}}(A) = \int_A g \,\mathrm{d}\mathcal{L}^1$$ and hence, $$\mu_{\mathbf{t}}(B(x,r)) \le Cr$$, where $$C = \frac{1}{2\pi} \Vert\hat{\mu}_{\mathbf{t}}\Vert_{L^1}$$. Therefore, the *lower pointwise dimension* satisfies
+for $$\mathcal{L}^d$$-almost all $$\mathbf{t} \in \mathbb{R}^d$$. The second integral converges precisely when $$s-1 > 1$$, and the first is finite by assumption. The integral over $$\vert\xi\vert \leq 1$$ is finite since $$\hat{\mu}_{\mathbf{t}}$$ is bounded. It follows that $$\hat{\mu}_{\mathbf{t}} \in L^1(\mathbb{R})$$ and hence, the [Fourier inversion theorem](https://en.wikipedia.org/wiki/Fourier_inversion_theorem) implies that $$\mu_{\mathbf{t}}$$ has a density $$g(x) = \frac{1}{2\pi} \int \hat{\mu}_{\mathbf{t}}(\xi) e^{i x \xi} \, \mathbb{d}\xi$$. The inverse Fourier transform of an $$L^1$$ function is continuous, so the density $$g$$ is continuous. It is also bounded, because $$\vert g(x) \vert \leq \frac{1}{2\pi} \Vert\hat{\mu}_{\mathbf{t}}\Vert_{L^1} < \infty$$. By the [Radon-Nikodym theorem](https://en.wikipedia.org/wiki/Radon%E2%80%93Nikodym_theorem), we have $$\mu_{\mathbf{t}}(A) = \int_A g \,\mathrm{d}\mathcal{L}^1$$ and hence, 
 
 $$
-\underline{\dim}_{\text{loc}}(\mu_{\mathbf{t}}, y) = \liminf_{r \downarrow 0} \frac{\log \mu(B(x,r))}{\log r} \ge 1
+  \mu_{\mathbf{t}}(B(y,r)) \le Cr,
 $$
 
-for all $$y \in f_{\mathbf{t}}([0,1])$$. Since $$f_{\mathbf{t}}$$ is $$\alpha$$-Hölder, a straightforward argument on maximal packings yields
+where $$C = \frac{1}{2\pi} \Vert\hat{\mu}_{\mathbf{t}}\Vert_{L^1}$$. 
+Let $$\{B(x_i,r)\}_{i=1}^{N_r}$$ be a maximal $$r$$-packing of $$f^{-1}(\{y\})$$. Note that $$y = f(x_i)$$ and $$B(x_i,r) \cap B(x_j,r) = \emptyset$$ whenever $$i \ne j$$. Since $$|f(x_i)-f(z)| \le C|x_i-z|^\alpha \le Cr^\alpha$$ for all $$z \in B(x_i,r)$$, we have 
 
 $$
-\overline{\dim}_{\mathrm{M}}(f^{-1}(\{y\})) \le 1 - \alpha \underline{\dim}_{\text{loc}}(\mu_{\mathbf{t}}, y) \le 1 - \alpha,
+  \mu_{\mathbf{t}}(B(y,Cr^\alpha)) = \mathcal{L}^1(f^{-1}(B(y,Cr^\alpha))) \ge \sum_{i=1}^{N_r}\mathcal{L}^1(B(x_i,r))= 2N_rr.
 $$
+
+Therefore,
+
+$$
+  \begin{align*}
+    \overline{\dim}_{\mathrm{M}}(f^{-1}(\{y\})) &= \limsup_{r \downarrow 0} \frac{\log N_r}{\log r^{-1}} \\ &\le \limsup_{r \downarrow 0} \frac{\log \frac12 r^{-1}\mu_{\mathbf{t}}(B(y,Cr^\alpha))}{\log r^{-1}} \le \limsup_{r \downarrow 0} \frac{\log Cr^{\alpha-1}}{\log r^{-1}} \le 1-\alpha,
+  \end{align*}
+$$ 
 
 proving part (1). 
 
@@ -181,4 +190,4 @@ This confirms that essentially all $$\alpha$$-Weierstrass functions, like preval
 
 *Proof.* To prove (1), the task is to construct an $$\alpha$$-bi-Hölder *Weierstrass embedding* $$\Phi \colon [0,1] \to \mathbb{R}^d$$ whose coordinate functions that are $$\alpha$$-Weierstrass functions, and proceed as in the proof of [Theorem 5(1)](#theorem-5). However, in proving [Theorem 5(2)](#theorem-5) the idea was first to analyze slices in almost every direction and then adjust the slice direction by adding a linear function to the Hölder function. In the Banach space of $$\alpha$$-Weierstrass functions, which consists of $$1$$-periodic functions, this adjustment is not feasible. Consequently, in addition to constructing an $$\alpha$$-bi-Hölder Weierstrass embedding, the task is to directly analyze the occupation measure of $$W_g^{\alpha,b} + \langle \Phi, \mathbf{t} \rangle$$, showing it is absolutely continuous for $$\mathcal{L}^d$$-almost all $$\mathbf{t} \in \mathbb{R}^d$$. &#x25A0;
 
-The method to prove [Theorem 7(2)](#theorem-7) streamlines the proof of [Theorem 5(2)](#theorem-5), showing that for prevalent $$\alpha$$-Hölder functions, the result can be established without relying on the "almost every rotation" argument. There also appears to be an interesting dichotomy: When $$\alpha$$ is small, a prevalent Weierstrass function exhibits "wilder" behavior, yet its occupation measure’s density function may possess more favorable properties as we know it is continuous and bounded when $$0<\alpha<1$$. 
+The method to prove [Theorem 7(2)](#theorem-7) streamlines the proof of [Theorem 5(2)](#theorem-5), showing that for prevalent $$\alpha$$-Hölder functions, the result can be established without relying on the "almost every rotation" argument. There also appears to be an interesting dichotomy: When $$\alpha$$ is small, a prevalent Weierstrass function exhibits "wilder" behavior, yet its occupation measure’s density function may possess more favorable properties as we know it is continuous and bounded when $$0<\alpha<\frac12$$. 
