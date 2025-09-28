@@ -25,6 +25,32 @@ nav a:hover, nav a.selected:hover
   background: lighten($dark, 15%)
   text-decoration: inherit
 
+#items
+  margin-block: 0
+  padding-block: 0
+
+.hidden
+  visibility: hidden
+  height: 0
+  margin: 0 !important
+  padding: 0 !important
+  overflow: hidden
+  line-height: 0
+  min-height: 0 !important
+  max-height: 0
+  border: none !important
+  font-size: 0
+  position: absolute
+  width: 0
+
+#items li.hidden p
+  margin: 0 !important
+  padding: 0 !important
+  line-height: 0
+  min-height: 0 !important
+  border: none !important
+  font-size: 0
+
 .icon
   margin-right: .5em
   color: inherit!important

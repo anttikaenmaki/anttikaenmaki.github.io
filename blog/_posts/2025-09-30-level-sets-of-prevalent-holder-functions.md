@@ -131,7 +131,7 @@ $$
 for $$\mathcal{L}^d$$-almost all $$\mathbf{t} \in \mathbb{R}^d$$. The second integral converges precisely when $$s-1 > 1$$, and the first is finite by assumption. The integral over $$\vert\xi\vert \leq 1$$ is finite since $$\hat{\mu}_{\mathbf{t}}$$ is bounded. It follows that $$\hat{\mu}_{\mathbf{t}} \in L^1(\mathbb{R})$$ and hence, the [Fourier inversion theorem](https://en.wikipedia.org/wiki/Fourier_inversion_theorem) implies that $$\mu_{\mathbf{t}}$$ has a density $$g(x) = \frac{1}{2\pi} \int \hat{\mu}_{\mathbf{t}}(\xi) e^{i x \xi} \, \mathbb{d}\xi$$. The inverse Fourier transform of an $$L^1$$ function is continuous, so the density $$g$$ is continuous. It is also bounded, because $$\vert g(x) \vert \leq \frac{1}{2\pi} \Vert\hat{\mu}_{\mathbf{t}}\Vert_{L^1} < \infty$$. By the [Radon-Nikodym theorem](https://en.wikipedia.org/wiki/Radon%E2%80%93Nikodym_theorem), we have $$\mu_{\mathbf{t}}(A) = \int_A g \,\mathrm{d}\mathcal{L}^1$$ and hence, 
 
 $$
-  \mu_{\mathbf{t}}(B(y,r)) \le Cr,
+  \mu_{\mathbf{t}}(B(y,r')) \le Cr',
 $$
 
 where $$C = \frac{1}{2\pi} \Vert\hat{\mu}_{\mathbf{t}}\Vert_{L^1}$$. 
@@ -166,13 +166,13 @@ of the probe space $$\mathcal{S}$$, it is possible to adjust the slice direction
 
 ## Level sets of prevalent Weierstrass functions
 
-Weierstrass functions are a special class of Hölder functions, defined as:
+[*Weierstrass functions*](https://en.wikipedia.org/wiki/Weierstrass_function) are a special class of Hölder functions, defined as
 
 $$
 W_g^{\alpha,b}(x) = \sum_{k=0}^\infty b^{-\alpha k} g(b^k x),
 $$
 
-where $$g$$ is a [Lipschitz function](https://en.wikipedia.org/wiki/Lipschitz_continuity), $$b \ge 2$$ is an [integer](https://en.wikipedia.org/wiki/Integer), and $$0<\alpha<1$$. These [$$1$$-periodic](https://en.wikipedia.org/wiki/Periodic_function) functions are famous for being continuous but nowhere differentiable, making them a classic example of "wild" functions.
+where $$g$$ is a [Lipschitz function](https://en.wikipedia.org/wiki/Lipschitz_continuity), $$b \ge 2$$ is an [integer](https://en.wikipedia.org/wiki/Integer), and $$0<\alpha<1$$. These [$$1$$-periodic](https://en.wikipedia.org/wiki/Periodic_function) functions are famous for being continuous but nowhere differentiable, making them a classic example of "wild" functions. In fact, the Weierstrass function is the first published example (1872) of a nowhere differentiable continuous function. 
 
 {% include theorem.html no="6" theorem="Theorem" info="[Ren-Shen (2021)](https://zbmath.org/1484.28011)" %}
 *For any non-constant $$g$$, all but finitely many $$0<\alpha<1$$, and any integer $$b \ge 2$$, an $$\alpha$$-Weierstrass function $$W_g^{\alpha,b} \colon [0,1] \to \mathbb{R}$$ satisfies*
