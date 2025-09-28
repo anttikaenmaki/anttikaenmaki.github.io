@@ -15,6 +15,7 @@
  *     with classes for filters (e.g., topic-et, status-preprint).
  *   - Optional <input type="checkbox" class="filter-checkbox" 
  *     value="topic-et"> for filter controls.
+ *   - Numbering of items is provided by <ol> browser-generated numbers.
  *
  * CSS Requirements (optional if count=display):
  *   - For count=hidden: Define .hidden { visibility: hidden; height: 0; 
@@ -61,6 +62,12 @@
  *   - No external dependencies (pure JavaScript).
  *   - Add CSS .hidden class.
  *   - Ensure there are <li> elements with appropriate classes in #items.
+ *   - Add CSS #items styles; add .hidden styles for count=hidden.
+ *   - Select count mode via URL parameter: ?count=display (renumbers 
+ *     searches), requires no extra CSS, and is the default. Loading the file 
+ *     with search.js?count=hidden overrides default. Visiting the site with 
+ *     publications?count=hidden overrides parameters specified in script src.
+ *     Count=hidden preserves the original numbering and requires .hidden CSS.
  *
  * Example:
  *   HTML:
@@ -79,8 +86,8 @@
  *       Shows last two <li>.
  *     - Press ESC -> Clears input, refocuses, shows all items.
  *     - On a page without checkboxes, 'self-affine' shows matching items.
- *     - Visit with ?search=dimension -> 
- *     - Visit with ?count=hidden -> searches use original numbering
+ *     - Visit with ?search=dimension -> searches for 'dimension'.
+ *     - Visit with ?count=hidden -> searches use original numbering.
  */
 
 function normalizeText(text) {
@@ -171,9 +178,15 @@ function searchArticles(query, articles, filterCheckboxes) {
         orGroups = [[]];
     }
 
-    // Determine mode from URL parameter, default to 'display'
-    const urlParams = new URLSearchParams(window.location.search);
-    const count = urlParams.get('mode') === 'hidden' ? 'hidden' : 'display';
+    // Determine count mode from script src URL parameter, default to 'display'
+    const scriptSrc = document.currentScript ? document.currentScript.src : '';
+    const scriptUrl = scriptSrc ? new URL(scriptSrc, document.baseURI || window.location.href) : new URL(window.location.href);
+    let count = scriptUrl.searchParams.get('count') === 'hidden' ? 'hidden' : 'display';
+
+    // User given page URL parameter overrides the script src URL parameter
+    const pageUrlParams = new URLSearchParams(window.location.search);
+    const pageCount = pageUrlParams.get('count');
+    count = pageCount === 'hidden' ? 'hidden' : pageCount === 'display' ? 'display' : count;
 
     articles.forEach(article => {
         let articleText = article.textContent;
