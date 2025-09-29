@@ -113,7 +113,7 @@ Recalling [Theorem 3](#theorem-3), the slicing theorem suggests that a prevalent
 In the proof of (1), we analyze $$f_{\mathbf{t}}$$ using [Fourier analysis](https://en.wikipedia.org/wiki/Fourier_analysis). Define the *occupation measure* $$\mu_{\mathbf{t}} = (f_{\mathbf{t}})_*\mathcal{L}^1$$, which describes how the function distributes Lebesgue measure. The task is to show that
 
 $$
-  \int \mathcal{I}_s(\mu_{\mathbf{t}}) \, d\mathbf{t} < \infty
+  \int \mathcal{I}_s(\mu_{\mathbf{t}}) \, \mathrm{d}\mathbf{t} < \infty
 $$
 
 over all bounded sets for $$s > 2$$, where 
@@ -128,7 +128,7 @@ $$
   \int_{|\xi|>1} |\hat{\mu}_{\mathbf{t}}| \, \mathrm{d}\xi \le \biggl( \int_{|\xi|>1} |\xi|^{s-1} |\hat{\mu}_{\mathbf{t}}(\xi)|^2 \, \mathrm{d}\xi \biggr)^{1/2} \biggl( \int_{|\xi|>1} |\xi|^{-(s-1)} \, \mathrm{d}\xi \biggr)^{1/2} < \infty
 $$
 
-for $$\mathcal{L}^d$$-almost all $$\mathbf{t} \in \mathbb{R}^d$$. The second integral converges precisely when $$s-1 > 1$$, and the first is finite by assumption. The integral over $$\vert\xi\vert \leq 1$$ is finite since $$\hat{\mu}_{\mathbf{t}}$$ is bounded. It follows that $$\hat{\mu}_{\mathbf{t}} \in L^1(\mathbb{R})$$ and hence, the [Fourier inversion theorem](https://en.wikipedia.org/wiki/Fourier_inversion_theorem) implies that $$\mu_{\mathbf{t}}$$ has a density $$g(x) = \frac{1}{2\pi} \int \hat{\mu}_{\mathbf{t}}(\xi) e^{i x \xi} \, \mathbb{d}\xi$$. The inverse Fourier transform of an $$L^1$$ function is continuous, so the density $$g$$ is continuous. It is also bounded, because $$\vert g(x) \vert \leq \frac{1}{2\pi} \Vert\hat{\mu}_{\mathbf{t}}\Vert_{L^1} < \infty$$. By the [Radon-Nikodym theorem](https://en.wikipedia.org/wiki/Radon%E2%80%93Nikodym_theorem), we have $$\mu_{\mathbf{t}}(A) = \int_A g \,\mathrm{d}\mathcal{L}^1$$ and hence, 
+for $$\mathcal{L}^d$$-almost all $$\mathbf{t} \in \mathbb{R}^d$$. The second integral converges precisely when $$s-1 > 1$$, and the first is finite by assumption. The integral over $$\vert\xi\vert \leq 1$$ is finite since $$\hat{\mu}_{\mathbf{t}}$$ is bounded. It follows that $$\hat{\mu}_{\mathbf{t}} \in L^1(\mathbb{R})$$ and hence, the [Fourier inversion theorem](https://en.wikipedia.org/wiki/Fourier_inversion_theorem) implies that $$\mu_{\mathbf{t}}$$ has a density $$g(x) = \frac{1}{2\pi} \int \hat{\mu}_{\mathbf{t}}(\xi) e^{i x \xi} \, \mathrm{d}\xi$$. The inverse Fourier transform of an $$L^1$$ function is continuous, so the density $$g$$ is continuous. It is also bounded, because $$\vert g(x) \vert \leq \frac{1}{2\pi} \Vert\hat{\mu}_{\mathbf{t}}\Vert_{L^1} < \infty$$. By the [Radon-Nikodym theorem](https://en.wikipedia.org/wiki/Radon%E2%80%93Nikodym_theorem), we have $$\mu_{\mathbf{t}}(A) = \int_A g \,\mathrm{d}\mathcal{L}^1$$ and hence, 
 
 $$
   \mu_{\mathbf{t}}(B(y,r')) \le Cr',
