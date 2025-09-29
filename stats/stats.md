@@ -4,13 +4,7 @@ title: Statistics
 permalink: /stats/
 ---
 
-This is an
-<a href="https://yle.fi/"
-  data-umami-event="outbound-link-click"
-  data-umami-event-url="https://yle.fi/"
->
-external link.
-</a>
+This is an <a href="https://yle.fi/" data-umami-event="outbound-link-click" data-umami-event-url="https://yle.fi/">external link.</a>
 
 I have published in {% include atleast.html n=1 filter="journal" items="publication" output="number" %} journals and at least 3 times in {% capture pop-journals %}{% include atleast.html n=3 filter="journal" items="publication" output="names" %}{% endcapture %}{% include checkbox.html type="journal" filters=pop-journals checkbox="no" %}.
 
