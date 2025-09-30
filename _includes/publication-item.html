@@ -4,7 +4,56 @@
           include.arxiv, include.attachment, include.attachmentfile, include.doi, include.journaldata
   Outputs: <li class="status-... journal-... topic-... coauthor-..."><p><a><strong>Paper title</strong></a><br />coauthors, status</p></li>
 {%- endcomment -%}
-    {: .status-{{ include.status }} .journal-{{ include.journal | downcase | replace: ".", "" | replace: " ", "-" | split: "," | first }} {% if include.topic != "" %}{% assign topics = include.topic | split: " " %}{% for topic in topics %}.topic-{{ topic }}{% endfor %}{% endif %} {% if include.collaborators != "" %}{% assign people = include.collaborators | split: " " %}{% for person in people %}.coauthor-{{ person }}{% endfor %}{% endif %} }
-    {% if include.arxiv == "" %}**{{ include.papername }}**{% else %}[**{{ include.papername }}**]({{ include.arxiv }}){% endif %}{% if include.attachment != "" %} | {% if include.attachmentfile != "" %}[{{ include.attachment }}](/assets/{{ include.attachmentfile }}){% else %}{{ include.attachment }}{% endif %}{% endif %}{% if include.collaborators != "" %}\
-        (with {% assign people = include.collaborators | split: " " %}{% for person in people %}{% assign persondata = site.data.people[person] %}{% if forloop.index != 1 %}{% if people.size == 2 %} and {% elsif forloop.last %}, and {% else %}, {% endif %}{% endif %}{% if persondata.www == "" %}{{ persondata.shortname }}{% else %}[{{ persondata.shortname }}]({{ persondata.www }}){% endif %}{% endfor %}){% endif %}\
+    {: .status-{{ include.status }} .journal-{{ include.journal | downcase | replace: ".", "" | replace: " ", "-" | split: "," | first }}
+    {%- if include.topic != "" -%}
+      {%- assign topics = include.topic | split: " " -%}
+      {%- for topic in topics -%}
+        .topic-{{ topic }}
+      {%- endfor -%}
+    {%- endif -%}
+    {%- if include.collaborators != "" -%}
+      {%- assign people = include.collaborators | split: " " -%}
+      {%- for person in people -%}
+        .coauthor-{{ person }}
+      {%- endfor -%}
+    {%- endif -%} }
+    {%- if include.arxiv == "" -%}
+      **{{ include.papername }}**
+    {%- else -%}
+      {%- if include.papername.size > 50 -%}
+        {%- assign papernameshort = include.papername | slice: 0, 47 | append: "..." -%}
+      {%- else -%}
+        {%- assign papernameshort = include.papername -%}
+      {%- endif -%}
+      <a href="{{ include.arxiv }}" data-umami-event="{{ papernameshort }}" data-umami-event-url="{{ include.arxiv }}"><strong>{{ include.papername }}</strong></a>
+    {%- endif -%}
+    {%- if include.attachment != "" -%}
+      &nbsp;|&nbsp;
+      {%- if include.attachmentfile != "" -%}
+        [{{ include.attachment }}](/assets/{{ include.attachmentfile }})
+      {%- else -%}
+        {{ include.attachment }}
+      {%- endif -%}
+    {%- endif -%}
+    {%- if include.collaborators != "" -%}\
+        (with&nbsp;
+      {%- assign people = include.collaborators | split: " " -%}
+      {%- for person in people -%}
+        {%- assign persondata = site.data.people[person] -%}
+        {%- if forloop.index != 1 -%}
+          {%- if people.size == 2 -%}
+            &nbsp;and&nbsp;
+          {%- elsif forloop.last -%}
+            , and&nbsp;
+          {%- else -%}
+            ,&nbsp;
+          {%- endif -%}
+        {%- endif -%}
+        {%- if persondata.www == "" -%}
+          {{ persondata.shortname }}
+        {%- else -%}
+          [{{ persondata.shortname }}]({{ persondata.www }})
+        {%- endif -%}
+      {%- endfor -%})
+    {%- endif -%}\
         {% assign journal = site.data.journals[include.journal] %}{% if include.doi == "" %}{% if journal.www == "" %}{{ journal.shortname }}, {{ include.journaldata }}{% else %}[{{ journal.shortname }}]({{ journal.www }}), {{ include.journaldata }}{% endif %}{% else %}[{{ journal.shortname }}, {{ include.journaldata }}]({{ include.doi }}){% endif %}

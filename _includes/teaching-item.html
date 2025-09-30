@@ -1,4 +1,4 @@
 
-    [**{{ include.name }}**](/assets/pdfs/{{ include.filename }})\
+    <a href="/assets/pdfs/{{ include.filename }}" data-umami-event="{{ include.name }}" data-umami-event-url="/assets/pdfs/{{ include.filename }}"><strong>{{ include.name }}</strong></a>
     {{ include.description }}\{% assign pdf = site.static_files | where: "name", include.filename | first %}\
     {{ include.date }}
