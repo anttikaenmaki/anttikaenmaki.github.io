@@ -2,7 +2,7 @@
 	"65" : {
 		"status"			: "preprint",
 		"papername"			: "Level sets of prevalent Weierstrass functions",
-		"arxiv"				: "https://arxiv.org/abs/2507.15591",
+		"arxiv"				: "https://doi.org/10.48550/arXiv.2507.15591",
 		"attachment"		: "",
 		"attachmentfile"	: "",
 		"collaborators"		: "buczolichzoltan magabalazs",
@@ -15,7 +15,7 @@
 	"64" : {
 		"status"			: "preprint",
 		"papername"			: "Self-affine sponges with random contractions",
-		"arxiv"				: "https://arxiv.org/abs/2505.04383",
+		"arxiv"				: "https://doi.org/10.48550/arXiv.2505.04383",
 		"attachment"		: "",
 		"attachmentfile"	: "",
 		"collaborators"		: "baranybalazs ramsmichal",
