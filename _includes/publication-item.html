@@ -20,6 +20,7 @@
     {%- if include.arxiv == "" -%}
       **{{ include.papername }}**
     {%- else -%}
+      {%- comment -%} Umami event names (data-umami-event) are limited to 50 characters {%- endcomment -%}
       {%- if include.papername.size > 50 -%}
         {%- assign papernameshort = include.papername | slice: 0, 47 | append: "..." -%}
       {%- else -%}
