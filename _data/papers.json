@@ -61,7 +61,7 @@
     },
     "60": {
         "status": "publication",
-        "papername": "Level sets of prevalent H\u00f6lder functions",
+        "papername": "Level sets of prevalent Hölder functions",
         "arxiv": "https://doi.org/10.48550/arXiv.2402.08520",
         "attachment": "",
         "attachmentfile": "",
@@ -156,15 +156,15 @@
         "doi": "https://doi.org/10.1017/S0305004124000136"
     },
     "52": {
-        "status": "preprint",
+        "status": "publication",
         "papername": "Finer geometry of planar self-affine sets",
         "arxiv": "https://doi.org/10.48550/arXiv.2107.00983",
         "attachment": "",
         "attachmentfile": "",
         "collaborators": "baranybalazs yuhan",
         "topic": "fg gmt",
-        "journal": "preprint",
-        "journaldata": "2021",
+        "journal": "advmath",
+        "journaldata": "to appear",
         "doi": ""
     },
     "51": {
