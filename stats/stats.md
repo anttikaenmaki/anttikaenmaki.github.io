@@ -8,7 +8,7 @@ This is an <a href="https://yle.fi/" data-umami-event="Yle test" data-umami-even
 
 I have published in {% include atleast.html n=1 filter="journal" items="publication" output="number" %} journals and at least 3 times in {% capture pop-journals %}{% include atleast.html n=3 filter="journal" items="publication" output="names" %}{% endcapture %}{% include checkbox.html type="journal" filters=pop-journals checkbox="no" %}.
 
-I have published {% include count-papers.html items="procamermathsoc,advmath" %} papers in PAMS and Advances. My JUFO-3 count is {% include count-jufo.html  %}
+I have published {% include count-papers.html items="procamermathsoc,advmath" %} papers in PAMS and Advances.
 
 I have authored {% include checkbox-status.html items="preprint" end=", " checked="checked" %}{% include checkbox-status.html items="publication" checked="checked" %}{% include checkbox-status.html items="survey" begin=", and " end=" along with related works," checked="checked" %}{% include checkbox-status.html type="topic" items="et" middle="ergodic theory" end=", " %}{% include checkbox-status.html type="topic" items="fg" middle="fractal geometry" end=", and " %}{% include checkbox-status.html type="topic" items="gmt" middle="geometric measure theory" end="," %} as detailed below.
 

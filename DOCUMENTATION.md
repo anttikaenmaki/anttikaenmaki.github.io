@@ -138,7 +138,6 @@ Stores journal information for publications.
   "uniqueid": {
     "name": "Full Journal Name",
     "shortname": "Abbreviated Name",
-    "jufo": "3",
     "www": "https://journal.url"
   }
 }
@@ -151,7 +150,6 @@ Stores journal information for publications.
   "advmath": {
     "name": "Advances in Mathematics",
     "shortname": "Adv. Math.",
-    "jufo": "3",
     "www": "https://www.sciencedirect.com/journal/advances-in-mathematics"
   }
 }
@@ -160,7 +158,6 @@ Stores journal information for publications.
 **Fields:**
 - `name` (string, required): Full journal name
 - `shortname` (string, required): Standard abbreviated name
-- `jufo` (string, optional): JUFO rating (Finnish publication forum rating: "0", "1", "2", "3")
 - `www` (string, optional): Journal website URL
 
 **Special Entries:**
@@ -414,30 +411,7 @@ Counts papers matching specified criteria.
 
 ---
 
-### 6. `count-jufo.html`
-
-Counts papers published in journals with JUFO rating ≥ n.
-
-**Purpose:** Count high-quality publications by Finnish JUFO rating.
-
-**Parameters:**
-- `include.n` (integer, optional): Minimum JUFO rating (0-3, default: 3)
-
-**Usage:**
-
-```liquid
-<!-- Count JUFO level 3 papers -->
-{% include count-jufo.html n=3 %}
-
-<!-- Count JUFO level 2+ papers -->
-{% include count-jufo.html n=2 %}
-```
-
-**Output:** Returns integer count
-
----
-
-### 7. `atleast.html`
+### 6. `atleast.html`
 
 Finds collaborators or journals with at least N publications.
 
@@ -468,7 +442,7 @@ Finds collaborators or journals with at least N publications.
 
 ---
 
-### 8. `search-bar.html`
+### 7. `search-bar.html`
 
 Creates a search input field for filtering content.
 
@@ -489,7 +463,7 @@ Creates a search input field for filtering content.
 
 ---
 
-### 9. `theorem.html`
+### 8. `theorem.html`
 
 Creates an anchor and formatted theorem heading.
 
@@ -519,7 +493,7 @@ Creates an anchor and formatted theorem heading.
 
 ---
 
-### 10. `menu.html`
+### 9. `menu.html`
 
 Renders navigation menu from list of items.
 
@@ -547,7 +521,7 @@ Renders navigation menu from list of items.
 
 ---
 
-### 11. `sidebar.html`
+### 10. `sidebar.html`
 
 Generates a sidebar navigation (alternative to header).
 
@@ -565,7 +539,7 @@ Generates a sidebar navigation (alternative to header).
 
 ---
 
-### 12. `home.html`
+### 11. `home.html`
 
 Displays blog posts with pagination.
 
@@ -583,7 +557,7 @@ Displays blog posts with pagination.
 
 ---
 
-### 13. `archive.html`
+### 12. `archive.html`
 
 Lists all posts in a category as ordered list.
 
@@ -610,7 +584,7 @@ Lists all posts in a category as ordered list.
 
 ---
 
-### 14. `meta.html`
+### 13. `meta.html`
 
 Displays post metadata (title and date).
 
@@ -632,7 +606,7 @@ Displays post metadata (title and date).
 
 ---
 
-### 15. `date.html`
+### 14. `date.html`
 
 Formats a date with optional Finnish translation.
 
@@ -653,7 +627,7 @@ Formats a date with optional Finnish translation.
 
 ---
 
-### 16. `embed.html`
+### 15. `embed.html`
 
 Creates responsive iframe embed (for videos, etc.).
 
@@ -813,7 +787,6 @@ Total publications: {% include count-papers.html type="status" items="publicatio
   "newjournal": {
     "name": "Journal of New Mathematics",
     "shortname": "J. New Math.",
-    "jufo": "2",
     "www": "https://journal-url.com"
   }
 }
@@ -913,11 +886,6 @@ title: Statistics
 - Fractal geometry: {% include count-papers.html type="topic" items="fg" %}
 - Ergodic theory: {% include count-papers.html type="topic" items="et" %}
 - Geometric measure theory: {% include count-papers.html type="topic" items="gmt" %}
-
-## High-Impact Publications
-
-- JUFO level 3: {% include count-jufo.html n=3 %}
-- JUFO level 2+: {% include count-jufo.html n=2 %}
 
 ## Collaborations
 
@@ -1047,7 +1015,6 @@ bundle exec jekyll serve
 | `checkbox.html` | Create filter checkbox | type, filters, checkbox |
 | `checkbox-status.html` | Checkbox with count | type, items, middle |
 | `count-papers.html` | Count papers | type, items |
-| `count-jufo.html` | Count by JUFO rating | n |
 | `atleast.html` | Find frequent items | n, filter, output |
 | `search-bar.html` | Search input | text |
 | `theorem.html` | Format theorem | theorem, no, info |
@@ -1061,7 +1028,7 @@ bundle exec jekyll serve
 | File | Purpose | Key Fields |
 |------|---------|------------|
 | `people.json` | Collaborator database | name, firstname, shortname, www |
-| `journals.json` | Journal database | name, shortname, jufo, www |
+| `journals.json` | Journal database | name, shortname, www |
 | `papers.json` | Publication database | status, papername, journal, collaborators, topic |
 
 ---
