@@ -120,15 +120,15 @@
         "doi": "https://doi.org/10.1007/s00220-024-05131-2"
     },
     "55": {
-        "status": "preprint",
+        "status": "publication",
         "papername": "Covering number on inhomogeneous graph-directed self-similar sets",
         "arxiv": "https://doi.org/10.48550/arXiv.2307.16263",
         "attachment": "",
         "attachmentfile": "",
         "collaborators": "baranybalazs nissinenpetteri",
         "topic": "fg",
-        "journal": "preprint",
-        "journaldata": "2023",
+        "journal": "jfractalgeom",
+        "journaldata": "to appear",
         "doi": ""
     },
     "54": {
