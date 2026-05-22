@@ -1,7 +1,7 @@
 ---
 title:  "Super-exponential condensation without exact overlaps"
 layout: post
-description: Exponential separation and dimension drop conjecture.
+description: Exponential separation and dimension drop conjecture
 ---
 
 ## Self-similar sets

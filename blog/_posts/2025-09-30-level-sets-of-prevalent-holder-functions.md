@@ -1,7 +1,7 @@
 ---
 title: "Level sets of prevalent Hölder and Weierstrass functions"
 layout: post
-description: "Exploring level set dimensions of Hölder and Weierstrass functions."
+description: "Exploring level set dimensions of Hölder and Weierstrass functions"
 ---
 
 ## Typical continuous real functions
