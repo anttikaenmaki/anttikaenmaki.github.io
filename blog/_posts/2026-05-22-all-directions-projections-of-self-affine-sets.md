@@ -74,7 +74,7 @@ The breakthrough came with the dimension theorem for planar self-affine sets:
 {% include theorem.html no="4" theorem="Theorem" info="[Bárány-Hochman-Rapaport (2019)](https://doi.org/10.1007/s00222-018-00849-y)" %}
 *Let $$X \subset \mathbb{R}^2$$ be a strongly irreducible proximal self-affine set satisfying the strong open set condition. Then* 
 
-$$ \mathrm{dim}_{\mathrm{H}}(\mathrm{proj}_V(X)) = \min\{1,\mathrm{dim}_{\mathrm{aff}}(\mathsf{A})\} $$ 
+$$ \mathrm{dim}_{\mathrm{H}}(\mathrm{proj}_V(X)) = \min\{1,\mathrm{dim}_{\mathrm{H}}(X)\} = \min\{1,\mathrm{dim}_{\mathrm{aff}}(\mathsf{A})\} $$ 
 
 *for all $$V \in \mathbb{RP}^1$$.*
 
