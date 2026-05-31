@@ -72,7 +72,11 @@ In the plane the all-directions question has a clear genealogy. [Falconer-Kempto
 The breakthrough came with the dimension theorem for planar self-affine sets:
 
 {% include theorem.html no="4" theorem="Theorem" info="[Bárány-Hochman-Rapaport (2019)](https://doi.org/10.1007/s00222-018-00849-y)" %}
-*Let $$X \subset \mathbb{R}^2$$ be a strongly irreducible proximal self-affine set satisfying the strong open set condition. Then $$\mathrm{dim}_{\mathrm{H}}(\mathrm{proj}_V(X)) = \min\{1,\mathrm{dim}_{\mathrm{aff}}(\mathsf{A})\}$$ for all $$V \in \mathbb{RP}^1$$.*
+*Let $$X \subset \mathbb{R}^2$$ be a strongly irreducible proximal self-affine set satisfying the strong open set condition. Then* 
+
+$$ \mathrm{dim}_{\mathrm{H}}(\mathrm{proj}_V(X)) = \min\{1,\mathrm{dim}_{\mathrm{aff}}(\mathsf{A})\} $$ 
+
+*for all $$V \in \mathbb{RP}^1$$.*
 
 The argument behind [Theorem 4](#theorem-4) establishes exact-dimensionality of projected self-affine measures, building on [Hochman's (2014)](https://doi.org/10.4007/annals.2014.180.2.7) inverse theorem for entropies of convolutions and the local-entropy-averages technique of [Hochman-Shmerkin (2012)](https://doi.org/10.4007/annals.2012.175.3.1), together with a Furstenberg-measure analysis in the spirit of [Hochman-Solomyak (2017)](https://doi.org/10.1007/s00222-017-0740-6). It eliminates the exceptional set, at the cost of the strong open set condition. The subsequent paper of [Hochman-Rapaport (2022)](https://doi.org/10.4171/jems/1127) relaxed this hypothesis to exponential separation, much closer to a no-overlap condition than to a no-touching condition.
 
