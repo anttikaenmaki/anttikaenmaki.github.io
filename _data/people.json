@@ -101,7 +101,14 @@
 		"name"				: "Jordan",
 		"firstname"			: "Thomas",
 		"shortname"			: "T. Jordan",
-		"www"				: ""
+		"www"				: "https://people.maths.bris.ac.uk/~matmj/"
+	},
+
+	"jurganatalia" : {
+		"name"				: "Jurga",
+		"firstname"			: "Natalia",
+		"shortname"			: "N. Jurga",
+		"www"				: "https://www.nataliajurga.co.uk/"
 	},
 
 	"kemptontom" : {

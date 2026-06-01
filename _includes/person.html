@@ -1,0 +1,6 @@
+{%- comment -%}
+  Renders a person from _data/people.json as "Firstname Lastname", linked to their homepage when www is set.
+  Input: include.key (the people.json key, e.g. "fraserjonathan").
+{%- endcomment -%}
+{%- assign person = site.data.people[include.key] -%}
+{%- if person.www == "" -%}{{ person.firstname }} {{ person.name }}{%- else -%}[{{ person.firstname }} {{ person.name }}]({{ person.www }}){%- endif -%}
