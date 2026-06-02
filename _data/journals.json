@@ -161,6 +161,12 @@
 		"www"				: ""
 	},
 
+  "probabtheoryrelatedfields" : {
+    "name"				: "Probability Theory and Related Fields",
+    "shortname"			: "Probab. Theory Related Fields",
+    "www"				: "https://link.springer.com/journal/440"
+  },
+
 	"procamermathsoc"		: {
 		"name"				: "Proceedings of the American Mathematical Society",
 		"shortname"			: "Proc. Amer. Math. Soc.",

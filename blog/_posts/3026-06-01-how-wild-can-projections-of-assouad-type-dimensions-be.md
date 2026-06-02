@@ -19,8 +19,6 @@ The same picture survives, in a more nuanced form, for [box](https://en.wikipedi
 
 For the [Assouad dimension](https://en.wikipedia.org/wiki/Assouad_dimension), no such theorem exists. [Fraser–Orponen (2017)](https://doi.org/10.1112/plms.12012) showed that the Assouad dimension of a planar projection can take two distinct values on direction sets of positive measure. The question this leaves open is the obvious one: *how wild can the Assouad-projection function be?* And once that question is settled, the same question returns for the Assouad spectrum — the one-parameter family of dimensions $$\dim_{\mathrm{A}}^\theta X$$ that interpolates between the upper box dimension at $$\theta = 0$$ and the quasi-Assouad dimension as $$\theta \uparrow 1$$. As a concrete example to keep in mind throughout this post, fix the sparse sequence
 
-<!-- recurring example: dyadic decay set Z -->
-
 $$ Z \ = \ \{0\} \cup \{2^{-i} : i \in \mathbb{N}\} \ \subset \ \mathbb{R}. $$
 
 This set has Assouad dimension zero, and a scaled copy of $$Z$$ will be the universal "thin" building block in everything that follows.
@@ -45,7 +43,7 @@ The dichotomy that organizes these three regimes is not between dimensions, but 
 
 The Assouad dimension measures the *worst* local-to-global scaling ratio of covering numbers: for $$X \subseteq \mathbb{R}^d$$,
 
-$$ \dim_{\mathrm{A}} X \ = \ \inf \biggl\{ \alpha \,:\, \sup_{x \in X,\, 0 < r < R} \frac{N_r(X \cap B(x,R))}{(R/r)^\alpha} \, < \, \infty \biggr\}, $$
+$$ \dim_{\mathrm{A}} X = \inf \biggl\{ \alpha : \sup_{\genfrac{}{}{0pt}{}{x \in X}{0 < r < R}} \frac{N_r(X \cap B(x,R))}{(R/r)^\alpha} < \infty \biggr\}, $$
 
 where $$N_r$$ denotes the smallest number of closed balls of radius $$r$$ needed to cover. Unlike the Hausdorff and box dimensions, this need not match the *global* covering rate, and unlike them, it is not [Lipschitz](https://en.wikipedia.org/wiki/Lipschitz_continuity)-stable: a Lipschitz image of $$X$$ can have strictly larger Assouad dimension than $$X$$. That instability is why the simple Lipschitz argument behind the upper bound in [Theorem 1](#theorem-1) breaks down for the Assouad dimension.
 
@@ -53,11 +51,11 @@ The set $$Z = \{0\} \cup \{2^{-i}\}$$ is a clean illustration. As a metric space
 
 The Assouad spectrum locks the two scales together. For $$\theta \in (0,1)$$, the *Assouad spectrum* of $$X$$ at $$\theta$$ is
 
-$$ \dim_{\mathrm{A}}^\theta X \ = \ \inf \biggl\{ \alpha \,:\, \sup_{x \in X,\, 0 < R < 1} \frac{N_{R^{1/\theta}}(X \cap B(x,R))}{(R/R^{1/\theta})^\alpha} \, < \, \infty \biggr\}, $$
+$$ \dim_{\mathrm{A}}^\theta X = \inf \biggl\{ \alpha : \sup_{\genfrac{}{}{0pt}{}{x \in X}{0 < R < 1}} \frac{N_{R^{1/\theta}}(X \cap B(x,R))}{(R/R^{1/\theta})^\alpha} < \infty \biggr\}, $$
 
 and the *quasi-Assouad dimension* is the limit $$\dim_{\mathrm{qA}} X = \lim_{\theta \uparrow 1} \dim_{\mathrm{A}}^\theta X$$. By Fraser–Hare–Hare–Troscheit–Yu (2019), this limit definition agrees with the original definition of Lü–Xi (2016). At $$\theta = 0$$ the spectrum recovers the upper box dimension; at $$\theta = 1$$ it limits to the quasi-Assouad dimension; and one always has
 
-$$ \overline{\dim}_{\mathrm{M}} X \, \leq \, \dim_{\mathrm{A}}^\theta X \, \leq \, \min\biggl\{ \frac{\overline{\dim}_{\mathrm{M}} X}{1-\theta},\, \dim_{\mathrm{qA}} X\biggr\}. $$
+$$ \overline{\dim}_{\mathrm{M}} X \leq \dim_{\mathrm{A}}^\theta X \leq \min\biggl\{ \frac{\overline{\dim}_{\mathrm{M}} X}{1-\theta},\, \dim_{\mathrm{qA}} X\biggr\}. $$
 
 The leftmost bound and the $$\overline{\dim}_{\mathrm{M}} X / (1-\theta)$$ bound follow directly from the definition; the quasi-Assouad bound follows from monotonicity of the spectrum in $$\theta$$. The spectrum is bi-Lipschitz invariant. It is the natural object to consider once one accepts that the Assouad dimension can blow up under Lipschitz maps but wants a one-parameter family that still degrades gracefully.
 
@@ -70,7 +68,7 @@ The first movement is the Assouad-dimension extreme. In [our earlier paper](http
 {% include theorem.html no="2" theorem="Theorem" info="[Fraser-K (2020)](https://doi.org/10.48550/arXiv.1811.00951)" %}
 *Let $$\phi \colon G(2,1) \to [0,1]$$ be upper semi-continuous. Then there exists a compact set $$F \subset \mathbb{R}^2$$ with $$\dim_{\mathrm{A}} F = 0$$ such that*
 
-$$ \dim_{\mathrm{A}} \mathrm{proj}_\pi F \ = \ \phi(\pi) $$
+$$ \dim_{\mathrm{A}} \mathrm{proj}_\pi F = \phi(\pi) $$
 
 for all $$\pi \in G(2,1)$$. Reading [Theorem 2](#theorem-2) takes a moment. The compact set $$F$$ itself has Assouad dimension zero, yet its projection onto a generic line can have any value in $$[0,1]$$ — and that value can change with the direction in any way an upper semi-continuous function is allowed to change. Two immediate consequences settle a question of Fraser–Orponen (2017) on how many distinct projected values are simultaneously possible.
 
@@ -92,7 +90,7 @@ The second regime is the surprise of our recent paper with Kenneth Falconer and 
 {% include theorem.html no="4" theorem="Theorem" %}
 *Let $$X \subset \mathbb{R}^2$$ be bounded and $$\theta \in (0,1)$$. Then*
 
-$$ \dim_{\mathrm{A}}^\theta \mathrm{proj}_V X \ \leq \ \frac{1}{2} \biggl( \frac{\overline{\dim}_{\mathrm{M}} X}{1-\theta} + \dim_{\mathrm{A}}^\theta X \biggr) $$
+$$ \dim_{\mathrm{A}}^\theta \mathrm{proj}_V X \leq \frac{1}{2} \biggl( \frac{\overline{\dim}_{\mathrm{M}} X}{1-\theta} + \dim_{\mathrm{A}}^\theta X \biggr) $$
 
 *for $$\gamma_{2,1}$$-almost every $$V \in G(2,1)$$.*
 
@@ -107,7 +105,7 @@ The matching almost-sure *lower* bound runs through capacities. For $$0 < s \leq
 {% include theorem.html no="5" theorem="Theorem" %}
 *Let $$X \subset \mathbb{R}^d$$, $$\theta \in (0,1)$$, and $$1 \leq k < d$$ be an integer. Then*
 
-$$ \dim_{\mathrm{A}}^\theta \mathrm{proj}_V X \ \geq \ \dim_{\mathrm{A}}^{\theta,k} X $$
+$$ \dim_{\mathrm{A}}^\theta \mathrm{proj}_V X \geq \dim_{\mathrm{A}}^{\theta,k} X $$
 
 *for $$\gamma_{d,k}$$-almost every $$V \in G(d,k)$$.*
 
@@ -115,7 +113,7 @@ $$ \dim_{\mathrm{A}}^\theta \mathrm{proj}_V X \ \geq \ \dim_{\mathrm{A}}^{\theta
 
 A consequence of [Theorem 4](#theorem-4) is a non-trivial generic upper bound for the Assouad spectrum of certain parametrised self-similar sets in the line, obtained by realising them as projections of a planar self-similar set. For three translations $$\mathbf{b} = (b_1, b_2, b_3) \in \mathbb{R}^3$$ and a contraction ratio $$r \in (0, \tfrac12)$$, the self-similar set $$F_{\mathbf{b}} \subset \mathbb{R}$$ generated by $$f_i(x) = rx + b_i$$ has similarity dimension $$s = \log 3 / \log(1/r)$$ and satisfies
 
-$$ \dim_{\mathrm{A}}^\theta F_{\mathbf{b}} \ \leq \ \frac{1}{2}\biggl( \frac{s}{1-\theta} + s\biggr) $$
+$$ \dim_{\mathrm{A}}^\theta F_{\mathbf{b}} \leq \frac{1}{2}\biggl( \frac{s}{1-\theta} + s\biggr) $$
 
 for Lebesgue-almost every $$\mathbf{b}$$. This beats the trivial bound $$s/(1-\theta)$$ whenever $$\theta \in (0,1)$$, and provides non-trivial quantitative generic evidence for the conjecture that $$\dim_{\mathrm{qA}} K = \dim_{\mathrm{H}} K$$ for self-similar sets on the line; see [Fraser's (2021)](https://doi.org/10.1017/9781108778459) Question 17.5.3.
 
@@ -128,14 +126,14 @@ The third regime undoes the second. Drop boundedness, and the constraint from [T
 {% include theorem.html no="6" theorem="Theorem" %}
 *Let $$0 < s < t \leq 1$$. There exists a uniformly discrete unbounded set $$X \subseteq \mathbb{R}^2$$ and non-empty disjoint open sets $$I_s, I_t \subseteq G(2,1)$$ such that, simultaneously for every $$\theta \in (0,1)$$,*
 
-$$ \dim_{\mathrm{A}}^\theta \mathrm{proj}_V X \ = \ \begin{cases} s, & V \in I_s, \\ t, & V \in I_t. \end{cases} $$
+$$ \dim_{\mathrm{A}}^\theta \mathrm{proj}_V X = \begin{cases} s, & V \in I_s, \\ t, & V \in I_t. \end{cases} $$
 
 [Theorem 6](#theorem-6) refines and unifies a hierarchy of partial results: prescribing two values at a single $$\theta$$, then countably many values at a single $$\theta$$, then two values *for every* $$\theta$$ at once. The last form has an immediate consequence for the quasi-Assouad dimension by taking $$\theta \uparrow 1$$.
 
 {% include theorem.html no="7" theorem="Corollary" %}
 *Let $$0 < s < t \leq 1$$. There exists a uniformly discrete unbounded set $$X \subseteq \mathbb{R}^2$$ and non-empty disjoint open sets $$I_s, I_t \subseteq G(2,1)$$ such that*
 
-$$ \dim_{\mathrm{qA}} \mathrm{proj}_V X \ = \ \begin{cases} s, & V \in I_s, \\ t, & V \in I_t. \end{cases} $$
+$$ \dim_{\mathrm{qA}} \mathrm{proj}_V X = \begin{cases} s, & V \in I_s, \\ t, & V \in I_t. \end{cases} $$
 
 So no Marstrand-type theorem holds for the quasi-Assouad dimension either, once unbounded sets are admitted.
 
