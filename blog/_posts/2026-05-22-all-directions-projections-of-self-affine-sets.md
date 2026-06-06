@@ -109,9 +109,9 @@ The main set-projection theorem is then:
 
 $$ \mathrm{dim}_{\mathrm{H}}(\mathrm{proj}_V(X)) = \min\{1,\mathrm{dim}_{\mathrm{H}}(X)\} = \min\{1,\overline{\mathrm{dim}}_{\mathrm{M}}(X)\} $$
 
-*for all $$V \in \mathbb{RP}^{d-1}$$. No separation condition on the translations is assumed.*
+*for all $$V \in \mathbb{RP}^{d-1}$$.*
 
-On the example $$\Phi_0$$, [Proposition 6](#proposition-6) certifies Zariski density, so [Theorem 7](#theorem-7) applies regardless of how the translations $$t_1,t_2$$ overlap, and yields [Corollary 2](#corollary-2) as a special case.
+[Theorem 7](#theorem-7) assumes no separation condition on the translations. For the example $$\Phi_0$$, [Proposition 6](#proposition-6) certifies Zariski density, so [Theorem 7](#theorem-7) applies regardless of how the translations $$t_1,t_2$$ overlap and yields [Corollary 2](#corollary-2) as a special case.
 
 
 
