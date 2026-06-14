@@ -21,7 +21,7 @@ The natural question is when the exceptional set can be eliminated entirely. Red
 
 {% include embed.html url="https://www.youtube.com/embed/vfJyQVSsznU" %}
 
-This post is based on a [talk](/assets/pdfs/kaenmaki-warsaw-handout.pdf) I gave at [IMPAN](https://en.wikipedia.org/wiki/Institute_of_Mathematics_of_the_Polish_Academy_of_Sciences), [Warsaw](https://en.wikipedia.org/wiki/Warsaw), at the conference "Ergodic theory, fractal geometry and Diophantine approximation". It explains why this works, what the main theorem says, and what follows for the Minkowski dimension.
+This post is based on a [talk](/assets/pdfs/kaenmaki-warsaw-handout.pdf) I gave at [IMPAN](https://en.wikipedia.org/wiki/Institute_of_Mathematics_of_the_Polish_Academy_of_Sciences), [Warsaw](https://en.wikipedia.org/wiki/Warsaw), at the conference "Ergodic theory, fractal geometry and Diophantine approximation". 
 
 
 
