@@ -3,7 +3,7 @@ author: "Antti Käenmäki"
 description: "kaenmaki.net"
 domain: kaenmaki.net       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://kaenmaki.net  # the base hostname and protocol for your site, e.g. http://example.com
-baseurl: "/"      # place folder name if the site is served in a subfolder
+baseurl: ""       # place folder name if the site is served in a subfolder
 permalink: /:categories/:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -40,3 +40,8 @@ comments:
 
 plugins:
  - jekyll-feed
+
+# Files not part of the published site
+exclude:
+ - TODO.md
+ - DOCUMENTATION.md

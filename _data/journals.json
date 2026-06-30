@@ -1,223 +1,223 @@
 {
-	"actaunivcarolinmathphys" : {
-		"name"				: "Acta Universitatis Carolinae Mathematica et Physica",
-		"shortname"			: "Acta Univ. Carolin. Math. Phys.",
-		"www"				: "https://dml.cz/handle/10338.dmlcz/142102"
-	},
-
-	"advmath" : {
-		"name"				: "Advances in Mathematics",
-		"shortname"			: "Adv. Math.",
-		"www"				: "https://www.sciencedirect.com/journal/advances-in-mathematics"
-	},
-
-	"amerjmath" : {
-		"name"				: "American Journal of Mathematics",
-		"shortname"			: "Amer. J. Math.",
-		"www"				: "https://www.press.jhu.edu/journals/american-journal-mathematics"
-	},
-
-	"annacadscifennmath" : {
-		"name"				: "Annales Academiae Scientiarum Fennicae Mathematica",
-		"shortname"			: "Ann. Acad. Sci. Fenn. Math.",
-		"www"				: "https://www.acadsci.fi/mathematica/"
-	},
-
-	"annscnormsuperpisaclsci" : {
-		"name"				: "Annali della Scuola Normale Superiore di Pisa - Classe di Scienze",
-		"shortname"			: "Ann. Sc. Norm. Super. Pisa Cl. Sci.",
-		"www"				: "https://journals.sns.it/index.php/annaliscienze/"
-	},
-
-	"arkhimedes" : {
-		"name"				: "Arkhimedes",
-		"shortname"			: "Arkhimedes",
-		"www"				: "https://journal.fi/arkhimedes"
-	},
-
-	"arkmat" : {
-		"name"				: "Arkiv för Matematik",
-		"shortname"			: "Ark. Mat.",
-		"www"				: "https://intlpress.com/journals/journalList?id=1804410492600512513"
-	},
-
-	"banachcenterpubl" : {
-		"name"				: "Banach Center Publications",
-		"shortname"			: "Banach Center Publ.",
-		"www"				: "https://www.impan.pl/en/publishing-house/banach-center-publications"
-	},
-
-	"bulllondmathsoc" : {
-		"name"				: "Bulletin of the London Mathematical Society",
-		"shortname"			: "Bull. Lond. Math. Soc.",
-		"www"				: "https://www.lms.ac.uk/publications/blms"
-	},
-
-	"chaossolitonsfractals" : {
-		"name"				: "Chaos, Solitons & Fractals",
-		"shortname"			: "Chaos Solitons Fractals",
-		"www"				: "https://www.sciencedirect.com/journal/chaos-solitons-and-fractals"
-	},
-
-	"commmathphys" : {
-		"name"				: "Communications in Mathematical Physics",
-		"shortname"			: "Comm. Math. Phys.",
-		"www"				: "https://link.springer.com/journal/220"
-	},
-
-	"discretecontindynsyst" : {
-		"name"				: "Discrete and Continuous Dynamical Systems",
-		"shortname"			: "Discrete Contin. Dyn. Syst.",
-		"www"				: "https://www.aimsciences.org/DCDS"
-	},
-
-	"ergodictheorydynamsystems" : {
-		"name"				: "Ergodic Theory and Dynamical Systems",
-		"shortname"			: "Ergodic Theory Dynam. Systems",
-		"www"				: "https://www.cambridge.org/core/journals/ergodic-theory-and-dynamical-systems"
-	},
-
-	"fractalgeometryandstochasticsv" : {
-		"name"				: "Fractal Geometry and Stochastics V, Springer International Publishing",
-		"shortname"			: "Fractal Geometry and Stochastics V, Springer International Publishing",
-		"www"				: "https://link.springer.com/book/10.1007/978-3-319-18660-3"
-	},
-
-	"fundmath" : {
-		"name"				: "Fundamenta Mathematicae",
-		"shortname"			: "Fund. Math.",
-		"www"				: "https://www.impan.pl/en/publishing-house/journals-and-series/fundamenta-mathematicae"
-	},
-
-	"indianaunivmathj" : {
-		"name"				: "Indiana University Mathematics Journal",
-		"shortname"			: "Indiana Univ. Math. J.",
-		"www"				: "https://www.iumj.indiana.edu/"
-	},
-
-	"intmathresnotimrn" : {
-		"name"				: "International Mathematics Research Notices",
-		"shortname"			: "Int. Math. Res. Not.",
-		"www"				: "https://academic.oup.com/imrn"
-	},
-
-	"israeljmath" : {
-		"name"				: "Israel Journal of Mathematics",
-		"shortname"			: "Israel J. Math.",
-		"www"				: "https://link.springer.com/journal/11856"
-	},
-
-	"jfractalgeom" : {
-		"name"				: "Journal of Fractal Geometry",
-		"shortname"			: "J. Fractal Geom.",
-		"www"				: "https://ems.press/journals/jfg"
-	},
-
-	"jlondmathsoc" : {
-		"name"				: "Journal of the London Mathematical Society",
-		"shortname"			: "J. Lond. Math. Soc.",
-		"www"				: "https://www.lms.ac.uk/publications/jlms"
-	},
-
-	"mathnachr" : {
-		"name"				: "Mathematische Nachrichten",
-		"shortname"			: "Math. Nachr.",
-		"www"				: "https://onlinelibrary.wiley.com/journal/15222616"
-	},
-
-	"mathproccambridgephilossoc" : {
-		"name"				: "Mathematical Proceedings of the Cambridge Philosophical Society",
-		"shortname"			: "Math. Proc. Cambridge Philos. Soc.",
-		"www"				: "https://www.cambridge.org/core/journals/mathematical-proceedings-of-the-cambridge-philosophical-society"
-	},
-
-	"mathscand" : {
-		"name"				: "Mathematica Scandinavica",
-		"shortname"			: "Math. Scand.",
-		"www"				: "https://www.mscand.dk/"
-	},
-
-	"mathz" : {
-		"name"				: "Mathematische Zeitschrift",
-		"shortname"			: "Math. Z.",
-		"www"				: "https://link.springer.com/journal/209"
-	},
-
-	"monatshmath" : {
-		"name"				: "Monatshefte für Mathematik",
-		"shortname"			: "Monatsh. Math.",
-		"www"				: "https://link.springer.com/journal/605"
-	},
-
-	"nonlinearity" : {
-		"name"				: "Nonlinearity",
-		"shortname"			: "Nonlinearity",
-		"www"				: "https://iopscience.iop.org/journal/0951-7715"
-	},
-
-	"preprint" : {
-		"name"				: "Preprint",
-		"shortname"			: "Preprint",
-		"www"				: ""
-	},
-
-  "probabtheoryrelatedfields" : {
-    "name"				: "Probability Theory and Related Fields",
-    "shortname"			: "Probab. Theory Related Fields",
-    "www"				: "https://link.springer.com/journal/440"
+  "actaunivcarolinmathphys" : {
+    "name"      : "Acta Universitatis Carolinae Mathematica et Physica",
+    "shortname" : "Acta Univ. Carolin. Math. Phys.",
+    "www"       : "https://dml.cz/handle/10338.dmlcz/142102"
   },
 
-	"procamermathsoc"		: {
-		"name"				: "Proceedings of the American Mathematical Society",
-		"shortname"			: "Proc. Amer. Math. Soc.",
-		"www"				: "https://www.ams.org/publications/journals/journalsframework/proc"
-	},
+  "advmath" : {
+    "name"      : "Advances in Mathematics",
+    "shortname" : "Adv. Math.",
+    "www"       : "https://www.sciencedirect.com/journal/advances-in-mathematics"
+  },
 
-	"procedinburghmathsoc" : {
-		"name"				: "Proceedings of the Edinburgh Mathematical Society",
-		"shortname"			: "Proc. Edinburgh Math. Soc.",
-		"www"				: "https://www.cambridge.org/core/journals/proceedings-of-the-edinburgh-mathematical-society"
-	},
+  "amerjmath" : {
+    "name"      : "American Journal of Mathematics",
+    "shortname" : "Amer. J. Math.",
+    "www"       : "https://www.press.jhu.edu/journals/american-journal-mathematics"
+  },
 
-	"proclondmathsoc" : {
-		"name"				: "Proceedings of the London Mathematical Society",
-		"shortname"			: "Proc. Lond. Math. Soc.",
-		"www"				: "https://www.lms.ac.uk/publications/plms"
-	},
+  "annacadscifennmath" : {
+    "name"      : "Annales Academiae Scientiarum Fennicae Mathematica",
+    "shortname" : "Ann. Acad. Sci. Fenn. Math.",
+    "www"       : "https://www.acadsci.fi/mathematica/"
+  },
 
-	"publmat" : {
-		"name"				: "Publicacions Matematiques",
-		"shortname"			: "Publ. Mat.",
-		"www"				: "https://projecteuclid.org/journals/publicacions-matematiques"
-	},
+  "annscnormsuperpisaclsci" : {
+    "name"      : "Annali della Scuola Normale Superiore di Pisa - Classe di Scienze",
+    "shortname" : "Ann. Sc. Norm. Super. Pisa Cl. Sci.",
+    "www"       : "https://journals.sns.it/index.php/annaliscienze/"
+  },
 
-	"realanalexchange2007" : {
-		"name"				: "Real Analysis Exchange 2007, 31st Summer Symposium Conference",
-		"shortname"			: "Real Anal. Exchange 2007, 31st Summer Symposium Conference",
-		"www"				: "https://realanalexch.org/symposia"
-	},
+  "arkhimedes" : {
+    "name"      : "Arkhimedes",
+    "shortname" : "Arkhimedes",
+    "www"       : "https://journal.fi/arkhimedes"
+  },
 
-	"recentdevelopmentsinfractalsandrelatedfields" : {
-		"name"				: "Recent Developments in Fractals and Related Fields, Applied and Numerical Harmonic Analysis",
-		"shortname"			: "Recent Developments in Fractals and Related Fields, Applied and Numerical Harmonic Analysis",
-		"www"				: "https://link.springer.com/book/10.1007/978-0-8176-4888-6"
-	},
+  "arkmat" : {
+    "name"      : "Arkiv för Matematik",
+    "shortname" : "Ark. Mat.",
+    "www"       : "https://intlpress.com/journals/journalList?id=1804410492600512513"
+  },
 
-	"repunivjyvaskyladeptmathstat" : {
-		"name"				: "Report University of Jyväskylä Department of Mathematics and Statistics",
-		"shortname"			: "Rep. Univ. Jyväskylä Dept. Math. Stat.",
-		"www"				: ""
-	},
+  "banachcenterpubl" : {
+    "name"      : "Banach Center Publications",
+    "shortname" : "Banach Center Publ.",
+    "www"       : "https://www.impan.pl/en/publishing-house/banach-center-publications"
+  },
 
-	"statistprobablett" : {
-		"name"				: "Statistics & Probability Letters",
-		"shortname"			: "Statist. Probab. Lett.",
-		"www"				: "https://www.sciencedirect.com/journal/statistics-and-probability-letters"
-	},
+  "bulllondmathsoc" : {
+    "name"      : "Bulletin of the London Mathematical Society",
+    "shortname" : "Bull. Lond. Math. Soc.",
+    "www"       : "https://www.lms.ac.uk/publications/blms"
+  },
 
-	"transamermathsoc" : {
-		"name"				: "Transactions of the American Mathematical Society",
-		"shortname"			: "Trans. Amer. Math. Soc.",
-		"www"				: "https://www.ams.org/publications/journals/journalsframework/tran"
-	}
+  "chaossolitonsfractals" : {
+    "name"      : "Chaos, Solitons & Fractals",
+    "shortname" : "Chaos Solitons Fractals",
+    "www"       : "https://www.sciencedirect.com/journal/chaos-solitons-and-fractals"
+  },
+
+  "commmathphys" : {
+    "name"      : "Communications in Mathematical Physics",
+    "shortname" : "Comm. Math. Phys.",
+    "www"       : "https://link.springer.com/journal/220"
+  },
+
+  "discretecontindynsyst" : {
+    "name"      : "Discrete and Continuous Dynamical Systems",
+    "shortname" : "Discrete Contin. Dyn. Syst.",
+    "www"       : "https://www.aimsciences.org/DCDS"
+  },
+
+  "ergodictheorydynamsystems" : {
+    "name"      : "Ergodic Theory and Dynamical Systems",
+    "shortname" : "Ergodic Theory Dynam. Systems",
+    "www"       : "https://www.cambridge.org/core/journals/ergodic-theory-and-dynamical-systems"
+  },
+
+  "fractalgeometryandstochasticsv" : {
+    "name"      : "Fractal Geometry and Stochastics V, Springer International Publishing",
+    "shortname" : "Fractal Geometry and Stochastics V, Springer International Publishing",
+    "www"       : "https://link.springer.com/book/10.1007/978-3-319-18660-3"
+  },
+
+  "fundmath" : {
+    "name"      : "Fundamenta Mathematicae",
+    "shortname" : "Fund. Math.",
+    "www"       : "https://www.impan.pl/en/publishing-house/journals-and-series/fundamenta-mathematicae"
+  },
+
+  "indianaunivmathj" : {
+    "name"      : "Indiana University Mathematics Journal",
+    "shortname" : "Indiana Univ. Math. J.",
+    "www"       : "https://www.iumj.indiana.edu/"
+  },
+
+  "intmathresnotimrn" : {
+    "name"      : "International Mathematics Research Notices",
+    "shortname" : "Int. Math. Res. Not.",
+    "www"       : "https://academic.oup.com/imrn"
+  },
+
+  "israeljmath" : {
+    "name"      : "Israel Journal of Mathematics",
+    "shortname" : "Israel J. Math.",
+    "www"       : "https://link.springer.com/journal/11856"
+  },
+
+  "jfractalgeom" : {
+    "name"      : "Journal of Fractal Geometry",
+    "shortname" : "J. Fractal Geom.",
+    "www"       : "https://ems.press/journals/jfg"
+  },
+
+  "jlondmathsoc" : {
+    "name"      : "Journal of the London Mathematical Society",
+    "shortname" : "J. Lond. Math. Soc.",
+    "www"       : "https://www.lms.ac.uk/publications/jlms"
+  },
+
+  "mathnachr" : {
+    "name"      : "Mathematische Nachrichten",
+    "shortname" : "Math. Nachr.",
+    "www"       : "https://onlinelibrary.wiley.com/journal/15222616"
+  },
+
+  "mathproccambridgephilossoc" : {
+    "name"      : "Mathematical Proceedings of the Cambridge Philosophical Society",
+    "shortname" : "Math. Proc. Cambridge Philos. Soc.",
+    "www"       : "https://www.cambridge.org/core/journals/mathematical-proceedings-of-the-cambridge-philosophical-society"
+  },
+
+  "mathscand" : {
+    "name"      : "Mathematica Scandinavica",
+    "shortname" : "Math. Scand.",
+    "www"       : "https://www.mscand.dk/"
+  },
+
+  "mathz" : {
+    "name"      : "Mathematische Zeitschrift",
+    "shortname" : "Math. Z.",
+    "www"       : "https://link.springer.com/journal/209"
+  },
+
+  "monatshmath" : {
+    "name"      : "Monatshefte für Mathematik",
+    "shortname" : "Monatsh. Math.",
+    "www"       : "https://link.springer.com/journal/605"
+  },
+
+  "nonlinearity" : {
+    "name"      : "Nonlinearity",
+    "shortname" : "Nonlinearity",
+    "www"       : "https://iopscience.iop.org/journal/0951-7715"
+  },
+
+  "preprint" : {
+    "name"      : "Preprint",
+    "shortname" : "Preprint",
+    "www"       : ""
+  },
+
+  "probabtheoryrelatedfields" : {
+    "name"      : "Probability Theory and Related Fields",
+    "shortname" : "Probab. Theory Related Fields",
+    "www"       : "https://link.springer.com/journal/440"
+  },
+
+  "procamermathsoc" : {
+    "name"      : "Proceedings of the American Mathematical Society",
+    "shortname" : "Proc. Amer. Math. Soc.",
+    "www"       : "https://www.ams.org/publications/journals/journalsframework/proc"
+  },
+
+  "procedinburghmathsoc" : {
+    "name"      : "Proceedings of the Edinburgh Mathematical Society",
+    "shortname" : "Proc. Edinburgh Math. Soc.",
+    "www"       : "https://www.cambridge.org/core/journals/proceedings-of-the-edinburgh-mathematical-society"
+  },
+
+  "proclondmathsoc" : {
+    "name"      : "Proceedings of the London Mathematical Society",
+    "shortname" : "Proc. Lond. Math. Soc.",
+    "www"       : "https://www.lms.ac.uk/publications/plms"
+  },
+
+  "publmat" : {
+    "name"      : "Publicacions Matematiques",
+    "shortname" : "Publ. Mat.",
+    "www"       : "https://projecteuclid.org/journals/publicacions-matematiques"
+  },
+
+  "realanalexchange2007" : {
+    "name"      : "Real Analysis Exchange 2007, 31st Summer Symposium Conference",
+    "shortname" : "Real Anal. Exchange 2007, 31st Summer Symposium Conference",
+    "www"       : "https://realanalexch.org/symposia"
+  },
+
+  "recentdevelopmentsinfractalsandrelatedfields" : {
+    "name"      : "Recent Developments in Fractals and Related Fields, Applied and Numerical Harmonic Analysis",
+    "shortname" : "Recent Developments in Fractals and Related Fields, Applied and Numerical Harmonic Analysis",
+    "www"       : "https://link.springer.com/book/10.1007/978-0-8176-4888-6"
+  },
+
+  "repunivjyvaskyladeptmathstat" : {
+    "name"      : "Report University of Jyväskylä Department of Mathematics and Statistics",
+    "shortname" : "Rep. Univ. Jyväskylä Dept. Math. Stat.",
+    "www"       : ""
+  },
+
+  "statistprobablett" : {
+    "name"      : "Statistics & Probability Letters",
+    "shortname" : "Statist. Probab. Lett.",
+    "www"       : "https://www.sciencedirect.com/journal/statistics-and-probability-letters"
+  },
+
+  "transamermathsoc" : {
+    "name"      : "Transactions of the American Mathematical Society",
+    "shortname" : "Trans. Amer. Math. Soc.",
+    "www"       : "https://www.ams.org/publications/journals/journalsframework/tran"
+  }
 }

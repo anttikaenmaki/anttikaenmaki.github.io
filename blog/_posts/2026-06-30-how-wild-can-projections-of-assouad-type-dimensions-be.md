@@ -6,18 +6,18 @@ description: The Marstrand-Mattila projection theorem for Assouad-type dimension
 
 ## A line of questions Marstrand did not answer
 
-The Marstrand–Mattila projection theorem is one of the cleanest statements in [geometric measure theory](https://en.wikipedia.org/wiki/Geometric_measure_theory): the [Hausdorff dimension](https://en.wikipedia.org/wiki/Hausdorff_dimension) of an orthogonal projection of a [Borel set](https://en.wikipedia.org/wiki/Borel_set) is the maximum it can be, almost everywhere.
+The Marstrand–Mattila projection theorem is one of the cleanest statements in [geometric measure theory](https://en.wikipedia.org/wiki/Geometric_measure_theory): the [Hausdorff dimension](https://en.wikipedia.org/wiki/Hausdorff_dimension) of an [orthogonal projection](https://en.wikipedia.org/wiki/Projection_(linear_algebra)) of a [Borel set](https://en.wikipedia.org/wiki/Borel_set) is the maximum it can be, [almost everywhere](https://en.wikipedia.org/wiki/Almost_everywhere).
 
 {% include theorem.html no="1" theorem="Theorem" info="Marstrand (1954) and Mattila (1975)" %}
 *Let $$X \subseteq \mathbb{R}^d$$ be a Borel set, and let $$1 \leq k < d$$ be an integer. Then*
 
 $$ \dim_{\mathrm{H}} \mathrm{proj}_V X \ = \ \min\{k, \dim_{\mathrm{H}} X\} $$
 
-*for $$\gamma_{d,k}$$-almost every $$k$$-dimensional subspace $$V$$ of $$\mathbb{R}^d$$, where $$\gamma_{d,k}$$ is the rotation-invariant probability measure on the [Grassmannian](https://en.wikipedia.org/wiki/Grassmannian) $$G(d,k)$$.*
+*for $$\gamma_{d,k}$$-almost every $$k$$-dimensional subspace $$V$$ of $$\mathbb{R}^d$$, where $$\gamma_{d,k}$$ is the [rotation-invariant probability measure](https://en.wikipedia.org/wiki/Haar_measure) on the [Grassmannian](https://en.wikipedia.org/wiki/Grassmannian) $$G(d,k)$$.*
 
-The same picture survives, in a more nuanced form, for [box](https://en.wikipedia.org/wiki/Minkowski%E2%80%93Bouligand_dimension) and [packing](https://en.wikipedia.org/wiki/Packing_dimension) dimensions: the projected dimension is again almost surely constant, with the constant computed from a *dimension profile* of $$X$$ rather than from the dimension itself. So for every classical notion of fractal dimension we know, there is *some* Marstrand-type theorem: the projection function $$V \mapsto \dim \, \mathrm{proj}_V X$$ has an almost-everywhere value, and that value is determined by an intrinsic invariant of $$X$$.
+The same picture survives, in a more nuanced form, for [box](https://en.wikipedia.org/wiki/Minkowski%E2%80%93Bouligand_dimension) and [packing](https://en.wikipedia.org/wiki/Packing_dimension) dimensions: the projected dimension is again almost surely constant, with the constant computed from a *dimension profile* of $$X$$ rather than from the dimension itself. So for every classical notion of [fractal dimension](https://en.wikipedia.org/wiki/Fractal_dimension) we know, there is *some* Marstrand-type theorem: the projection function $$V \mapsto \dim \, \mathrm{proj}_V X$$ has an almost-everywhere value, and that value is determined by an intrinsic invariant of $$X$$.
 
-For the [Assouad dimension](https://en.wikipedia.org/wiki/Assouad_dimension), no such theorem exists. [Fraser–Orponen (2017)](https://doi.org/10.1112/plms.12012) showed that the Assouad dimension of a planar projection can take two distinct values on direction sets of positive measure. The question this leaves open is the obvious one: *how wild can the Assouad-projection function be?* And once that question is settled, the same question returns for the Assouad spectrum — the one-parameter family of dimensions $$\dim_{\mathrm{A}}^\theta X$$ that interpolates between the upper box dimension at $$\theta = 0$$ and the quasi-Assouad dimension as $$\theta \uparrow 1$$. As a concrete example to keep in mind throughout this post, fix the sparse sequence
+For the [Assouad dimension](https://en.wikipedia.org/wiki/Assouad_dimension), no such theorem exists. [Fraser–Orponen (2017)](https://doi.org/10.48550/arXiv.1509.01128) showed that the Assouad dimension of a planar projection can take two distinct values on direction sets of positive measure. The question this leaves open is the obvious one: *how wild can the Assouad-projection function be?* And once that question is settled, the same question returns for the Assouad spectrum — the one-parameter family of dimensions $$\dim_{\mathrm{A}}^\theta X$$ that interpolates between the upper box dimension at $$\theta = 0$$ and the quasi-Assouad dimension as $$\theta \uparrow 1$$. As a concrete example to keep in mind throughout this post, fix the sparse sequence
 
 $$ Z \ = \ \{0\} \cup \{2^{-i} : i \in \mathbb{N}\} \ \subset \ \mathbb{R}. $$
 
@@ -31,7 +31,7 @@ The answer turns out to have three regimes, and they form the perspective behind
 
 For the *Assouad dimension on compact planar sets* the answer is *maximally wild*: every reasonable function on the Grassmannian is realisable as the projection function of some compact set. This is the headline result of [our earlier paper](https://doi.org/10.48550/arXiv.1811.00951), joint with [Jonathan Fraser](https://jonathan-fraser.github.io/homepage/).
 
-For the *Assouad spectrum on bounded planar sets* the answer is *constrained*: a tube-counting estimate forces the spectrum of projections to be bounded above by an intrinsic quantity, ruling out wildness above the ambient dimension. This is the surprise of our recent paper with [Kenneth Falconer](https://kennethfalconer.github.io/) and Jonathan Fraser.
+For the *Assouad spectrum on bounded planar sets* the answer is *constrained*: a tube-counting estimate forces the spectrum of projections to be bounded above by an intrinsic quantity, ruling out wildness above the ambient dimension. This is the surprise of [our recent paper](https://doi.org/10.48550/arXiv.2606.28830) with [Kenneth Falconer](https://kennethfalconer.github.io/) and Jonathan Fraser.
 
 For the *Assouad spectrum on unbounded sets* the wildness returns in full: one can prescribe the projected spectrum on open sets of directions, even simultaneously for every interpolation parameter $$\theta$$.
 
@@ -47,13 +47,13 @@ $$ \dim_{\mathrm{A}} X = \inf \biggl\{ \alpha : \sup_{\genfrac{}{}{0pt}{}{x \in 
 
 where $$N_r$$ denotes the smallest number of closed balls of radius $$r$$ needed to cover. Unlike the Hausdorff and box dimensions, this need not match the *global* covering rate, and unlike them, it is not [Lipschitz](https://en.wikipedia.org/wiki/Lipschitz_continuity)-stable: a Lipschitz image of $$X$$ can have strictly larger Assouad dimension than $$X$$. That instability is why the simple Lipschitz argument behind the upper bound in [Theorem 1](#theorem-1) breaks down for the Assouad dimension.
 
-The set $$Z = \{0\} \cup \{2^{-i}\}$$ is a clean illustration. As a metric space it is countable, so its Hausdorff dimension is zero. Its Assouad dimension is also zero: zooming into the gap between consecutive points of $$Z$$ near the origin gives the same picture at every scale, so the covering ratio stays bounded by a constant. The set $$Z$$ is the canonical low-dimensional sequence, and exactly because of that, it will keep appearing inside thin tubes and along long sides of bricks throughout this post.
+The set $$Z = \{0\} \cup \{2^{-i}\}$$ is a clean illustration. As a [metric space](https://en.wikipedia.org/wiki/Metric_space) it is [countable](https://en.wikipedia.org/wiki/Countable_set), so its Hausdorff dimension is zero. Its Assouad dimension is also zero: zooming into the gap between consecutive points of $$Z$$ near the origin gives the same picture at every scale, so the covering ratio stays bounded by a constant. The set $$Z$$ is the canonical low-dimensional sequence, and exactly because of that, it will keep appearing inside thin tubes and along long sides of bricks throughout this post.
 
 The Assouad spectrum locks the two scales together. For $$\theta \in (0,1)$$, the *Assouad spectrum* of $$X$$ at $$\theta$$ is
 
 $$ \dim_{\mathrm{A}}^\theta X = \inf \biggl\{ \alpha : \sup_{\genfrac{}{}{0pt}{}{x \in X}{0 < R < 1}} \frac{N_{R^{1/\theta}}(X \cap B(x,R))}{(R/R^{1/\theta})^\alpha} < \infty \biggr\}, $$
 
-and the *quasi-Assouad dimension* is the limit $$\dim_{\mathrm{qA}} X = \lim_{\theta \uparrow 1} \dim_{\mathrm{A}}^\theta X$$. By Fraser–Hare–Hare–Troscheit–Yu (2019), this limit definition agrees with the original definition of Lü–Xi (2016). At $$\theta = 0$$ the spectrum recovers the upper box dimension; at $$\theta = 1$$ it limits to the quasi-Assouad dimension; and one always has
+and the *quasi-Assouad dimension* is the limit $$\dim_{\mathrm{qA}} X = \lim_{\theta \uparrow 1} \dim_{\mathrm{A}}^\theta X$$. By [Fraser–Hare–Hare–Troscheit–Yu (2019)](https://doi.org/10.48550/arXiv.1804.09607), this limit definition agrees with the original definition of [Lü–Xi (2016)](https://doi.org/10.48550/arXiv.1409.2070). At $$\theta = 0$$ the spectrum recovers the upper box dimension; at $$\theta = 1$$ it limits to the quasi-Assouad dimension; and one always has
 
 $$ \overline{\dim}_{\mathrm{M}} X \leq \dim_{\mathrm{A}}^\theta X \leq \min\biggl\{ \frac{\overline{\dim}_{\mathrm{M}} X}{1-\theta},\, \dim_{\mathrm{qA}} X\biggr\}. $$
 
@@ -65,19 +65,29 @@ The leftmost bound and the $$\overline{\dim}_{\mathrm{M}} X / (1-\theta)$$ bound
 
 The first movement is the Assouad-dimension extreme. In [our earlier paper](https://doi.org/10.48550/arXiv.1811.00951), joint with Jonathan Fraser, we showed that the Assouad-projection function of a compact planar set can match any *[upper semi-continuous](https://en.wikipedia.org/wiki/Semicontinuity)* prescription.
 
-{% include theorem.html no="2" theorem="Theorem" info="[Fraser-K (2020)](https://doi.org/10.48550/arXiv.1811.00951)" %}
-*Let $$\phi \colon G(2,1) \to [0,1]$$ be upper semi-continuous. Then there exists a compact set $$F \subset \mathbb{R}^2$$ with $$\dim_{\mathrm{A}} F = 0$$ such that*
+{% include theorem.html no="2" theorem="Theorem" info="[Fraser-K (2023)](https://doi.org/10.48550/arXiv.1811.00951)" %}
+*Let $$\phi \colon G(2,1) \to [0,1]$$ be upper semi-continuous. Then there exists a compact set $$X \subset \mathbb{R}^2$$ with $$\dim_{\mathrm{A}} X = 0$$ such that*
 
-$$ \dim_{\mathrm{A}} \mathrm{proj}_\pi F = \phi(\pi) $$
+$$ \dim_{\mathrm{A}} \mathrm{proj}_V X = \phi(V) $$
 
-for all $$\pi \in G(2,1)$$. Reading [Theorem 2](#theorem-2) takes a moment. The compact set $$F$$ itself has Assouad dimension zero, yet its projection onto a generic line can have any value in $$[0,1]$$ — and that value can change with the direction in any way an upper semi-continuous function is allowed to change. Two immediate consequences settle a question of Fraser–Orponen (2017) on how many distinct projected values are simultaneously possible.
+*for all $$V \in G(2,1)$$.*
 
-{% include theorem.html no="3" theorem="Corollary" info="[Fraser-K (2020)](https://doi.org/10.48550/arXiv.1811.00951)" %}
-*Let $$E \subseteq [0,1]$$ be finite or countable. There exists a compact set $$F \subset \mathbb{R}^2$$ such that for every $$s \in E$$, the set of $$\pi \in G(2,1)$$ with $$\dim_{\mathrm{A}} \mathrm{proj}_\pi F = s$$ has positive measure. Moreover, there exists a compact set $$F \subset \mathbb{R}^2$$ such that, for every $$s \in [0,1]$$, at most one $$\pi$$ satisfies $$\dim_{\mathrm{A}} \mathrm{proj}_\pi F = s$$.*
+Reading [Theorem 2](#theorem-2) takes a moment. The compact set $$X$$ itself has Assouad dimension zero, yet its projection onto a generic line can have any value in $$[0,1]$$ — and that value can change with the direction in any way an upper semi-continuous function is allowed to change. Two immediate consequences settle a question of [Fraser–Orponen (2017)](https://doi.org/10.48550/arXiv.1509.01128) on how many distinct projected values are simultaneously possible.
+
+{% include theorem.html no="3" theorem="Corollary" info="[Fraser-K (2023)](https://doi.org/10.48550/arXiv.1811.00951)" %}
+*Let $$E \subseteq [0,1]$$ be finite or countable. Then there exists a compact set $$X \subset \mathbb{R}^2$$ such that*
+
+$$ \gamma_{2,1}\bigl( \{ V \in G(2,1) : \dim_{\mathrm{A}} \mathrm{proj}_V X = s \} \bigr) > 0 $$
+
+*for every $$s \in E$$. Moreover, there exists a compact set $$X \subset \mathbb{R}^2$$ such that*
+
+$$ \#\{ V \in G(2,1) : \dim_{\mathrm{A}} \mathrm{proj}_V X = s \} \leq 1 $$
+
+*for every $$s \in [0,1]$$.*
 
 The first half of [Corollary 3](#corollary-3) takes a step function for $$\phi$$ and applies [Theorem 2](#theorem-2); the second half takes a strictly monotone $$\phi$$ that injects $$G(2,1)$$ into $$[0,1]$$. Either way, the conclusion is that no Marstrand-type theorem is even *formulable* for the Assouad dimension of compact planar sets: there is no intrinsic invariant to feed into the right-hand side, because every reasonable right-hand side already appears.
 
-*Proof sketch.* The construction packs scaled, stretched and rotated copies of a single template — a finite approximation of a [self-similar](https://en.wikipedia.org/wiki/Self-similarity) [Cantor set](https://en.wikipedia.org/wiki/Cantor_set) of dimension $$s = \phi(\pi)$$, paired with a scaled copy of our example $$Z$$ as its "thin" axis — along the graph of $$x \mapsto x^2$$. The parabola gives enough room between the copies that distinct copies do not interfere with each other under projection. For each direction $$\pi$$, a countable dense subset $$\Pi \subset G(2,1)$$ supplies a sequence of copies whose long axis is asymptotically aligned with $$\pi$$. Projecting onto $$\pi$$, the long axes nearly collapse and what remains looks, after rescaling, like an approximation to a self-similar set of dimension $$\phi(\pi)$$. A weak tangent argument — using [Mackay–Tyson (2010)](https://doi.org/10.1090/ulect/054) for the lower bound — converts this into the assertion $$\dim_{\mathrm{A}} \mathrm{proj}_\pi F \geq \phi(\pi)$$. The upper bound is the harder direction, and it is where upper semi-continuity enters: a transverse direction sees only $$Z$$ and contributes zero, while a near-aligned direction sees an approximation to a set of dimension at most $$\limsup_k \phi(\pi_k) \leq \phi(\pi)$$. &#x25A0;
+*Proof sketch.* The construction packs scaled, stretched and rotated copies of a single template — a finite approximation of a [self-similar](https://en.wikipedia.org/wiki/Self-similarity) [Cantor set](https://en.wikipedia.org/wiki/Cantor_set) of dimension $$s = \phi(V)$$, paired with a scaled copy of our example $$Z$$ as its "thin" axis — along the graph of $$x \mapsto x^2$$. The parabola gives enough room between the copies that distinct copies do not interfere with each other under projection. For each direction $$V$$, a countable dense subset $$\Pi \subset G(2,1)$$ supplies a sequence of copies whose long axis is asymptotically aligned with $$V$$. Projecting onto $$V$$, the long axes nearly collapse and what remains looks, after rescaling, like an approximation to a self-similar set of dimension $$\phi(V)$$. A weak tangent argument, using [Mackay–Tyson (2010)](https://doi.org/10.1090/ulect/054) for the lower bound, converts this into the assertion $$\dim_{\mathrm{A}} \mathrm{proj}_V X \geq \phi(V)$$. The upper bound is the harder direction, and it is where upper semi-continuity enters: a transverse direction sees only $$Z$$ and contributes zero, while a near-aligned direction sees an approximation to a set of dimension at most $$\limsup_k \phi(V_k) \leq \phi(V)$$. &#x25A0;
 
 The takeaway is brutal but clean. For the Assouad dimension on compact planar sets, the projection function can be essentially anything an upper semi-continuous function allows. The very question Marstrand answered for Hausdorff dimension — *what value does the projected dimension take almost everywhere?* — is degenerate here.
 
@@ -85,9 +95,9 @@ The takeaway is brutal but clean. For the Assouad dimension on compact planar se
 
 ## The Assouad spectrum on bounded sets: tubes constrain the wildness
 
-The second regime is the surprise of our recent paper with Kenneth Falconer and Jonathan Fraser. For the Assouad *spectrum* of bounded planar sets, the wildness from [Theorem 2](#theorem-2) is no longer possible. There is a quantitative tube-counting bound.
+The second regime is the surprise of [our recent paper](https://doi.org/10.48550/arXiv.2606.28830) with Kenneth Falconer and Jonathan Fraser. For the Assouad *spectrum* of bounded planar sets, the wildness from [Theorem 2](#theorem-2) is no longer possible. There is a quantitative tube-counting bound.
 
-{% include theorem.html no="4" theorem="Theorem" %}
+{% include theorem.html no="4" theorem="Theorem" info="[Falconer-Fraser-K (2026+)](https://doi.org/10.48550/arXiv.2606.28830)" %}
 *Let $$X \subset \mathbb{R}^2$$ be bounded and $$\theta \in (0,1)$$. Then*
 
 $$ \dim_{\mathrm{A}}^\theta \mathrm{proj}_V X \leq \frac{1}{2} \biggl( \frac{\overline{\dim}_{\mathrm{M}} X}{1-\theta} + \dim_{\mathrm{A}}^\theta X \biggr) $$
@@ -100,9 +110,9 @@ The trivial bound from the definition of the spectrum is the right-hand side wit
 
 The tube-counting argument also yields a more refined exceptional-set estimate: for each $$\alpha \in [0,1)$$, the Hausdorff dimension of directions with spectrum above $$(1+\alpha)^{-1} ( \overline{\dim}_{\mathrm{M}} X / (1-\theta) + \alpha \dim_{\mathrm{A}}^\theta X)$$ is at most $$\alpha$$.
 
-The matching almost-sure *lower* bound runs through capacities. For $$0 < s \leq d$$, the *$$s$$-energy kernel* $$\phi_r^s(x) = \min\{1, (r/\lvert x\rvert)^s\}$$ on $$\mathbb{R}^d$$ generates a capacity $$C_r^s$$, and Falconer (2021) showed that the upper box dimension can be re-cast in terms of $$C_r^s$$ rather than $$N_r$$. The same substitution works for the spectrum, giving a *spectrum dimension profile* $$\dim_{\mathrm{A}}^{\theta,k} X$$ — the supremum of exponents $$\alpha$$ such that $$C_{R^{1/\theta}}^k(X \cap B(x,R)) \geq c (R/R^{1/\theta})^\alpha$$ uniformly. A standard Markov-and-Borel–Cantelli argument then yields the projection counterpart.
+The matching almost-sure *lower* bound runs through capacities. For $$0 < s \leq d$$, the *$$s$$-energy kernel* $$\phi_r^s(x) = \min\{1, (r/\lvert x\rvert)^s\}$$ on $$\mathbb{R}^d$$ generates a capacity $$C_r^s$$, and Falconer (2021) showed that the upper box dimension can be re-cast in terms of $$C_r^s$$ rather than $$N_r$$. The same substitution works for the spectrum, giving a *spectrum dimension profile* $$\dim_{\mathrm{A}}^{\theta,k} X$$ — the supremum of exponents $$\alpha$$ such that $$C_{R^{1/\theta}}^k(X \cap B(x,R)) \geq c (R/R^{1/\theta})^\alpha$$ uniformly. A standard [Markov](https://en.wikipedia.org/wiki/Markov%27s_inequality)-and-[Borel–Cantelli](https://en.wikipedia.org/wiki/Borel%E2%80%93Cantelli_lemma) argument then yields the projection counterpart.
 
-{% include theorem.html no="5" theorem="Theorem" %}
+{% include theorem.html no="5" theorem="Theorem" info="[Falconer-Fraser-K (2026+)](https://doi.org/10.48550/arXiv.2606.28830)" %}
 *Let $$X \subset \mathbb{R}^d$$, $$\theta \in (0,1)$$, and $$1 \leq k < d$$ be an integer. Then*
 
 $$ \dim_{\mathrm{A}}^\theta \mathrm{proj}_V X \geq \dim_{\mathrm{A}}^{\theta,k} X $$
@@ -115,7 +125,7 @@ A consequence of [Theorem 4](#theorem-4) is a non-trivial generic upper bound fo
 
 $$ \dim_{\mathrm{A}}^\theta F_{\mathbf{b}} \leq \frac{1}{2}\biggl( \frac{s}{1-\theta} + s\biggr) $$
 
-for Lebesgue-almost every $$\mathbf{b}$$. This beats the trivial bound $$s/(1-\theta)$$ whenever $$\theta \in (0,1)$$, and provides non-trivial quantitative generic evidence for the conjecture that $$\dim_{\mathrm{qA}} K = \dim_{\mathrm{H}} K$$ for self-similar sets on the line; see [Fraser's (2021)](https://doi.org/10.1017/9781108778459) Question 17.5.3.
+for [Lebesgue](https://en.wikipedia.org/wiki/Lebesgue_measure)-almost every $$\mathbf{b}$$. This beats the trivial bound $$s/(1-\theta)$$ whenever $$\theta \in (0,1)$$, and provides non-trivial quantitative generic evidence for the conjecture that $$\dim_{\mathrm{qA}} K = \dim_{\mathrm{H}} K$$ for self-similar sets on the line; see Question 17.5.3 in [Fraser's (2021)](https://doi.org/10.1017/9781108778459).
 
 
 
@@ -123,14 +133,14 @@ for Lebesgue-almost every $$\mathbf{b}$$. This beats the trivial bound $$s/(1-\t
 
 The third regime undoes the second. Drop boundedness, and the constraint from [Theorem 4](#theorem-4) evaporates. The construction underlying the next theorem is essentially a higher-resolution version of the one used in [Theorem 2](#theorem-2), made to fit the more delicate scale-relation of the spectrum.
 
-{% include theorem.html no="6" theorem="Theorem" %}
+{% include theorem.html no="6" theorem="Theorem" info="[Falconer-Fraser-K (2026+)](https://doi.org/10.48550/arXiv.2606.28830)" %}
 *Let $$0 < s < t \leq 1$$. There exists a uniformly discrete unbounded set $$X \subseteq \mathbb{R}^2$$ and non-empty disjoint open sets $$I_s, I_t \subseteq G(2,1)$$ such that, simultaneously for every $$\theta \in (0,1)$$,*
 
 $$ \dim_{\mathrm{A}}^\theta \mathrm{proj}_V X = \begin{cases} s, & V \in I_s, \\ t, & V \in I_t. \end{cases} $$
 
 [Theorem 6](#theorem-6) refines and unifies a hierarchy of partial results: prescribing two values at a single $$\theta$$, then countably many values at a single $$\theta$$, then two values *for every* $$\theta$$ at once. The last form has an immediate consequence for the quasi-Assouad dimension by taking $$\theta \uparrow 1$$.
 
-{% include theorem.html no="7" theorem="Corollary" %}
+{% include theorem.html no="7" theorem="Corollary" info="[Falconer-Fraser-K (2026+)](https://doi.org/10.48550/arXiv.2606.28830)" %}
 *Let $$0 < s < t \leq 1$$. There exists a uniformly discrete unbounded set $$X \subseteq \mathbb{R}^2$$ and non-empty disjoint open sets $$I_s, I_t \subseteq G(2,1)$$ such that*
 
 $$ \dim_{\mathrm{qA}} \mathrm{proj}_V X = \begin{cases} s, & V \in I_s, \\ t, & V \in I_t. \end{cases} $$

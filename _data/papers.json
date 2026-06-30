@@ -1,782 +1,859 @@
 {
-    "65": {
-        "status": "preprint",
-        "papername": "Level sets of prevalent Weierstrass functions",
-        "arxiv": "https://doi.org/10.48550/arXiv.2507.15591",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "buczolichzoltan magabalazs",
-        "topic": "gmt",
-        "journal": "preprint",
-        "journaldata": "2025",
-        "doi": ""
-    },
-    "64": {
-        "status": "publication",
-        "papername": "Self-affine sponges with random contractions",
-        "arxiv": "https://doi.org/10.48550/arXiv.2505.04383",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "baranybalazs ramsmichal",
-        "topic": "fg",
-        "journal": "probabtheoryrelatedfields",
-        "journaldata": "to appear",
-        "doi": "https://doi.org/10.1007/s00440-026-01509-6"
-    },
-    "63": {
-        "status": "preprint",
-        "papername": "Tangents and slices of self-affine carpets",
-        "arxiv": "https://doi.org/10.48550/arXiv.2410.19404",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "rutaralex",
-        "topic": "fg gmt",
-        "journal": "preprint",
-        "journaldata": "2024",
-        "doi": ""
-    },
-    "62": {
-        "status": "publication",
-        "papername": "Regularity of non-autonomous self-similar sets",
-        "arxiv": "https://doi.org/10.48550/arXiv.2410.17944",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "rutaralex",
-        "topic": "fg",
-        "journal": "mathproccambridgephilossoc",
-        "journaldata": "179 (2025), no. 3, 623\u2013648",
-        "doi": "https://doi.org/10.1017/S0305004125000416"
-    },
-    "61": {
-        "status": "publication",
-        "papername": "Thermodynamic formalism of countably generated self-affine sets",
-        "arxiv": "https://doi.org/10.48550/arXiv.2405.00520",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "morrisian",
-        "topic": "et fg",
-        "journal": "transamermathsoc",
-        "journaldata": "379 (2026), no. 5, 3161-3210.",
-        "doi": "https://doi.org/10.1090/tran/9419"
-    },
-    "60": {
-        "status": "publication",
-        "papername": "Level sets of prevalent Hölder functions",
-        "arxiv": "https://doi.org/10.48550/arXiv.2402.08520",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "anttilaroope baranybalazs",
-        "topic": "gmt",
-        "journal": "procamermathsoc",
-        "journaldata": "153 (2025), no. 5, 2023-2035",
-        "doi": "https://doi.org/10.1090/proc/17045"
-    },
-    "59": {
-        "status": "publication",
-        "papername": "Local dimension spectrum for dominated planar self-affine sets",
-        "arxiv": "https://doi.org/10.48550/arXiv.2401.13626",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "batsisalex kemptontom",
-        "topic": "et fg",
-        "journal": "mathz",
-        "journaldata": "312 (2026), no. 4, Paper No. 115",
-        "doi": "https://doi.org/10.1007/s00209-026-03972-2"
-    },
-    "58": {
-        "status": "preprint",
-        "papername": "Tangents of invariant sets",
-        "arxiv": "https://doi.org/10.48550/arXiv.2309.11971",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "rutaralex",
-        "topic": "gmt",
-        "journal": "preprint",
-        "journaldata": "2023",
-        "doi": ""
-    },
-    "57": {
-        "status": "preprint",
-        "papername": "Scaling limits of self-conformal measures",
-        "arxiv": "https://doi.org/10.48550/arXiv.2308.11399",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "baranybalazs pyoralaaleksi wumeng",
-        "topic": "et fg gmt",
-        "journal": "preprint",
-        "journaldata": "2023",
-        "doi": ""
-    },
-    "56": {
-        "status": "publication",
-        "papername": "Dimension of planar non-conformal attractors with triangular derivative matrices",
-        "arxiv": "https://doi.org/10.48550/arXiv.2308.09590",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "baranybalazs",
-        "topic": "fg",
-        "journal": "commmathphys",
-        "journaldata": "405 (2024), no. 11, Paper No. 256",
-        "doi": "https://doi.org/10.1007/s00220-024-05131-2"
-    },
-    "55": {
-        "status": "publication",
-        "papername": "Covering number on inhomogeneous graph-directed self-similar sets",
-        "arxiv": "https://doi.org/10.48550/arXiv.2307.16263",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "baranybalazs nissinenpetteri",
-        "topic": "fg",
-        "journal": "jfractalgeom",
-        "journaldata": "to appear",
-        "doi": ""
-    },
-    "54": {
-        "status": "publication",
-        "papername": "Slices of the Takagi function",
-        "arxiv": "https://doi.org/10.48550/arXiv.2305.08181",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "anttilaroope baranybalazs",
-        "topic": "fg gmt",
-        "journal": "ergodictheorydynamsystems",
-        "journaldata": "44 (2024), no. 9, 2361-2398",
-        "doi": "https://doi.org/10.1017/etds.2023.117"
-    },
-    "53": {
-        "status": "publication",
-        "papername": "Non-invertible planar self-affine sets",
-        "arxiv": "https://doi.org/10.48550/arXiv.2205.07351",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "nissinenpetteri",
-        "topic": "et fg",
-        "journal": "mathproccambridgephilossoc",
-        "journaldata": "177 (2024), no. 1, 49-65",
-        "doi": "https://doi.org/10.1017/S0305004124000136"
-    },
-    "52": {
-        "status": "publication",
-        "papername": "Finer geometry of planar self-affine sets",
-        "arxiv": "https://doi.org/10.48550/arXiv.2107.00983",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "baranybalazs yuhan",
-        "topic": "fg gmt",
-        "journal": "advmath",
-        "journaldata": "493 (2026), Paper No. 110914",
-        "doi": "https://doi.org/10.1016/j.aim.2026.110914"
-    },
-    "51": {
-        "status": "publication",
-        "papername": "Minkowski dimension for measures",
-        "arxiv": "https://doi.org/10.48550/arXiv.2001.07055",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "falconerkenneth fraserjonathan",
-        "topic": "gmt",
-        "journal": "procamermathsoc",
-        "journaldata": "151 (2023), no. 2, 779-794",
-        "doi": "https://doi.org/10.1090/proc/16174"
-    },
-    "50": {
-        "status": "publication",
-        "papername": "Super-exponential condensation without exact overlaps",
-        "arxiv": "https://doi.org/10.48550/arXiv.1910.04623",
-        "attachment": "Numerical calculations",
-        "attachmentfile": "mathematica/50-numerical-calculations.nb",
-        "collaborators": "baranybalazs",
-        "topic": "fg",
-        "journal": "advmath",
-        "journaldata": "379 (2021), Paper No. 107549",
-        "doi": "https://doi.org/10.1016/j.aim.2020.107549"
-    },
-    "49": {
-        "status": "publication",
-        "papername": "Assouad dimension of planar self-affine sets",
-        "arxiv": "https://doi.org/10.48550/arXiv.1906.11007",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "baranybalazs rossieino",
-        "topic": "fg",
-        "journal": "transamermathsoc",
-        "journaldata": "374 (2021), no. 2, 1297-1326",
-        "doi": "https://doi.org/10.1090/tran/8224"
-    },
-    "48": {
-        "status": "publication",
-        "papername": "Absolute continuity in families of parametrised non-homogeneous self-similar measures",
-        "arxiv": "https://doi.org/10.48550/arXiv.1812.05006",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "orponentuomas",
-        "topic": "fg",
-        "journal": "jfractalgeom",
-        "journaldata": "10 (2023), no. 1, 169-207",
-        "doi": "https://doi.org/10.4171/jfg/127"
-    },
-    "47": {
-        "status": "publication",
-        "papername": "Attainable values for the Assouad dimension of projections",
-        "arxiv": "https://doi.org/10.48550/arXiv.1811.00951",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "fraserjonathan",
-        "topic": "gmt",
-        "journal": "procamermathsoc",
-        "journaldata": "148 (2020), no. 8, 3393-3405",
-        "doi": "https://doi.org/10.1090/proc/14999"
-    },
-    "46": {
-        "status": "publication",
-        "papername": "On the Hausdorff dimension of microsets",
-        "arxiv": "https://doi.org/10.48550/arXiv.1808.00707",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "fraserjonathan howroyddouglas yuhan",
-        "topic": "gmt",
-        "journal": "procamermathsoc",
-        "journaldata": "147 (2019), no. 11, 4921-4936",
-        "doi": "https://doi.org/10.1090/proc/14613"
-    },
-    "45": {
-        "status": "publication",
-        "papername": "Birkhoff and Lyapunov spectra on planar self-affine sets",
-        "arxiv": "https://doi.org/10.48550/arXiv.1805.08004",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "baranybalazs jordanthomas ramsmichal",
-        "topic": "fg",
-        "journal": "intmathresnotimrn",
-        "journaldata": "IMRN 2021, no. 10, 7966-8005",
-        "doi": "https://doi.org/10.1093/imrn/rnz359"
-    },
-    "44": {
-        "status": "publication",
-        "papername": "Self-conformal sets with positive Hausdorff measure",
-        "arxiv": "https://doi.org/10.48550/arXiv.1803.09113",
-        "attachment": "Numerical calculations",
-        "attachmentfile": "mathematica/44-numerical-calculations-for-example-76.cdf",
-        "collaborators": "angelevskajasmina troscheitsascha",
-        "topic": "fg",
-        "journal": "bulllondmathsoc",
-        "journaldata": "52 (2020), no. 1, 200-223",
-        "doi": "https://doi.org/10.1112/blms.12320"
-    },
-    "43": {
-        "status": "publication",
-        "papername": "Domination, almost additivity, and thermodynamic formalism for planar matrix cocycles",
-        "arxiv": "https://doi.org/10.48550/arXiv.1802.01916",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "baranybalazs morrisian",
-        "topic": "et",
-        "journal": "israeljmath",
-        "journaldata": "239 (2020), no. 1, 173-214",
-        "doi": "https://doi.org/10.1007/s11856-020-2054-4"
-    },
-    "42": {
-        "status": "publication",
-        "papername": "A Marstrand-type restricted projection theorem in R^3",
-        "arxiv": "https://doi.org/10.48550/arXiv.1708.04859",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "orponentuomas venierilaura",
-        "topic": "gmt",
-        "journal": "amerjmath",
-        "journaldata": "147 (2025), no. 1, 81-123",
-        "doi": "https://doi.org/10.1353/ajm.2025.a950274"
-    },
-    "41": {
-        "status": "survey",
-        "papername": "Dynamics of the scenery flow and conical density theorems",
-        "arxiv": "https://doi.org/10.48550/arXiv.1710.02371",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "",
-        "topic": "et gmt",
-        "journal": "banachcenterpubl",
-        "journaldata": "115 (2018), 99-143",
-        "doi": "https://doi.org/10.4064/bc115-4"
-    },
-    "40": {
-        "status": "publication",
-        "papername": "Self-affine sets in analytic curves and algebraic surfaces",
-        "arxiv": "https://doi.org/10.48550/arXiv.1612.07136",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "fengdejun",
-        "topic": "fg gmt",
-        "journal": "annacadscifennmath",
-        "journaldata": "43 (2018), no. 1, 109-119",
-        "doi": "https://doi.org/10.5186/aasfm.2018.4306"
-    },
-    "39": {
-        "status": "publication",
-        "papername": "Dimension of self-affine sets for fixed translation vectors",
-        "arxiv": "https://doi.org/10.48550/arXiv.1611.09196",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "baranybalazs koivusalohenna",
-        "topic": "fg",
-        "journal": "jlondmathsoc",
-        "journaldata": "98 (2018), no. 1, 223-252",
-        "doi": "https://doi.org/10.1112/jlms.12132"
-    },
-    "38": {
-        "status": "publication",
-        "papername": "Genericity of dimension drop on self-affine sets",
-        "arxiv": "https://doi.org/10.48550/arXiv.1611.00496",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "libing",
-        "topic": "et fg",
-        "journal": "statistprobablett",
-        "journaldata": "126 (2017), 18-25",
-        "doi": "https://dx.doi.org/10.1016/j.spl.2017.02.028"
-    },
-    "37": {
-        "status": "publication",
-        "papername": "Structure of equilibrium states on self-affine sets and strict monotonicity of affinity dimension",
-        "arxiv": "https://doi.org/10.48550/arXiv.1609.07360",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "morrisian",
-        "topic": "et fg",
-        "journal": "proclondmathsoc",
-        "journaldata": "116 (2018), no. 4, 929-956",
-        "doi": "https://doi.org/10.1112/plms.12089"
-    },
-    "36": {
-        "status": "publication",
-        "papername": "Measures with predetermined regularity and inhomogeneous self-similar sets",
-        "arxiv": "https://doi.org/10.48550/arXiv.1609.03325",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "lehrbackjuha",
-        "topic": "fg gmt",
-        "journal": "arkmat",
-        "journaldata": "55 (2017), no. 1, 165-184",
-        "doi": "https://dx.doi.org/10.4310/ARKIV.2017.v55.n1.a8"
-    },
-    "35": {
-        "status": "publication",
-        "papername": "Rigidity of quasisymmetric mappings on self-affine carpets",
-        "arxiv": "https://doi.org/10.48550/arXiv.1607.02244",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "ojalatuomo rossieino",
-        "topic": "fg gmt",
-        "journal": "intmathresnotimrn",
-        "journaldata": "IMRN 2018, no. 12, 3769-3799",
-        "doi": "https://dx.doi.org/10.1093/imrn/rnw336"
-    },
-    "34": {
-        "status": "publication",
-        "papername": "A note on correlation and local dimensions",
-        "arxiv": "https://doi.org/10.48550/arXiv.1511.08191",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "yangjiaojiao wumin",
-        "topic": "fg gmt",
-        "journal": "chaossolitonsfractals",
-        "journaldata": "97 (2017), 39-43",
-        "doi": "https://dx.doi.org/10.1016/j.chaos.2017.02.004"
-    },
-    "33": {
-        "status": "publication",
-        "papername": "Ledrappier-Young formula and exact dimensionality of self-affine measures",
-        "arxiv": "https://doi.org/10.48550/arXiv.1511.05792",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "baranybalazs",
-        "topic": "fg",
-        "journal": "advmath",
-        "journaldata": "318 (2017), 88-129",
-        "doi": "https://dx.doi.org/10.1016/j.aim.2017.07.015"
-    },
-    "32": {
-        "status": "publication",
-        "papername": "Weak separation condition, Assouad dimension, and Furstenberg homogeneity",
-        "arxiv": "https://doi.org/10.48550/arXiv.1506.07851",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "rossieino",
-        "topic": "et fg",
-        "journal": "annacadscifennmath",
-        "journaldata": "41 (2016), no. 1, 465-490",
-        "doi": "https://dx.doi.org/10.5186/aasfm.2016.4133"
-    },
-    "31": {
-        "status": "publication",
-        "papername": "Self-affine sets with fibered tangents",
-        "arxiv": "https://doi.org/10.48550/arXiv.1505.00958",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "koivusalohenna rossieino",
-        "topic": "fg",
-        "journal": "ergodictheorydynamsystems",
-        "journaldata": "37 (2017), no. 6, 1915-1934",
-        "doi": "https://dx.doi.org/10.1017/etds.2015.130"
-    },
-    "30": {
-        "status": "publication",
-        "papername": "Local dimensions in Moran constructions",
-        "arxiv": "https://doi.org/10.48550/arXiv.1504.05354",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "libing suomalaville",
-        "topic": "fg",
-        "journal": "nonlinearity",
-        "journaldata": "29 (2016), no. 3, 807-822",
-        "doi": "https://dx.doi.org/10.1088/0951-7715/29/3/807"
-    },
-    "29": {
-        "status": "survey",
-        "papername": "Scenery flow, conical densities, and rectifiability",
-        "arxiv": "https://doi.org/10.48550/arXiv.1701.08615",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "",
-        "topic": "et gmt",
-        "journal": "fractalgeometryandstochasticsv",
-        "journaldata": "2015, 27-38",
-        "doi": "https://dx.doi.org/10.1007/978-3-319-18660-3_2"
-    },
-    "28": {
-        "status": "publication",
-        "papername": "Dynamics of the scenery flow and geometry of measures",
-        "arxiv": "https://doi.org/10.48550/arXiv.1401.0231",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "sahlstentuomas shmerkinpablo",
-        "topic": "et gmt",
-        "journal": "proclondmathsoc",
-        "journaldata": "110 (2015), no. 5, 1248-1280",
-        "doi": "https://dx.doi.org/10.1112/plms/pdv003"
-    },
-    "27": {
-        "status": "publication",
-        "papername": "Structure of distributions generated by the scenery flow",
-        "arxiv": "https://doi.org/10.48550/arXiv.1312.2567",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "sahlstentuomas shmerkinpablo",
-        "topic": "et",
-        "journal": "jlondmathsoc",
-        "journaldata": "91 (2015), no. 2, 464-494",
-        "doi": "https://dx.doi.org/10.1112/jlms/jdu076"
-    },
-    "26": {
-        "status": "publication",
-        "papername": "Multifractal analysis of Birkhoff averages for typical infinitely generated self-affine sets",
-        "arxiv": "https://doi.org/10.48550/arXiv.1212.5820",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "reevehenry",
-        "topic": "et fg",
-        "journal": "jfractalgeom",
-        "journaldata": "1 (2014), no. 1, 83-152",
-        "doi": "https://dx.doi.org/10.4171/JFG/3"
-    },
-    "25": {
-        "status": "publication",
-        "papername": "Dimensions, Whitney covers, and tubular neighborhoods",
-        "arxiv": "https://doi.org/10.48550/arXiv.1209.0629",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "lehrbackjuha vuorinenmatti",
-        "topic": "gmt",
-        "journal": "indianaunivmathj",
-        "journaldata": "62 (2013), no. 6, 1861-1889",
-        "doi": "https://dx.doi.org/10.1512/iumj.2013.62.5155"
-    },
-    "24": {
-        "status": "publication",
-        "papername": "Local conical dimensions for measures",
-        "arxiv": "https://doi.org/10.48550/arXiv.1204.5886",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "fengdejun suomalaville",
-        "topic": "gmt",
-        "journal": "mathproccambridgephilossoc",
-        "journaldata": "154 (2013), no. 3, 465-479",
-        "doi": "https://dx.doi.org/10.1017/S0305004113000066"
-    },
-    "23": {
-        "status": "publication",
-        "papername": "Dimensions of random affine code tree fractals",
-        "arxiv": "https://doi.org/10.48550/arXiv.1202.0140",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "jarvenpaaesa jarvenpaamaarit koivusalohenna stenfloorjan suomalaville",
-        "topic": "fg",
-        "journal": "ergodictheorydynamsystems",
-        "journaldata": "34 (2014), no. 3, 854-875",
-        "doi": "https://dx.doi.org/10.1017/etds.2012.168"
-    },
-    "22": {
-        "status": "publication",
-        "papername": "Local structure of self-affine sets",
-        "arxiv": "https://doi.org/10.48550/arXiv.1104.0088",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "bandtchristoph",
-        "topic": "fg",
-        "journal": "ergodictheorydynamsystems",
-        "journaldata": "33 (2013), no. 5, 1326-1337",
-        "doi": "https://dx.doi.org/10.1017/S0143385712000326"
-    },
-    "21": {
-        "status": "publication",
-        "papername": "Existence of doubling measures via generalised nested cubes",
-        "arxiv": "https://doi.org/10.48550/arXiv.1011.0683",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "rajalatapio suomalaville",
-        "topic": "gmt",
-        "journal": "procamermathsoc",
-        "journaldata": "140 (2012), no. 9, 3275-3281",
-        "doi": "https://dx.doi.org/10.1090/S0002-9939-2012-11161-X"
-    },
-    "20": {
-        "status": "publication",
-        "papername": "Local multifractal analysis in metric spaces",
-        "arxiv": "https://doi.org/10.48550/arXiv.1209.3648",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "rajalatapio suomalaville",
-        "topic": "fg gmt",
-        "journal": "nonlinearity",
-        "journaldata": "26 (2013), no. 8, 2157-2173",
-        "doi": "https://dx.doi.org/10.1088/0951-7715/26/8/2157"
-    },
-    "19": {
-        "status": "publication",
-        "papername": "Local homogeneity and dimensions of measures",
-        "arxiv": "https://doi.org/10.48550/arXiv.1003.2895",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "rajalatapio suomalaville",
-        "topic": "gmt",
-        "journal": "annscnormsuperpisaclsci",
-        "journaldata": "16 (2016), no. 4, 1315-1351",
-        "doi": "https://dx.doi.org/10.2422/2036-2145.201504_001"
-    },
-    "18": {
-        "status": "publication",
-        "papername": "Equilibrium states for the pressure function for products of matrices",
-        "arxiv": "https://doi.org/10.48550/arXiv.1009.3129",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "fengdejun",
-        "topic": "et",
-        "journal": "discretecontindynsyst",
-        "journaldata": "30 (2011), no. 3, 699-704",
-        "doi": "https://dx.doi.org/10.3934/dcds.2011.30.699"
-    },
-    "17": {
-        "status": "publication",
-        "papername": "Dimension and measures on sub-self-affine sets",
-        "arxiv": "https://doi.org/10.48550/arXiv.1701.08611",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "vilppolainenmarkku",
-        "topic": "fg",
-        "journal": "monatshmath",
-        "journaldata": "161 (2010), no. 3, 271-293",
-        "doi": "https://dx.doi.org/10.1007/s00605-009-0144-9"
-    },
-    "16": {
-        "status": "survey",
-        "papername": "On upper conical density results",
-        "arxiv": "https://doi.org/10.48550/arXiv.1701.08609",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "",
-        "topic": "gmt",
-        "journal": "recentdevelopmentsinfractalsandrelatedfields",
-        "journaldata": "2010, 45-54",
-        "doi": "https://dx.doi.org/10.1007/978-0-8176-4888-6_4"
-    },
-    "15": {
-        "status": "publication",
-        "papername": "Upper conical density results for general measures on R^n",
-        "arxiv": "https://doi.org/10.48550/arXiv.1701.08602",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "csornyeimarianna rajalatapio suomalaville",
-        "topic": "gmt",
-        "journal": "procedinburghmathsoc",
-        "journaldata": "53 (2010), no. 2, 311-331",
-        "doi": "https://dx.doi.org/10.1017/S0013091508001156"
-    },
-    "14": {
-        "status": "survey",
-        "papername": "Itseaffiineista joukoista",
-        "arxiv": "https://doi.org/10.48550/arXiv.1702.00277",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "",
-        "topic": "fg",
-        "journal": "arkhimedes",
-        "journaldata": "(2008), no. 2, 17-20",
-        "doi": ""
-    },
-    "13": {
-        "status": "survey",
-        "papername": "Porosity and regularity in metric measure spaces",
-        "arxiv": "https://doi.org/10.48550/arXiv.1701.08596",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "",
-        "topic": "gmt",
-        "journal": "realanalexchange2007",
-        "journaldata": "245-250",
-        "doi": ""
-    },
-    "12": {
-        "status": "publication",
-        "papername": "Packing dimension and Ahlfors regularity of porous sets in metric spaces",
-        "arxiv": "https://doi.org/10.48550/arXiv.1701.08593",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "jarvenpaaesa jarvenpaamaarit rajalatapio rogovinsari suomalaville",
-        "topic": "gmt",
-        "journal": "mathz",
-        "journaldata": "266 (2010), no. 1, 83-105",
-        "doi": "https://dx.doi.org/10.1007/s00209-009-0555-2"
-    },
-    "11": {
-        "status": "publication",
-        "papername": "Overlapping self-affine sets of Kakeya type",
-        "arxiv": "https://doi.org/10.48550/arXiv.0710.0442",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "shmerkinpablo",
-        "topic": "fg",
-        "journal": "ergodictheorydynamsystems",
-        "journaldata": "29 (2009), no. 3, 941-965",
-        "doi": "https://dx.doi.org/10.1017/S0143385708080474"
-    },
-    "10": {
-        "status": "publication",
-        "papername": "Packing dimension of mean porous measures",
-        "arxiv": "https://doi.org/10.48550/arXiv.0705.2447",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "beliaevdmitry jarvenpaaesa jarvenpaamaarit rajalatapio smirnovstanislav suomalaville",
-        "topic": "gmt",
-        "journal": "jlondmathsoc",
-        "journaldata": "80 (2009), no. 2, 514-530",
-        "doi": "https://dx.doi.org/10.1112/jlms/jdp040"
-    },
-    "9": {
-        "status": "publication",
-        "papername": "Separation conditions on controlled Moran constructions",
-        "arxiv": "https://doi.org/10.48550/arXiv.1701.08589",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "vilppolainenmarkku",
-        "topic": "fg",
-        "journal": "fundmath",
-        "journaldata": "200 (2008), no. 1, 69-100",
-        "doi": "https://dx.doi.org/10.4064/fm200-1-2"
-    },
-    "8": {
-        "status": "publication",
-        "papername": "Conical upper density theorems and porosity of measures",
-        "arxiv": "https://doi.org/10.48550/arXiv.1701.08587",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "suomalaville",
-        "topic": "gmt",
-        "journal": "advmath",
-        "journaldata": "217 (2008), no. 3, 952-966",
-        "doi": "https://dx.doi.org/10.1016/j.aim.2007.07.003"
-    },
-    "7": {
-        "status": "publication",
-        "papername": "Geometric rigidity of a class of fractal sets",
-        "arxiv": "https://doi.org/10.48550/arXiv.1701.08586",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "",
-        "topic": "fg gmt",
-        "journal": "mathnachr",
-        "journaldata": "279 (2006), no. 1-2, 179-187",
-        "doi": "https://dx.doi.org/10.1002/mana.200510354"
-    },
-    "6": {
-        "status": "publication",
-        "papername": "Asymptotically sharp dimension estimates for k-porous sets",
-        "arxiv": "https://doi.org/10.48550/arXiv.1701.08584",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "jarvenpaaesa jarvenpaamaarit suomalaville",
-        "topic": "gmt",
-        "journal": "mathscand",
-        "journaldata": "97 (2005), no. 2, 309-318",
-        "doi": "https://dx.doi.org/10.7146/math.scand.a-14978"
-    },
-    "5": {
-        "status": "survey",
-        "papername": "Measures of full dimension on self-affine sets",
-        "arxiv": "https://doi.org/10.48550/arXiv.1701.08578",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "",
-        "topic": "et fg",
-        "journal": "actaunivcarolinmathphys",
-        "journaldata": "45 (2004), no. 2, 45-53",
-        "doi": "https://dml.cz/handle/10338.dmlcz/702096"
-    },
-    "4": {
-        "status": "publication",
-        "papername": "Nonsymmetric conical upper density and k-porosity",
-        "arxiv": "https://doi.org/10.48550/arXiv.1701.08577",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "suomalaville",
-        "topic": "gmt",
-        "journal": "transamermathsoc",
-        "journaldata": "363 (2011), no. 3, 1183-1195",
-        "doi": "https://dx.doi.org/10.1090/S0002-9947-2010-04869-X"
-    },
-    "3": {
-        "status": "survey",
-        "papername": "Iterated function systems: Natural measure and local structure",
-        "arxiv": "",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "",
-        "topic": "et fg gmt",
-        "journal": "repunivjyvaskyladeptmathstat",
-        "journaldata": "93 (2003)",
-        "doi": "http://www.math.jyu.fi/research/reports/rep93.pdf"
-    },
-    "2": {
-        "status": "publication",
-        "papername": "On natural invariant measures on generalised iterated function systems",
-        "arxiv": "https://doi.org/10.48550/arXiv.1701.08575",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "",
-        "topic": "et fg",
-        "journal": "annacadscifennmath",
-        "journaldata": "29 (2004), no. 2, 419-458",
-        "doi": "https://dx.doi.org/10.5186/aasfm.00"
-    },
-    "1": {
-        "status": "publication",
-        "papername": "On the geometric structure of the limit set of conformal iterated function systems",
-        "arxiv": "https://doi.org/10.48550/arXiv.1701.08571",
-        "attachment": "",
-        "attachmentfile": "",
-        "collaborators": "",
-        "topic": "fg gmt",
-        "journal": "publmat",
-        "journaldata": "47 (2003), no. 1, 133-141",
-        "doi": "https://dx.doi.org/10.5565/PUBLMAT_47103_06"
-    }
+  "66" : {
+    "status"         : "preprint",
+    "papername"      : "On the Marstrand projection theorem for the Assouad spectrum",
+    "arxiv"          : "https: //doi.org/10.48550/arXiv.2606.28830",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "falconerkeneth fraserjonathan",
+    "topic"          : "gmt",
+    "journal"        : "preprint",
+    "journaldata"    : "2026",
+    "doi"            : ""
+  },
+
+  "65" : {
+    "status"         : "preprint",
+    "papername"      : "Level sets of prevalent Weierstrass functions",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2507.15591",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "buczolichzoltan magabalazs",
+    "topic"          : "gmt",
+    "journal"        : "preprint",
+    "journaldata"    : "2025",
+    "doi"            : ""
+  },
+
+  "64" : {
+    "status"         : "publication",
+    "papername"      : "Self-affine sponges with random contractions",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2505.04383",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "baranybalazs ramsmichal",
+    "topic"          : "fg",
+    "journal"        : "probabtheoryrelatedfields",
+    "journaldata"    : "to appear",
+    "doi"            : "https://doi.org/10.1007/s00440-026-01509-6"
+  },
+
+  "63" : {
+    "status"         : "preprint",
+    "papername"      : "Tangents and slices of self-affine carpets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2410.19404",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "rutaralex",
+    "topic"          : "fg gmt",
+    "journal"        : "preprint",
+    "journaldata"    : "2024",
+    "doi"            : ""
+  },
+
+  "62" : {
+    "status"         : "publication",
+    "papername"      : "Regularity of non-autonomous self-similar sets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2410.17944",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "rutaralex",
+    "topic"          : "fg",
+    "journal"        : "mathproccambridgephilossoc",
+    "journaldata"    : "179 (2025), no. 3, 623–648",
+    "doi"            : "https://doi.org/10.1017/S0305004125000416"
+  },
+
+  "61" : {
+    "status"         : "publication",
+    "papername"      : "Thermodynamic formalism of countably generated self-affine sets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2405.00520",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "morrisian",
+    "topic"          : "et fg",
+    "journal"        : "transamermathsoc",
+    "journaldata"    : "379 (2026), no. 5, 3161-3210.",
+    "doi"            : "https://doi.org/10.1090/tran/9419"
+  },
+
+  "60" : {
+    "status"         : "publication",
+    "papername"      : "Level sets of prevalent Hölder functions",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2402.08520",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "anttilaroope baranybalazs",
+    "topic"          : "gmt",
+    "journal"        : "procamermathsoc",
+    "journaldata"    : "153 (2025), no. 5, 2023-2035",
+    "doi"            : "https://doi.org/10.1090/proc/17045"
+  },
+
+  "59" : {
+    "status"         : "publication",
+    "papername"      : "Local dimension spectrum for dominated planar self-affine sets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2401.13626",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "batsisalex kemptontom",
+    "topic"          : "et fg",
+    "journal"        : "mathz",
+    "journaldata"    : "312 (2026), no. 4, Paper No. 115",
+    "doi"            : "https://doi.org/10.1007/s00209-026-03972-2"
+  },
+
+  "58" : {
+    "status"         : "preprint",
+    "papername"      : "Tangents of invariant sets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2309.11971",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "rutaralex",
+    "topic"          : "gmt",
+    "journal"        : "preprint",
+    "journaldata"    : "2023",
+    "doi"            : ""
+  },
+
+  "57" : {
+    "status"         : "preprint",
+    "papername"      : "Scaling limits of self-conformal measures",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2308.11399",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "baranybalazs pyoralaaleksi wumeng",
+    "topic"          : "et fg gmt",
+    "journal"        : "preprint",
+    "journaldata"    : "2023",
+    "doi"            : ""
+  },
+
+  "56" : {
+    "status"         : "publication",
+    "papername"      : "Dimension of planar non-conformal attractors with triangular derivative matrices",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2308.09590",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "baranybalazs",
+    "topic"          : "fg",
+    "journal"        : "commmathphys",
+    "journaldata"    : "405 (2024), no. 11, Paper No. 256",
+    "doi"            : "https://doi.org/10.1007/s00220-024-05131-2"
+  },
+
+  "55" : {
+    "status"         : "publication",
+    "papername"      : "Covering number on inhomogeneous graph-directed self-similar sets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2307.16263",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "baranybalazs nissinenpetteri",
+    "topic"          : "fg",
+    "journal"        : "jfractalgeom",
+    "journaldata"    : "to appear",
+    "doi"            : ""
+  },
+
+  "54" : {
+    "status"         : "publication",
+    "papername"      : "Slices of the Takagi function",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2305.08181",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "anttilaroope baranybalazs",
+    "topic"          : "fg gmt",
+    "journal"        : "ergodictheorydynamsystems",
+    "journaldata"    : "44 (2024), no. 9, 2361-2398",
+    "doi"            : "https://doi.org/10.1017/etds.2023.117"
+  },
+
+  "53" : {
+    "status"         : "publication",
+    "papername"      : "Non-invertible planar self-affine sets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2205.07351",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "nissinenpetteri",
+    "topic"          : "et fg",
+    "journal"        : "mathproccambridgephilossoc",
+    "journaldata"    : "177 (2024), no. 1, 49-65",
+    "doi"            : "https://doi.org/10.1017/S0305004124000136"
+  },
+
+  "52" : {
+    "status"         : "publication",
+    "papername"      : "Finer geometry of planar self-affine sets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2107.00983",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "baranybalazs yuhan",
+    "topic"          : "fg gmt",
+    "journal"        : "advmath",
+    "journaldata"    : "493 (2026), Paper No. 110914",
+    "doi"            : "https://doi.org/10.1016/j.aim.2026.110914"
+  },
+
+  "51" : {
+    "status"         : "publication",
+    "papername"      : "Minkowski dimension for measures",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2001.07055",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "falconerkenneth fraserjonathan",
+    "topic"          : "gmt",
+    "journal"        : "procamermathsoc",
+    "journaldata"    : "151 (2023), no. 2, 779-794",
+    "doi"            : "https://doi.org/10.1090/proc/16174"
+  },
+
+  "50" : {
+    "status"         : "publication",
+    "papername"      : "Super-exponential condensation without exact overlaps",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1910.04623",
+    "attachment"     : "Numerical calculations",
+    "attachmentfile" : "mathematica/50-numerical-calculations.nb",
+    "collaborators"  : "baranybalazs",
+    "topic"          : "fg",
+    "journal"        : "advmath",
+    "journaldata"    : "379 (2021), Paper No. 107549",
+    "doi"            : "https://doi.org/10.1016/j.aim.2020.107549"
+  },
+
+  "49" : {
+    "status"         : "publication",
+    "papername"      : "Assouad dimension of planar self-affine sets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1906.11007",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "baranybalazs rossieino",
+    "topic"          : "fg",
+    "journal"        : "transamermathsoc",
+    "journaldata"    : "374 (2021), no. 2, 1297-1326",
+    "doi"            : "https://doi.org/10.1090/tran/8224"
+  },
+
+  "48" : {
+    "status"         : "publication",
+    "papername"      : "Absolute continuity in families of parametrised non-homogeneous self-similar measures",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1812.05006",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "orponentuomas",
+    "topic"          : "fg",
+    "journal"        : "jfractalgeom",
+    "journaldata"    : "10 (2023), no. 1, 169-207",
+    "doi"            : "https://doi.org/10.4171/jfg/127"
+  },
+
+  "47" : {
+    "status"         : "publication",
+    "papername"      : "Attainable values for the Assouad dimension of projections",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1811.00951",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "fraserjonathan",
+    "topic"          : "gmt",
+    "journal"        : "procamermathsoc",
+    "journaldata"    : "148 (2020), no. 8, 3393-3405",
+    "doi"            : "https://doi.org/10.1090/proc/14999"
+  },
+
+  "46" : {
+    "status"         : "publication",
+    "papername"      : "On the Hausdorff dimension of microsets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1808.00707",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "fraserjonathan howroyddouglas yuhan",
+    "topic"          : "gmt",
+    "journal"        : "procamermathsoc",
+    "journaldata"    : "147 (2019), no. 11, 4921-4936",
+    "doi"            : "https://doi.org/10.1090/proc/14613"
+  },
+
+  "45" : {
+    "status"         : "publication",
+    "papername"      : "Birkhoff and Lyapunov spectra on planar self-affine sets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1805.08004",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "baranybalazs jordanthomas ramsmichal",
+    "topic"          : "fg",
+    "journal"        : "intmathresnotimrn",
+    "journaldata"    : "IMRN 2021, no. 10, 7966-8005",
+    "doi"            : "https://doi.org/10.1093/imrn/rnz359"
+  },
+
+  "44" : {
+    "status"         : "publication",
+    "papername"      : "Self-conformal sets with positive Hausdorff measure",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1803.09113",
+    "attachment"     : "Numerical calculations",
+    "attachmentfile" : "mathematica/44-numerical-calculations-for-example-76.cdf",
+    "collaborators"  : "angelevskajasmina troscheitsascha",
+    "topic"          : "fg",
+    "journal"        : "bulllondmathsoc",
+    "journaldata"    : "52 (2020), no. 1, 200-223",
+    "doi"            : "https://doi.org/10.1112/blms.12320"
+  },
+
+  "43" : {
+    "status"         : "publication",
+    "papername"      : "Domination, almost additivity, and thermodynamic formalism for planar matrix cocycles",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1802.01916",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "baranybalazs morrisian",
+    "topic"          : "et",
+    "journal"        : "israeljmath",
+    "journaldata"    : "239 (2020), no. 1, 173-214",
+    "doi"            : "https://doi.org/10.1007/s11856-020-2054-4"
+  },
+
+  "42" : {
+    "status"         : "publication",
+    "papername"      : "A Marstrand-type restricted projection theorem in R^3",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1708.04859",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "orponentuomas venierilaura",
+    "topic"          : "gmt",
+    "journal"        : "amerjmath",
+    "journaldata"    : "147 (2025), no. 1, 81-123",
+    "doi"            : "https://doi.org/10.1353/ajm.2025.a950274"
+  },
+
+  "41" : {
+    "status"         : "survey",
+    "papername"      : "Dynamics of the scenery flow and conical density theorems",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1710.02371",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "",
+    "topic"          : "et gmt",
+    "journal"        : "banachcenterpubl",
+    "journaldata"    : "115 (2018), 99-143",
+    "doi"            : "https://doi.org/10.4064/bc115-4"
+  },
+
+  "40" : {
+    "status"         : "publication",
+    "papername"      : "Self-affine sets in analytic curves and algebraic surfaces",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1612.07136",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "fengdejun",
+    "topic"          : "fg gmt",
+    "journal"        : "annacadscifennmath",
+    "journaldata"    : "43 (2018), no. 1, 109-119",
+    "doi"            : "https://doi.org/10.5186/aasfm.2018.4306"
+  },
+
+  "39" : {
+    "status"         : "publication",
+    "papername"      : "Dimension of self-affine sets for fixed translation vectors",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1611.09196",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "baranybalazs koivusalohenna",
+    "topic"          : "fg",
+    "journal"        : "jlondmathsoc",
+    "journaldata"    : "98 (2018), no. 1, 223-252",
+    "doi"            : "https://doi.org/10.1112/jlms.12132"
+  },
+
+  "38" : {
+    "status"         : "publication",
+    "papername"      : "Genericity of dimension drop on self-affine sets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1611.00496",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "libing",
+    "topic"          : "et fg",
+    "journal"        : "statistprobablett",
+    "journaldata"    : "126 (2017), 18-25",
+    "doi"            : "https://dx.doi.org/10.1016/j.spl.2017.02.028"
+  },
+
+  "37" : {
+    "status"         : "publication",
+    "papername"      : "Structure of equilibrium states on self-affine sets and strict monotonicity of affinity dimension",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1609.07360",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "morrisian",
+    "topic"          : "et fg",
+    "journal"        : "proclondmathsoc",
+    "journaldata"    : "116 (2018), no. 4, 929-956",
+    "doi"            : "https://doi.org/10.1112/plms.12089"
+  },
+
+  "36" : {
+    "status"         : "publication",
+    "papername"      : "Measures with predetermined regularity and inhomogeneous self-similar sets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1609.03325",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "lehrbackjuha",
+    "topic"          : "fg gmt",
+    "journal"        : "arkmat",
+    "journaldata"    : "55 (2017), no. 1, 165-184",
+    "doi"            : "https://dx.doi.org/10.4310/ARKIV.2017.v55.n1.a8"
+  },
+
+  "35" : {
+    "status"         : "publication",
+    "papername"      : "Rigidity of quasisymmetric mappings on self-affine carpets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1607.02244",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "ojalatuomo rossieino",
+    "topic"          : "fg gmt",
+    "journal"        : "intmathresnotimrn",
+    "journaldata"    : "IMRN 2018, no. 12, 3769-3799",
+    "doi"            : "https://dx.doi.org/10.1093/imrn/rnw336"
+  },
+
+  "34" : {
+    "status"         : "publication",
+    "papername"      : "A note on correlation and local dimensions",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1511.08191",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "yangjiaojiao wumin",
+    "topic"          : "fg gmt",
+    "journal"        : "chaossolitonsfractals",
+    "journaldata"    : "97 (2017), 39-43",
+    "doi"            : "https://dx.doi.org/10.1016/j.chaos.2017.02.004"
+  },
+
+  "33" : {
+    "status"         : "publication",
+    "papername"      : "Ledrappier-Young formula and exact dimensionality of self-affine measures",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1511.05792",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "baranybalazs",
+    "topic"          : "fg",
+    "journal"        : "advmath",
+    "journaldata"    : "318 (2017), 88-129",
+    "doi"            : "https://dx.doi.org/10.1016/j.aim.2017.07.015"
+  },
+
+  "32" : {
+    "status"         : "publication",
+    "papername"      : "Weak separation condition, Assouad dimension, and Furstenberg homogeneity",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1506.07851",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "rossieino",
+    "topic"          : "et fg",
+    "journal"        : "annacadscifennmath",
+    "journaldata"    : "41 (2016), no. 1, 465-490",
+    "doi"            : "https://dx.doi.org/10.5186/aasfm.2016.4133"
+  },
+
+  "31" : {
+    "status"         : "publication",
+    "papername"      : "Self-affine sets with fibered tangents",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1505.00958",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "koivusalohenna rossieino",
+    "topic"          : "fg",
+    "journal"        : "ergodictheorydynamsystems",
+    "journaldata"    : "37 (2017), no. 6, 1915-1934",
+    "doi"            : "https://dx.doi.org/10.1017/etds.2015.130"
+  },
+
+  "30" : {
+    "status"         : "publication",
+    "papername"      : "Local dimensions in Moran constructions",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1504.05354",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "libing suomalaville",
+    "topic"          : "fg",
+    "journal"        : "nonlinearity",
+    "journaldata"    : "29 (2016), no. 3, 807-822",
+    "doi"            : "https://dx.doi.org/10.1088/0951-7715/29/3/807"
+  },
+
+  "29" : {
+    "status"         : "survey",
+    "papername"      : "Scenery flow, conical densities, and rectifiability",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1701.08615",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "",
+    "topic"          : "et gmt",
+    "journal"        : "fractalgeometryandstochasticsv",
+    "journaldata"    : "2015, 27-38",
+    "doi"            : "https://dx.doi.org/10.1007/978-3-319-18660-3_2"
+  },
+
+  "28" : {
+    "status"         : "publication",
+    "papername"      : "Dynamics of the scenery flow and geometry of measures",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1401.0231",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "sahlstentuomas shmerkinpablo",
+    "topic"          : "et gmt",
+    "journal"        : "proclondmathsoc",
+    "journaldata"    : "110 (2015), no. 5, 1248-1280",
+    "doi"            : "https://dx.doi.org/10.1112/plms/pdv003"
+  },
+
+  "27" : {
+    "status"         : "publication",
+    "papername"      : "Structure of distributions generated by the scenery flow",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1312.2567",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "sahlstentuomas shmerkinpablo",
+    "topic"          : "et",
+    "journal"        : "jlondmathsoc",
+    "journaldata"    : "91 (2015), no. 2, 464-494",
+    "doi"            : "https://dx.doi.org/10.1112/jlms/jdu076"
+  },
+
+  "26" : {
+    "status"         : "publication",
+    "papername"      : "Multifractal analysis of Birkhoff averages for typical infinitely generated self-affine sets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1212.5820",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "reevehenry",
+    "topic"          : "et fg",
+    "journal"        : "jfractalgeom",
+    "journaldata"    : "1 (2014), no. 1, 83-152",
+    "doi"            : "https://dx.doi.org/10.4171/JFG/3"
+  },
+
+  "25" : {
+    "status"         : "publication",
+    "papername"      : "Dimensions, Whitney covers, and tubular neighborhoods",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1209.0629",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "lehrbackjuha vuorinenmatti",
+    "topic"          : "gmt",
+    "journal"        : "indianaunivmathj",
+    "journaldata"    : "62 (2013), no. 6, 1861-1889",
+    "doi"            : "https://dx.doi.org/10.1512/iumj.2013.62.5155"
+  },
+
+  "24" : {
+    "status"         : "publication",
+    "papername"      : "Local conical dimensions for measures",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1204.5886",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "fengdejun suomalaville",
+    "topic"          : "gmt",
+    "journal"        : "mathproccambridgephilossoc",
+    "journaldata"    : "154 (2013), no. 3, 465-479",
+    "doi"            : "https://dx.doi.org/10.1017/S0305004113000066"
+  },
+
+  "23" : {
+    "status"         : "publication",
+    "papername"      : "Dimensions of random affine code tree fractals",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1202.0140",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "jarvenpaaesa jarvenpaamaarit koivusalohenna stenfloorjan suomalaville",
+    "topic"          : "fg",
+    "journal"        : "ergodictheorydynamsystems",
+    "journaldata"    : "34 (2014), no. 3, 854-875",
+    "doi"            : "https://dx.doi.org/10.1017/etds.2012.168"
+  },
+
+  "22" : {
+    "status"         : "publication",
+    "papername"      : "Local structure of self-affine sets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1104.0088",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "bandtchristoph",
+    "topic"          : "fg",
+    "journal"        : "ergodictheorydynamsystems",
+    "journaldata"    : "33 (2013), no. 5, 1326-1337",
+    "doi"            : "https://dx.doi.org/10.1017/S0143385712000326"
+  },
+
+  "21" : {
+    "status"         : "publication",
+    "papername"      : "Existence of doubling measures via generalised nested cubes",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1011.0683",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "rajalatapio suomalaville",
+    "topic"          : "gmt",
+    "journal"        : "procamermathsoc",
+    "journaldata"    : "140 (2012), no. 9, 3275-3281",
+    "doi"            : "https://dx.doi.org/10.1090/S0002-9939-2012-11161-X"
+  },
+
+  "20" : {
+    "status"         : "publication",
+    "papername"      : "Local multifractal analysis in metric spaces",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1209.3648",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "rajalatapio suomalaville",
+    "topic"          : "fg gmt",
+    "journal"        : "nonlinearity",
+    "journaldata"    : "26 (2013), no. 8, 2157-2173",
+    "doi"            : "https://dx.doi.org/10.1088/0951-7715/26/8/2157"
+  },
+
+  "19" : {
+    "status"         : "publication",
+    "papername"      : "Local homogeneity and dimensions of measures",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1003.2895",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "rajalatapio suomalaville",
+    "topic"          : "gmt",
+    "journal"        : "annscnormsuperpisaclsci",
+    "journaldata"    : "16 (2016), no. 4, 1315-1351",
+    "doi"            : "https://dx.doi.org/10.2422/2036-2145.201504_001"
+  },
+
+  "18" : {
+    "status"         : "publication",
+    "papername"      : "Equilibrium states for the pressure function for products of matrices",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1009.3129",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "fengdejun",
+    "topic"          : "et",
+    "journal"        : "discretecontindynsyst",
+    "journaldata"    : "30 (2011), no. 3, 699-704",
+    "doi"            : "https://dx.doi.org/10.3934/dcds.2011.30.699"
+  },
+
+  "17" : {
+    "status"         : "publication",
+    "papername"      : "Dimension and measures on sub-self-affine sets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1701.08611",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "vilppolainenmarkku",
+    "topic"          : "fg",
+    "journal"        : "monatshmath",
+    "journaldata"    : "161 (2010), no. 3, 271-293",
+    "doi"            : "https://dx.doi.org/10.1007/s00605-009-0144-9"
+  },
+
+  "16" : {
+    "status"         : "survey",
+    "papername"      : "On upper conical density results",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1701.08609",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "",
+    "topic"          : "gmt",
+    "journal"        : "recentdevelopmentsinfractalsandrelatedfields",
+    "journaldata"    : "2010, 45-54",
+    "doi"            : "https://dx.doi.org/10.1007/978-0-8176-4888-6_4"
+  },
+
+  "15" : {
+    "status"         : "publication",
+    "papername"      : "Upper conical density results for general measures on R^n",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1701.08602",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "csornyeimarianna rajalatapio suomalaville",
+    "topic"          : "gmt",
+    "journal"        : "procedinburghmathsoc",
+    "journaldata"    : "53 (2010), no. 2, 311-331",
+    "doi"            : "https://dx.doi.org/10.1017/S0013091508001156"
+  },
+
+  "14" : {
+    "status"         : "survey",
+    "papername"      : "Itseaffiineista joukoista",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1702.00277",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "",
+    "topic"          : "fg",
+    "journal"        : "arkhimedes",
+    "journaldata"    : "(2008), no. 2, 17-20",
+    "doi"            : ""
+  },
+
+  "13" : {
+    "status"         : "survey",
+    "papername"      : "Porosity and regularity in metric measure spaces",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1701.08596",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "",
+    "topic"          : "gmt",
+    "journal"        : "realanalexchange2007",
+    "journaldata"    : "245-250",
+    "doi"            : ""
+  },
+
+  "12" : {
+    "status"         : "publication",
+    "papername"      : "Packing dimension and Ahlfors regularity of porous sets in metric spaces",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1701.08593",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "jarvenpaaesa jarvenpaamaarit rajalatapio rogovinsari suomalaville",
+    "topic"          : "gmt",
+    "journal"        : "mathz",
+    "journaldata"    : "266 (2010), no. 1, 83-105",
+    "doi"            : "https://dx.doi.org/10.1007/s00209-009-0555-2"
+  },
+
+  "11" : {
+    "status"         : "publication",
+    "papername"      : "Overlapping self-affine sets of Kakeya type",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.0710.0442",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "shmerkinpablo",
+    "topic"          : "fg",
+    "journal"        : "ergodictheorydynamsystems",
+    "journaldata"    : "29 (2009), no. 3, 941-965",
+    "doi"            : "https://dx.doi.org/10.1017/S0143385708080474"
+  },
+
+  "10" : {
+    "status"         : "publication",
+    "papername"      : "Packing dimension of mean porous measures",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.0705.2447",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "beliaevdmitry jarvenpaaesa jarvenpaamaarit rajalatapio smirnovstanislav suomalaville",
+    "topic"          : "gmt",
+    "journal"        : "jlondmathsoc",
+    "journaldata"    : "80 (2009), no. 2, 514-530",
+    "doi"            : "https://dx.doi.org/10.1112/jlms/jdp040"
+  },
+
+  "9" : {
+    "status"         : "publication",
+    "papername"      : "Separation conditions on controlled Moran constructions",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1701.08589",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "vilppolainenmarkku",
+    "topic"          : "fg",
+    "journal"        : "fundmath",
+    "journaldata"    : "200 (2008), no. 1, 69-100",
+    "doi"            : "https://dx.doi.org/10.4064/fm200-1-2"
+  },
+
+  "8" : {
+    "status"         : "publication",
+    "papername"      : "Conical upper density theorems and porosity of measures",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1701.08587",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "suomalaville",
+    "topic"          : "gmt",
+    "journal"        : "advmath",
+    "journaldata"    : "217 (2008), no. 3, 952-966",
+    "doi"            : "https://dx.doi.org/10.1016/j.aim.2007.07.003"
+  },
+
+  "7" : {
+    "status"         : "publication",
+    "papername"      : "Geometric rigidity of a class of fractal sets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1701.08586",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "",
+    "topic"          : "fg gmt",
+    "journal"        : "mathnachr",
+    "journaldata"    : "279 (2006), no. 1-2, 179-187",
+    "doi"            : "https://dx.doi.org/10.1002/mana.200510354"
+  },
+
+  "6" : {
+    "status"         : "publication",
+    "papername"      : "Asymptotically sharp dimension estimates for k-porous sets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1701.08584",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "jarvenpaaesa jarvenpaamaarit suomalaville",
+    "topic"          : "gmt",
+    "journal"        : "mathscand",
+    "journaldata"    : "97 (2005), no. 2, 309-318",
+    "doi"            : "https://dx.doi.org/10.7146/math.scand.a-14978"
+  },
+
+  "5" : {
+    "status"         : "survey",
+    "papername"      : "Measures of full dimension on self-affine sets",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1701.08578",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "",
+    "topic"          : "et fg",
+    "journal"        : "actaunivcarolinmathphys",
+    "journaldata"    : "45 (2004), no. 2, 45-53",
+    "doi"            : "https://dml.cz/handle/10338.dmlcz/702096"
+  },
+
+  "4" : {
+    "status"         : "publication",
+    "papername"      : "Nonsymmetric conical upper density and k-porosity",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1701.08577",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "suomalaville",
+    "topic"          : "gmt",
+    "journal"        : "transamermathsoc",
+    "journaldata"    : "363 (2011), no. 3, 1183-1195",
+    "doi"            : "https://dx.doi.org/10.1090/S0002-9947-2010-04869-X"
+  },
+
+  "3" : {
+    "status"         : "survey",
+    "papername"      : "Iterated function systems: Natural measure and local structure",
+    "arxiv"          : "",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "",
+    "topic"          : "et fg gmt",
+    "journal"        : "repunivjyvaskyladeptmathstat",
+    "journaldata"    : "93 (2003)",
+    "doi"            : "http://www.math.jyu.fi/research/reports/rep93.pdf"
+  },
+
+  "2" : {
+    "status"         : "publication",
+    "papername"      : "On natural invariant measures on generalised iterated function systems",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1701.08575",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "",
+    "topic"          : "et fg",
+    "journal"        : "annacadscifennmath",
+    "journaldata"    : "29 (2004), no. 2, 419-458",
+    "doi"            : "https://dx.doi.org/10.5186/aasfm.00"
+  },
+
+  "1" : {
+    "status"         : "publication",
+    "papername"      : "On the geometric structure of the limit set of conformal iterated function systems",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.1701.08571",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "",
+    "topic"          : "fg gmt",
+    "journal"        : "publmat",
+    "journaldata"    : "47 (2003), no. 1, 133-141",
+    "doi"            : "https://dx.doi.org/10.5565/PUBLMAT_47103_06"
+  }
 }

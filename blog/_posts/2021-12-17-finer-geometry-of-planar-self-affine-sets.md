@@ -325,7 +325,7 @@ If $$s=\dim_{\mathrm{H}}(X) \le 1$$, then, by [Theorem 13](#theorem-13), $$X$$ i
 $$      \dim_{\mathrm{A}}(\mathrm{proj}_{V^\bot}(X)) \ge \min\{1,\dim_{\mathrm{A}}(X)\} $$
 
 for all $$V \in \mathbb{RP}^1 \setminus E$$, where the set $$E \subset \mathbb{RP}^1$$ satisfies $$\dim_{\mathrm{H}}(E)=0$$.
-[Fraser-K (2020)](https://doi.org/10.48550/arXiv.1811.00951) showed that for every upper semi-continuous function $$f \colon \mathbb{RP}^1 \to [0,1]$$ there exists a compact set $$X \subset \mathbb{R}^2$$ with $$\dim_{\mathrm{A}}(X)=0$$ such that
+[Fraser-K (2023)](https://doi.org/10.48550/arXiv.1811.00951) showed that for every upper semi-continuous function $$f \colon \mathbb{RP}^1 \to [0,1]$$ there exists a compact set $$X \subset \mathbb{R}^2$$ with $$\dim_{\mathrm{A}}(X)=0$$ such that
 
 $$      \dim_{\mathrm{A}}(\mathrm{proj}_{V^\bot}(X)) = f(V) $$
 
