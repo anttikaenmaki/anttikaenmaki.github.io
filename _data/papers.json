@@ -1,4 +1,17 @@
 {
+  "67" : {
+    "status"         : "preprint",
+    "papername"      : "Projections of self-affine sets onto lines",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2607.14740",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "baranybalazs kolossvaryistvan",
+    "topic"          : "fg gmt",
+    "journal"        : "preprint",
+    "journaldata"    : "2026",
+    "doi"            : ""
+  },
+
   "66" : {
     "status"         : "preprint",
     "papername"      : "On the Marstrand projection theorem for the Assouad spectrum",
@@ -151,8 +164,8 @@
     "collaborators"  : "baranybalazs nissinenpetteri",
     "topic"          : "fg",
     "journal"        : "jfractalgeom",
-    "journaldata"    : "to appear",
-    "doi"            : ""
+    "journaldata"    : "13 (2026), no. 3-4, 241-262",
+    "doi"            : "https://doi.org/10.4171/JFG/191"
   },
 
   "54" : {

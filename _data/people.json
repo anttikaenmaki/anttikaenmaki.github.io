@@ -125,6 +125,13 @@
     "www"       : "https://people.maths.bris.ac.uk/~te20281/"
   },
 
+  "kolossvaryistvan" : {
+    "name"      : "Kolossváry",
+    "firstname" : "István",
+    "shortname" : "I. Kolossváry",
+    "www"       : "https://ikolossvary.github.io/"
+  },
+
   "lehrbackjuha" : {
     "name"      : "Lehrbäck",
     "firstname" : "Juha",
