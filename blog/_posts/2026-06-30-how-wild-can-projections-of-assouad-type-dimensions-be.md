@@ -1,6 +1,7 @@
 ---
 title:  "How wild can projections of Assouad-type dimensions be?"
 layout: post
+mathjax: true
 description: The Marstrand-Mattila projection theorem for Assouad-type dimensions
 ---
 

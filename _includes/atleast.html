@@ -2,9 +2,8 @@
   USAGE: include atleast.html n=5 filter="coauthor/journal" items="preprint/publication/survey" output="number/names"
 {%- endcomment -%}
 
-{%- if include.n and include.n >= 1 -%}
-  {%- assign n = include.n | plus: 0 -%}
-{%- else -%}
+{%- assign n = include.n | plus: 0 -%}
+{%- if n < 1 -%}
   {%- assign n = 5 -%}
 {%- endif -%}
 {%- if include.filter -%}
@@ -50,13 +49,11 @@
 {%- endfor -%}
 
 {%- assign atleast-filter = atleast-filter | split: " " | compact -%}
-{%- unless include.output -%}
-  {%- assign include.output = "number" -%}
-{%- endunless -%}
+{%- assign output = include.output | default: "number" -%}
 
-{%- if include.output == "names" -%}
+{%- if output == "names" -%}
   {{- atleast-filter | join: ", " -}}
-{%- elsif include.output == "number" -%}
+{%- elsif output == "number" -%}
   {{- atleast-filter.size -}}
 {%- else -%}
   {{- "Error: Invalid output filter. Use \"number\" or \"names\"." -}}

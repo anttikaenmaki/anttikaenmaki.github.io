@@ -1,7 +1,8 @@
 title: "Antti Käenmäki"
 author: "Antti Käenmäki"
-description: "kaenmaki.net"
-domain: kaenmaki.net       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+tagline: "Mathematician"   # appended to the homepage <title> by jekyll-seo-tag
+description: "Homepage of Antti Käenmäki, mathematician working on ergodic theory, fractal geometry, and geometric measure theory. Publications, blog, and teaching."
+domain: kaenmaki.net       # short site name shown in the footer
 url: https://kaenmaki.net  # the base hostname and protocol for your site, e.g. http://example.com
 baseurl: ""       # place folder name if the site is served in a subfolder
 permalink: /:categories/:title/
@@ -11,13 +12,13 @@ date_format: "%B %e, %Y"
 
 # Layout
 
-show_excerpts: true        # show article excerpts on the home page
+show_excerpts: false       # show excerpts of the blog posts
 show_frame: true           # adds a gray frame to the site
 show_sidebar: false        # show a sidebar instead of the usual header
 show_description: false    # show the site description in the sidebar
-show_excerpts: false       # show excerpts of the blog posts
 minimal: false              # use a dark header
-mathjax: true
+mathjax: false             # KaTeX loads only on pages with "mathjax: true" in their front matter
+future: false              # never publish future-dated posts, regardless of build pipeline
 markdown: kramdown
 kramdown:
   input: GFM
@@ -38,10 +39,31 @@ comments:
 #  disqus_shortname: ""    # see https://disqus.com/
 #  isso_domain: ""         # see https://posativ.org/isso/
 
+# Analytics (script is only injected in production builds)
+umami:
+  src: https://cloud.umami.is/script.js
+  website_id: cba10648-cab6-40ef-8309-c65f09539def
+
 plugins:
  - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-sitemap
+ - jekyll-redirect-from
 
-# Files not part of the published site
+# Files not part of the published site.
+# NOTE: a custom exclude REPLACES Jekyll's default list, so the defaults
+# (Gemfile, node_modules, vendor, ...) must be repeated here.
 exclude:
+ - .sass-cache
+ - .jekyll-cache
+ - gemfiles
+ - Gemfile
+ - Gemfile.lock
+ - node_modules
+ - vendor
+ - CNAME
  - TODO.md
  - DOCUMENTATION.md
+ - README.md
+ - UNLICENSE.txt
+ - assets/katex/README.md

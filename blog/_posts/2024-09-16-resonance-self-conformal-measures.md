@@ -1,6 +1,7 @@
 ---
 title:  "Dissonance of self-conformal measures on the real line"
 layout: post
+mathjax: true
 description: Motivation via Furstenberg conjectures and Marstrand's theorems
 ---
 
@@ -185,7 +186,7 @@ In particular, if $$\dim_{\mathrm{H}}(X) + \dim_{\mathrm{H}}(Y) \le 1$$, then th
 
 $$ \dim_{\mathrm{H}}(X+sY) = \min\{ 1, \dim_{\mathrm{H}}(X) + \dim_{\mathrm{H}}(Y) \}. $$
 
-Both theorems give positive answers to conjectures of [Furstenberg](https://en.wikipedia.org/wiki/Hillel_Furstenberg) from 1970 and late 60's. [Hochman's lecture notes](10.3934/jmd.2014.8.437) from 2014 give a detailed account for the proof of [Theorem 6](#theorem-6) and Furstenberg's proof for [Theorem 5](#theorem-5) under the extra assumption $$\dim_{\mathrm{H}}(X) + \dim_{\mathrm{H}}(Y) < \frac{1}{2}$$. Let us examine in detail in which sense the results are "dual" to each other. Fix $$e \in \mathbb{R} \setminus \{0\}$$ and write
+Both theorems give positive answers to conjectures of [Furstenberg](https://en.wikipedia.org/wiki/Hillel_Furstenberg) from 1970 and late 60's. [Hochman's lecture notes](https://doi.org/10.3934/jmd.2014.8.437) from 2014 give a detailed account for the proof of [Theorem 6](#theorem-6) and Furstenberg's proof for [Theorem 5](#theorem-5) under the extra assumption $$\dim_{\mathrm{H}}(X) + \dim_{\mathrm{H}}(Y) < \frac{1}{2}$$. Let us examine in detail in which sense the results are "dual" to each other. Fix $$e \in \mathbb{R} \setminus \{0\}$$ and write
 
 $$ \mathrm{proj}_e \colon \R^2 \to \R, \quad \mathrm{proj}_e(x) = e \cdot x. $$
 

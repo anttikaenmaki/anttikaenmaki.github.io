@@ -1,6 +1,7 @@
 ---
 title: "Rigidity of quasisymmetric maps on self-affine carpets"
 layout: post
+mathjax: true
 description: Quasi-Lipschitz maps and conformal Assouad dimension
 ---
 

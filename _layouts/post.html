@@ -5,7 +5,9 @@ layout: default
 <article>
   {% include meta.html post=page language=page.language %}
   {{ content }}
-  {% if page.comments != false and site.comments.isso or site.comments.disqus %}
+  {% assign comments_configured = false %}
+  {% if site.comments.isso_domain or site.comments.disqus_shortname %}{% assign comments_configured = true %}{% endif %}
+  {% if page.comments != false and comments_configured %}
     <hr>
     {% if site.comments.isso_domain %}<div id="isso-thread"></div>{% endif %}
     {% if site.comments.disqus_shortname %}<div id="disqus_thread"></div>{% endif %}

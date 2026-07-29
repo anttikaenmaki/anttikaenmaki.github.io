@@ -1,6 +1,7 @@
 ---
 title:  "All-directions projections of self-affine sets"
 layout: post
+mathjax: true
 description: Exceptional directions in the Marstrand-Mattila projection theorem for self-affine sets
 ---
 

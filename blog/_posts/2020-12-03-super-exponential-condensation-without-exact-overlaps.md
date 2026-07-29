@@ -1,6 +1,7 @@
 ---
 title:  "Super-exponential condensation without exact overlaps"
 layout: post
+mathjax: true
 description: Exponential separation and dimension drop conjecture
 ---
 

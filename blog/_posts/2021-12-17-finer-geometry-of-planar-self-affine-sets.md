@@ -1,6 +1,7 @@
 ---
 title:  "Finer geometry of planar self-affine sets"
 layout: post
+mathjax: true
 description: Marstrand's slicing theorem, Ahlfors regularity, and projections
 ---
 

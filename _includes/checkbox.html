@@ -1,42 +1,35 @@
 {%- comment -%}
   USAGE: include checkbox.html type="status/coauthor/topic/journal" filters="coauthors/journals separated by comma" text="text" checkbox="no/checked"
+  - type defaults to "journal" when omitted.
 {%- endcomment -%}
 
-{%- unless include.type -%}
-  {%- assign include.type = "journal" -%}
-{%- endunless -%}
+{%- assign type = include.type | default: "journal" -%}
 {%- unless include.filters -%}
   {%- assign filters = "" | split: "," -%}
 {%- else -%}
   {%- assign filters = include.filters | strip | split: "," | compact -%}
 {%- endunless -%}
-{%- unless include.text -%}
-  {%- assign include.text = "" -%}
-{%- endunless -%}
-{%- unless include.checkbox -%}
-  {%- assign include.checkbox = "" -%}
-{%- endunless -%}
 
 {%- for filter-tmp in filters -%}
   {%- assign filter = filter-tmp | strip -%}
   {%- if forloop.index != 1 %}
-    {%- if filters.size == 2 %} and 
-    {%- elsif forloop.last %}, and 
-    {%- else %}, 
+    {%- if filters.size == 2 %} and
+    {%- elsif forloop.last %}, and
+    {%- else %},
     {%- endif %}
     {% comment %} Explicit space after separator {% endcomment %}
     {{- " " -}}
     {%- endif -%}
-  {%- if include.type == "status" -%}
+  {%- if type == "status" -%}
     {%- assign data = filter | capitalize -%}
     {%- unless data -%}Error: status {{ filter }} not found.{%- endunless -%}
-  {%- elsif include.type == "topic" -%}
+  {%- elsif type == "topic" -%}
     {%- assign data = filter | capitalize -%}
-    {%- unless data -%}Error: journal {{ filter }} not found.{%- endunless -%}
-  {%- elsif include.type == "coauthor" -%}
+    {%- unless data -%}Error: topic {{ filter }} not found.{%- endunless -%}
+  {%- elsif type == "coauthor" -%}
     {%- assign data = site.data.people[filter] -%}
     {%- unless data -%}Error: person {{ filter }} not found.{%- endunless -%}
-  {%- elsif include.type == "journal" -%}
+  {%- elsif type == "journal" -%}
     {%- assign data = site.data.journals[filter] -%}
     {%- unless data -%}Error: journal {{ filter }} not found.{%- endunless -%}
   {%- else -%}
@@ -46,9 +39,9 @@
     {%- if include.checkbox == "no" -%}
       [
     {%- else -%}
-      <label for="{{ include.type }}-{{ filter }}" class="checkbox-label"><span class="javascript"><input type="checkbox" id="{{ include.type }}-{{ filter }}" value="{{ include.type }}-{{ filter | slugify }}" class="filter-checkbox"{%- if include.checkbox %} {{ include.checkbox }}{%- endif -%}>&thinsp;</span>
+      <label for="{{ type }}-{{ filter }}" class="checkbox-label"><span class="javascript"><input type="checkbox" id="{{ type }}-{{ filter }}" value="{{ type }}-{{ filter | slugify }}" class="filter-checkbox"{%- if include.checkbox %} {{ include.checkbox }}{%- endif -%}>&thinsp;</span>
     {%- endif -%}
-    {% if include.text %}{{ include.text }}{% elsif include.type == "status" %}{{ data }}{% elsif include.type == "coauthor" %}{{ data.firstname }} {{ data.name }}{% else %}{{ data.name }}{% endif %}
+    {% if include.text %}{{ include.text }}{% elsif type == "status" %}{{ data }}{% elsif type == "coauthor" %}{{ data.firstname }} {{ data.name }}{% else %}{{ data.name }}{% endif %}
     {%- if include.checkbox == "no" -%}
       ]({{ data.www }})
     {%- else -%}

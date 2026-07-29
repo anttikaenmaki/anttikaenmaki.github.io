@@ -41,9 +41,13 @@
  *     - Case-insensitive and diacritic-insensitive matching (e.g. 'kaenmaki' 
  *       is 'Käenmäki').
  *   - Checkboxes:
- *     - On pages with .filter-checkbox elements, only publications matching 
+ *     - On pages with .filter-checkbox elements, only publications matching
  *       checked filters are shown.
- *     - Checkboxes with the same value (e.g. status-publication) are 
+ *     - Checkboxes are grouped by their value prefix (e.g. status-*, topic-*).
+ *       Within a group the checked values are OR-ed; across groups the result
+ *       is AND-ed. A group with no checked box is ignored, so e.g. checking
+ *       "ergodic theory" narrows the checked statuses instead of doing nothing.
+ *     - Checkboxes with the same value (e.g. status-publication) are
  *       synchronized (checking one checks all).
  *   - No Checkboxes:
  *     - On pages without .filter-checkbox, all publications matching the query 
@@ -89,6 +93,17 @@
  *     - Visit with ?search=dimension -> searches for 'dimension'.
  *     - Visit with ?count=hidden -> searches use original numbering.
  */
+
+// Signal to CSS that JavaScript is running: basic.sass reveals .javascript
+// elements (the search UI) via "html.js" instead of @media (scripting: enabled),
+// which older browsers do not support.
+document.documentElement.classList.add('js');
+
+// document.currentScript is only valid during initial evaluation, never inside
+// event handlers, so the script-src count parameter must be captured here.
+const SCRIPT_URL = document.currentScript && document.currentScript.src
+    ? new URL(document.currentScript.src, document.baseURI || window.location.href)
+    : null;
 
 function normalizeText(text) {
     return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -152,9 +167,17 @@ function matchesTerm(text, term) {
 
 function searchArticles(query, articles, filterCheckboxes) {
     let terms = parseQuery(query);
-    let checkedFilters = Array.from(filterCheckboxes)
-        .filter(checkbox => checkbox.checked)
-        .map(checkbox => checkbox.value);
+
+    // Group checkboxes by value prefix (e.g. "status", "topic"). Each group
+    // with at least one checked box must be matched; the rest are ignored.
+    let filterGroups = {};
+    Array.from(filterCheckboxes).forEach(checkbox => {
+        let prefix = checkbox.value.split('-')[0];
+        (filterGroups[prefix] = filterGroups[prefix] || []).push(checkbox);
+    });
+    let activeGroups = Object.values(filterGroups)
+        .map(group => group.filter(checkbox => checkbox.checked).map(checkbox => checkbox.value))
+        .filter(checkedValues => checkedValues.length > 0);
 
     let orGroups = [];
     let currentGroup = [];
@@ -179,9 +202,7 @@ function searchArticles(query, articles, filterCheckboxes) {
     }
 
     // Determine count mode from script src URL parameter, default to 'display'
-    const scriptSrc = document.currentScript ? document.currentScript.src : '';
-    const scriptUrl = scriptSrc ? new URL(scriptSrc, document.baseURI || window.location.href) : new URL(window.location.href);
-    let count = scriptUrl.searchParams.get('count') === 'hidden' ? 'hidden' : 'display';
+    let count = SCRIPT_URL && SCRIPT_URL.searchParams.get('count') === 'hidden' ? 'hidden' : 'display';
 
     // User given page URL parameter overrides the script src URL parameter
     const pageUrlParams = new URLSearchParams(window.location.search);
@@ -191,8 +212,9 @@ function searchArticles(query, articles, filterCheckboxes) {
     articles.forEach(article => {
         let articleText = article.textContent;
         let articleClasses = Array.from(article.classList);
-        let matchesFilter = filterCheckboxes.length === 0 || 
-                   (checkedFilters.length > 0 && checkedFilters.some(filter => articleClasses.includes(filter)));
+        let matchesFilter = filterCheckboxes.length === 0 ||
+                   (activeGroups.length > 0 && activeGroups.every(checkedValues =>
+                       checkedValues.some(filter => articleClasses.includes(filter))));
 
         if (!matchesFilter) {
             if (count === 'display') {
@@ -241,6 +263,8 @@ function debounce(func, delay) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
+    if (!searchInput) return; // page without a search bar
+
     const articles = document.querySelectorAll('#items li');
     const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
     const urlParams = new URLSearchParams(window.location.search);

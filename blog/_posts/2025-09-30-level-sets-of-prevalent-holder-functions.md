@@ -1,6 +1,7 @@
 ---
 title: "Level sets of prevalent Hölder and Weierstrass functions"
 layout: post
+mathjax: true
 description: "Exploring level set dimensions of Hölder and Weierstrass functions"
 ---
 

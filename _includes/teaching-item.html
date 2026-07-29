@@ -1,4 +1,4 @@
 
     <a href="/assets/pdfs/{{ include.filename }}" data-umami-event="{{ include.name }}" data-umami-event-url="/assets/pdfs/{{ include.filename }}"><strong>{{ include.name }}</strong></a>
-    {{ include.description }}\{% assign pdf = site.static_files | where: "name", include.filename | first %}\
-    {{ include.date }}
+    {{ include.description }}\\
+    <span>{%- capture item_date -%}{% include date.html date=include.date language=include.language %}{%- endcapture -%}{{ item_date | strip }}</span>

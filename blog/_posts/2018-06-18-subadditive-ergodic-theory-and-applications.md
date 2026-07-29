@@ -1,6 +1,7 @@
 ---
 title:  "Subadditive ergodic theory and applications"
 layout: post
+mathjax: true
 description: Introduction to subadditive ergodic theory and its applications
 ---
 

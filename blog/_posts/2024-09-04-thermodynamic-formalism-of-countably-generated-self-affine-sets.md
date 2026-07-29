@@ -1,6 +1,7 @@
 ---
 title:  "Thermodynamic formalism of countably generated self-affine sets"
 layout: post
+mathjax: true
 description: Equilibrium states and Hausdorff dimension of self-affine sets
 ---
 

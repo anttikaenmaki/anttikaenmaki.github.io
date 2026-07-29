@@ -1,6 +1,7 @@
 ---
 title:  "Self-conformal sets with positive Hausdorff measure"
 layout: post
+mathjax: true
 description: Weak separation condition and Ahlfors regularity
 ---
 

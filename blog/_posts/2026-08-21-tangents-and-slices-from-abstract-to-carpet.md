@@ -1,7 +1,9 @@
 ---
 title:  "Tangents and slices, from abstract to carpet"
 layout: post
+mathjax: true
 description: How the direction of self-similarity controls abundance of large tangents
+published: false
 ---
 
 ## Tangents at a point, not just somewhere

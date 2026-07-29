@@ -1,6 +1,7 @@
 ---
 title:  "Scenery flow, conical densities, and rectifiability"
 layout: post
+mathjax: true
 description: Tangent distributions and geometric measure theory
 ---
 

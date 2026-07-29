@@ -2,6 +2,7 @@
 layout: page
 title: Statistics
 permalink: /stats/
+published: false   # personal testing page — set to true only while working on the site
 ---
 
 This is an <a href="https://yle.fi/" data-umami-event="Yle test" data-umami-event-url="https://yle.fi/">external link.</a>

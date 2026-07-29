@@ -1,0 +1,117 @@
+// Site component styles shared by both entry stylesheets (frame.css and
+// index.css): box sizing, search UI, filter checkboxes, KaTeX sizing.
+// search.js toggles the .hidden class, so these rules must exist whichever
+// entry stylesheet is active.
+
+*,*:before,*:after
+  box-sizing: border-box
+
+#items
+  margin-block: 0
+  padding-block: 0
+
+.hidden
+  visibility: hidden
+  height: 0
+  margin: 0 !important
+  padding: 0 !important
+  overflow: hidden
+  line-height: 0
+  min-height: 0 !important
+  max-height: 0
+  border: none !important
+  font-size: 0
+  position: absolute
+  width: 0
+
+#items li.hidden p
+  margin: 0 !important
+  padding: 0 !important
+  line-height: 0
+  min-height: 0 !important
+  border: none !important
+  font-size: 0
+
+.icon
+  margin-right: .5em
+  color: inherit!important
+
+.katex
+  font-size: 1.1em !important
+
+#search-input
+  width: 100%
+  background: $light
+  color: lighten($dark, 15%)
+  font-family: $font-family
+  font-weight: $font-weight
+  font-size: $font-size
+  line-height: $line-height
+  margin: 0
+  padding: 1px
+  border: none
+  border-bottom: 0.1em solid lighten($dark, 30%)
+  @media (prefers-color-scheme: dark)
+    color-scheme: dark
+    background-color: $dark
+    color: darken($light, 15%)!important
+    border-bottom: 0.1em solid darken($lightgreen,20%)!important
+
+#search-input:focus
+  outline: none
+  border-bottom: 0.1em solid lighten($dark, 50%)
+
+.checkbox-label
+  color: $green
+  cursor: pointer
+  @media (prefers-color-scheme: dark)
+    color-scheme: dark
+    background-color: $dark
+    color: $lightgreen!important
+
+// Without JavaScript the checkboxes stay hidden, so the labels render as
+// plain text (see the html.js mechanism in basic.sass).
+html:not(.js) .checkbox-label
+  cursor: default
+  color: $dark!important
+  @media (prefers-color-scheme: dark)
+    color: $light!important
+
+input[type="checkbox"]
+  -webkit-appearance: none
+  appearance: none
+  background-color: $light
+  color: $green
+  margin: 0
+  font: inherit
+  width: 0.97em
+  height: 0.97em
+  border: 0.1em solid $green
+  border-radius: 0.2em
+  transform: translateY(-0.05em)
+  display: inline-grid
+  place-content: center
+  @media (prefers-color-scheme: dark)
+    color-scheme: dark
+    background-color: $dark
+    color: $lightgreen!important
+    border: 0.1em solid $lightgreen!important
+
+input[type="checkbox"]::before
+  content: ""
+  width: 0.65em
+  height: 0.65em
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%)
+  transform: scale(0)
+  transform-origin: bottom left
+  transition: 120ms transform ease-in-out
+  background-color: $green
+  @media (prefers-color-scheme: dark)
+    color-scheme: dark
+
+input[type="checkbox"]:checked::before
+  transform: scale(1)
+  @media (prefers-color-scheme: dark)
+    color-scheme: dark
+    background-color: $lightgreen!important
+    color: $lightgreen!important

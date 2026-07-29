@@ -3,13 +3,13 @@
     "name"        : "Kuvaukset ja kompleksiluvut",
     "filename"    : "kuvaukset-kompleksiluvut.pdf",
     "description" : "Käänteiskuvaus, lukumäärä, alkeisfunktiot, kolmioepäyhtälö, kompleksitaso ja napakoordinaatit",
-    "date"        : "Joulukuu 28, 2024"
+    "date"        : "2024-12-28"
   },
 
   "1" : {
     "name"        : "Joukot ja todistaminen",
     "filename"    : "joukot-todistaminen.pdf",
     "description" : "Lauselogiikka, predikaattilogiikka, todistaminen, joukko ja relaatio",
-    "date"        : "Joulukuu 27, 2024"
+    "date"        : "2024-12-27"
   }
 }

@@ -1,6 +1,7 @@
 ---
 layout: page
 language: finnish
+lang: fi
 title: Opetus
 permalink: /opetus/
 ---

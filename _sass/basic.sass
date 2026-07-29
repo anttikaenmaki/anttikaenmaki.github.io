@@ -28,27 +28,6 @@ a
   &:hover
     text-decoration: underline
 
-.button
-  font-family: $font-family
-  font-weight: $font-weight
-  font-size: $font-size
-  padding: 2px 0
-  border: none
-  margin: 0
-  cursor: pointer
-  background-color: $light
-  color: $green
-  @media (prefers-color-scheme: dark)
-    color-scheme: dark
-    background-color: $dark
-    color: $lightgreen!important
-  &:hover, &.active
-    background-color: lighten($lightgreen, 10%)
-    color: $green
-    @media (prefers-color-scheme: dark)
-      background-color: lighten($dark, 15%)
-      color: $lightgreen
-
 @media (prefers-color-scheme: dark)
   body
     background: $dark
@@ -60,12 +39,15 @@ a
   a
     color: $lightgreen!important
 
+// Hidden by default; search.js adds the "js" class to <html> during its
+// initial evaluation, so the search UI only appears when JavaScript runs.
+// (Replaces @media (scripting: enabled), unsupported before Chrome 120 /
+// Firefox 113 / Safari 17.)
 .javascript
   display: none
 
-@media (scripting: enabled)
-  .javascript
-    display: initial
+html.js .javascript
+  display: initial
 
 p
   text-align: justify
@@ -106,7 +88,7 @@ img
 table
   display: inline-block
   max-width: 100%
-  overflow-y: scroll
+  overflow-x: auto
   border-spacing: 1px
   border-radius: 2px
   box-shadow: 0 0 0 1px reduce(12) inset
