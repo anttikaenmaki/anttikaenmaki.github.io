@@ -17,6 +17,7 @@ body
 h1, h2, h3, h4, h5, h6
   font-weight: $heading-weight
   color: darken($green, 10%)!important
+  clear: both // never let a floated image spill past the end of its section
 
 b, strong, th
   color: darken($green, 5%)!important
@@ -84,6 +85,15 @@ img
   border-radius: 2px
   max-width: 100%
   height: auto
+
+img + em // caption: put *caption* on the line directly below ![alt](src), with no blank line between
+  display: block
+  width: 80%
+  margin: 0 auto 1.5em
+  font-size: .85em
+  line-height: 1.45
+  text-align: center
+  opacity: .75
 
 table
   display: inline-block
