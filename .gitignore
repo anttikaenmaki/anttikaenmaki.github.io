@@ -7,6 +7,10 @@ _site
 *.gem
 TODO.md
 
+# Working material for posts: full-text copies of cited sources, kept local.
+# Never commit - the repo is public and these are other people's copyrighted text.
+_research/
+
 # --- LaTeX rules merged from .cursor/templates/.gitignore ---
 # Deliberately OMITTED from the template (they would break the Jekyll site):
 #   [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]-*  -> matches every Jekyll post filename
