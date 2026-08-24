@@ -52,15 +52,15 @@
   },
 
   "63" : {
-    "status"         : "preprint",
+    "status"         : "publication",
     "papername"      : "Tangents and slices of self-affine carpets",
     "arxiv"          : "https://doi.org/10.48550/arXiv.2410.19404",
     "attachment"     : "",
     "attachmentfile" : "",
     "collaborators"  : "rutaralex",
     "topic"          : "fg gmt",
-    "journal"        : "preprint",
-    "journaldata"    : "2024",
+    "journal"        : "ergodictheorydynamsystems",
+    "journaldata"    : "to appear",
     "doi"            : ""
   },
 
