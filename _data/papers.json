@@ -1,4 +1,17 @@
 {
+  "68" : {
+    "status"         : "preprint",
+    "papername"      : "Exponential separation of self-conformal systems",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2609.23743",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "",
+    "topic"          : "et fg",
+    "journal"        : "preprint",
+    "journaldata"    : "2026",
+    "doi"            : ""
+  },
+
   "67" : {
     "status"         : "preprint",
     "papername"      : "Projections of self-affine sets onto lines",

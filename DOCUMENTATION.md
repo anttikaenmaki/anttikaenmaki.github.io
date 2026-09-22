@@ -543,7 +543,7 @@ Generates a sidebar navigation (alternative to header).
 
 Displays blog posts with pagination.
 
-**Purpose:** Render blog post list for homepage.
+**Purpose:** Render blog post list for the homepage.
 
 **Usage:**
 
