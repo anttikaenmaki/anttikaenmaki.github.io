@@ -39,15 +39,15 @@
   },
 
   "65" : {
-    "status"         : "preprint",
+    "status"         : "publication",
     "papername"      : "Level sets of prevalent Weierstrass functions",
     "arxiv"          : "https://doi.org/10.48550/arXiv.2507.15591",
     "attachment"     : "",
     "attachmentfile" : "",
     "collaborators"  : "buczolichzoltan magabalazs",
     "topic"          : "fg gmt",
-    "journal"        : "preprint",
-    "journaldata"    : "2025",
+    "journal"        : "jlondmathsoc",
+    "journaldata"    : "to appear",
     "doi"            : ""
   },
 
