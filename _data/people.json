@@ -132,6 +132,13 @@
     "www"       : "https://ikolossvary.github.io/"
   },
 
+  "kosunenpekka" : {
+    "name"      : "Kosunen",
+    "firstname" : "Pekka",
+    "shortname" : "P. Kosunen",
+    "www"       : ""
+  },
+
   "lehrbackjuha" : {
     "name"      : "Lehrbäck",
     "firstname" : "Juha",

@@ -1,4 +1,17 @@
 {
+  "69" : {
+    "status"         : "preprint",
+    "papername"      : "Rational points of exact period three for the quadratic family",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2610.39820",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "kosunenpekka",
+    "topic"          : "",
+    "journal"        : "preprint",
+    "journaldata"    : "2026",
+    "doi"            : ""
+  },
+
   "68" : {
     "status"         : "preprint",
     "papername"      : "Exponential separation of self-conformal systems",
