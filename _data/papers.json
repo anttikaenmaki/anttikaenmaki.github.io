@@ -6,7 +6,7 @@
     "attachment"     : "",
     "attachmentfile" : "",
     "collaborators"  : "kosunenpekka",
-    "topic"          : "",
+    "topic"          : "fg",
     "journal"        : "preprint",
     "journaldata"    : "2026",
     "doi"            : ""
@@ -60,7 +60,7 @@
     "collaborators"  : "buczolichzoltan magabalazs",
     "topic"          : "fg gmt",
     "journal"        : "jlondmathsoc",
-    "journaldata"    : "to appear",
+    "journaldata"    : "114 (2026), no. 4, Paper No. e70749",
     "doi"            : "http://dx.doi.org/10.1112/jlms.70749"
   },
 
@@ -73,7 +73,7 @@
     "collaborators"  : "baranybalazs ramsmichal",
     "topic"          : "fg",
     "journal"        : "probabtheoryrelatedfields",
-    "journaldata"    : "to appear",
+    "journaldata"    : "196 (2026), no. 5-6, 2373-2401",
     "doi"            : "https://doi.org/10.1007/s00440-026-01509-6"
   },
 
@@ -469,7 +469,7 @@
 
   "33" : {
     "status"         : "publication",
-    "papername"      : "Ledrappier-Young formula and exact dimensionality of self-affine measures",
+    "papername"      : "Ledrappier–Young formula and exact dimensionality of self-affine measures",
     "arxiv"          : "https://doi.org/10.48550/arXiv.1511.05792",
     "attachment"     : "",
     "attachmentfile" : "",
@@ -495,7 +495,7 @@
 
   "31" : {
     "status"         : "publication",
-    "papername"      : "Self-affine sets with fibered tangents",
+    "papername"      : "Self-affine sets with fibred tangents",
     "arxiv"          : "https://doi.org/10.48550/arXiv.1505.00958",
     "attachment"     : "",
     "attachmentfile" : "",
@@ -671,7 +671,7 @@
     "collaborators"  : "fengdejun",
     "topic"          : "et",
     "journal"        : "discretecontindynsyst",
-    "journaldata"    : "30 (2011), no. 3, 699-704",
+    "journaldata"    : "30 (2011), no. 3, 699-708",
     "doi"            : "https://doi.org/10.3934/dcds.2011.30.699"
   },
 
