@@ -1,4 +1,17 @@
 {
+  "70" : {
+    "status"         : "preprint",
+    "papername"      : "Hausdorff dimension of planar box-like self-affine sets with rotations",
+    "arxiv"          : "https://doi.org/10.48550/arXiv.2611.09066",
+    "attachment"     : "",
+    "attachmentfile" : "",
+    "collaborators"  : "prokajdaniel simonkaroly troscheitsascha",
+    "topic"          : "et fg",
+    "journal"        : "preprint",
+    "journaldata"    : "2026",
+    "doi"            : ""
+  },
+
   "69" : {
     "status"         : "preprint",
     "papername"      : "Rational points of exact period three for the quadratic family",

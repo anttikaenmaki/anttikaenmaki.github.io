@@ -188,6 +188,13 @@
     "www"       : "https://sites.google.com/view/tuomaths/"
   },
 
+  "prokajdaniel" : {
+    "name"      : "Prokaj",
+    "firstname" : "Dániel",
+    "shortname" : "R. D. Prokaj",
+    "www"       : "https://rdprokaj.github.io/"
+  },
+
   "pyoralaaleksi" : {
     "name"      : "Pyörälä",
     "firstname" : "Aleksi",
@@ -249,6 +256,13 @@
     "firstname" : "Pablo",
     "shortname" : "P. Shmerkin",
     "www"       : "https://www.pabloshmerkin.org/"
+  },
+
+  "simonkaroly" : {
+    "name"      : "Simon",
+    "firstname" : "Károly",
+    "shortname" : "K. Simon",
+    "www"       : "https://math.bme.hu/~simonk/"
   },
 
   "smirnovstanislav" : {
