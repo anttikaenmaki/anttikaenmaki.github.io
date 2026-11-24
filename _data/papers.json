@@ -74,7 +74,7 @@
     "topic"          : "fg gmt",
     "journal"        : "jlondmathsoc",
     "journaldata"    : "114 (2026), no. 4, Paper No. e70749",
-    "doi"            : "http://dx.doi.org/10.1112/jlms.70749"
+    "doi"            : "https://doi.org/10.1112/jlms.70749"
   },
 
   "64" : {
@@ -100,7 +100,7 @@
     "topic"          : "fg gmt",
     "journal"        : "ergodictheorydynamsystems",
     "journaldata"    : "to appear",
-    "doi"            : ""
+    "doi"            : "https://doi.org/10.1017/etds.2026.10347"
   },
 
   "62" : {
