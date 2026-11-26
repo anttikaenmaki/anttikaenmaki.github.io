@@ -238,6 +238,7 @@ Renders a single publication entry with formatting, links, and metadata.
 **Purpose:** Display a publication with title, authors, journal, and links.
 
 **Parameters:**
+- `include.number` (string, optional): The paper's key in `papers.json`; it becomes the item's `value` attribute, so the paper keeps its number when a search hides other items (in a `{% for paper in site.data.papers %}` loop, pass `number=paper.first`, since the include tag does not accept `paper[0]`)
 - `include.status` (string, required): Publication status
 - `include.papername` (string, required): Paper title
 - `include.journal` (string, required): Journal ID
@@ -254,6 +255,7 @@ Renders a single publication entry with formatting, links, and metadata.
 ```liquid
 {% assign paper = site.data.papers["50"] %}
 {% include publication-item.html
+   number="50"
    status=paper.status
    papername=paper.papername
    journal=paper.journal
@@ -267,7 +269,7 @@ Renders a single publication entry with formatting, links, and metadata.
 %}
 ```
 
-**Output:** Generates HTML list item with CSS classes for filtering:
+**Output:** Generates HTML list item, `<li value="50">` when `number` is given, with CSS classes for filtering:
 - `.status-publication` / `.status-preprint` / `.status-survey`
 - `.journal-{journalname}`
 - `.topic-fg` / `.topic-et` / `.topic-gmt`

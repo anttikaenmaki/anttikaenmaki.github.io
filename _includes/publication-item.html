@@ -1,10 +1,12 @@
 {%- comment -%}
   Generates a publication entry as an HTML <li> with classes and explicit HTML content.
-  Inputs: include.status, include.journal, include.collaborators, include.papername,
+  Inputs: include.number, include.status, include.journal, include.collaborators, include.papername,
           include.arxiv, include.attachment, include.attachmentfile, include.doi, include.journaldata
-  Outputs: <li class="status-... journal-... topic-... coauthor-..."><p><a><strong>Paper title</strong></a><br />coauthors, status</p></li>
+  include.number (optional) is the paper's key in papers.json. It becomes the item's value
+  attribute, so the paper keeps its number when search.js hides other items.
+  Outputs: <li value="27" class="status-... journal-... topic-... coauthor-..."><p><a><strong>Paper title</strong></a><br />coauthors, status</p></li>
 {%- endcomment -%}
-    {: .status-{{ include.status }} .journal-{{ include.journal | downcase | replace: ".", "" | replace: " ", "-" | split: "," | first }}
+    {: {% if include.number %}value="{{ include.number }}" {% endif %}.status-{{ include.status }} .journal-{{ include.journal | downcase | replace: ".", "" | replace: " ", "-" | split: "," | first }}
     {%- if include.topic != "" -%}
       {%- assign topics = include.topic | split: " " -%}
       {%- for topic in topics -%}

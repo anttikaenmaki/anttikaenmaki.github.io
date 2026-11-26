@@ -18,6 +18,7 @@ I have authored {% include checkbox-status.html items="preprint" end=", " checke
 {% for paper in site.data.papers %}
 {% assign paperdata = paper[1] %}
 {{ paper[0] }}. {% include publication-item.html language=page.language
+    number         = paper.first
     status         = paperdata.status 
     papername      = paperdata.papername 
     arxiv          = paperdata.arxiv 

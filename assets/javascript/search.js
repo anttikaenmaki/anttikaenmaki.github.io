@@ -13,24 +13,18 @@
  *   - <input id="search-input"> for search queries.
  *   - <ol id="items"> containing <li> elements for items (e.g. publications), 
  *     with classes for filters (e.g., topic-et, status-preprint).
- *   - Optional <input type="checkbox" class="filter-checkbox" 
+ *   - Optional <input type="checkbox" class="filter-checkbox"
  *     value="topic-et"> for filter controls.
- *   - Numbering of items is provided by <ol> browser-generated numbers.
+ *   - Numbering of items is provided by <ol> browser-generated numbers, or
+ *     explicitly by <li value="27">. The publications page sets each value
+ *     to the paper's key in papers.json.
  *
- * CSS Requirements (optional if count=display):
- *   - For count=hidden: Define .hidden { visibility: hidden; height: 0; 
- *     margin: 0 !important; padding: 0 !important; overflow: hidden; 
- *     line-height: 0; min-height: 0 !important; max-height: 0; border: none 
- *     !important; font-size: 0; position: absolute; width: 0; } to hide 
- *     non-matching <li> elements without affecting <ol> numbering and 
- *     eliminate vertical space.
- *   - For count=hidden: Define #items li.hidden p { margin: 0 !important; 
- *     padding: 0 !important; line-height: 0; min-height: 0 !important; border: 
- *     none !important; font-size: 0; } to collapse child <p> spacing.
- *   - Use #items { margin-block: 0; padding-block: 0; } to eliminate vertical 
- *     spacing while preserving horizontal alignment (required for both 
- *     count=hidden and count=display).
- * 
+ * CSS Requirements: none.
+ *   - Non-matching <li> elements get the HTML hidden attribute, which the
+ *     browser renders as display: none. components.sass adds the guard
+ *     #items > li[hidden] { display: none !important; } so that a rule
+ *     setting display on list items cannot make a hidden item visible.
+ *
  * Functionality:
  *   - Search:
  *     - Searches publications based on #search-input value
@@ -38,8 +32,12 @@
  *     - OR logic with 'OR' or '||' (e.g. 'self-affine OR dimension').
  *     - Phrase searches with quotes (", ', “, ”, e.g. '"self-affine 
  *       measure"').
- *     - Case-insensitive and diacritic-insensitive matching (e.g. 'kaenmaki' 
+ *     - Case-insensitive and diacritic-insensitive matching (e.g. 'kaenmaki'
  *       is 'Käenmäki').
+ *     - Any whitespace counts as a space: in the query (e.g. the
+ *       non-breaking space that Option+Space types on a Mac) and in the
+ *       items (e.g. the non-breaking spaces between coauthor names, so that
+ *       '"Bárány and I. Kolossváry"' matches).
  *   - Checkboxes:
  *     - On pages with .filter-checkbox elements, only publications matching
  *       checked filters are shown.
@@ -52,26 +50,31 @@
  *   - No Checkboxes:
  *     - On pages without .filter-checkbox, all publications matching the query 
  *       are shown.
- *   - Numbering: Preserves numbering (e.g., 65, 64, 59, ...) for visible items 
- *     in count=hidden; renumbers to 8, 7, 6, ... in count=display which is 
- *     also default.
+ *   - Numbering: By default (count=hidden) every item keeps its number, so a
+ *     search can show e.g. 41, 29, 28, 27. With count=display the visible
+ *     items are renumbered 4, 3, 2, 1. Before hiding anything, the script
+ *     gives every <li> an explicit value attribute holding the number it had
+ *     when the page loaded, because an item hidden with display: none drops
+ *     out of the <ol> numbering; count=display rewrites these values after
+ *     each search.
  *   - ESC Key:
  *     - Clears #search-input, triggers search, and refocuses input.
  *   - Debouncing:
- *     - 200ms delay on input events to optimize performance.
+ *     - 200ms delay on input events to optimize performance. The delayed
+ *       search reads #search-input when it runs, so a search still pending
+ *       when ESC is pressed cannot bring the old results back.
  *
  * Integration:
- *   - Include in site via <script defer src="path/to/search.js"></script> in 
+ *   - Include in site via <script defer src="path/to/search.js"></script> in
  *     HTML.
  *   - No external dependencies (pure JavaScript).
- *   - Add CSS .hidden class.
  *   - Ensure there are <li> elements with appropriate classes in #items.
- *   - Add CSS #items styles; add .hidden styles for count=hidden.
- *   - Select count mode via URL parameter: ?count=display (renumbers 
- *     searches), requires no extra CSS, and is the default. Loading the file 
- *     with search.js?count=hidden overrides default. Visiting the site with 
- *     publications?count=hidden overrides parameters specified in script src.
- *     Count=hidden preserves the original numbering and requires .hidden CSS.
+ *   - Select count mode via URL parameter: ?count=hidden (hidden items are
+ *     still counted, so the numbers stay) is the default; ?count=display
+ *     counts only the displayed items, so searches renumber them. Loading the
+ *     file with search.js?count=display overrides the default. Visiting the
+ *     site with publications?count=hidden or publications?count=display
+ *     overrides the parameter specified in script src.
  *
  * Example:
  *   HTML:
@@ -91,7 +94,8 @@
  *     - Press ESC -> Clears input, refocuses, shows all items.
  *     - On a page without checkboxes, 'self-affine' shows matching items.
  *     - Visit with ?search=dimension -> searches for 'dimension'.
- *     - Visit with ?count=hidden -> searches use original numbering.
+ *     - Visit with ?count=display -> searches renumber the visible items;
+ *       without it they keep their original numbers.
  */
 
 // Signal to CSS that JavaScript is running: basic.sass reveals .javascript
@@ -105,8 +109,21 @@ const SCRIPT_URL = document.currentScript && document.currentScript.src
     ? new URL(document.currentScript.src, document.baseURI || window.location.href)
     : null;
 
+// Count mode: 'hidden' (the default) still counts the hidden items, so every
+// item keeps its number; 'display' counts only the displayed items, so a
+// search renumbers them. A count parameter in the page URL overrides one in
+// the script src.
+const COUNT_MODE = (() => {
+    const pageCount = new URLSearchParams(window.location.search).get('count');
+    if (pageCount === 'hidden' || pageCount === 'display') return pageCount;
+    return SCRIPT_URL && SCRIPT_URL.searchParams.get('count') === 'display' ? 'display' : 'hidden';
+})();
+
+// Lowercase, drop diacritics, and turn every run of whitespace into a single
+// space. The coauthor lines join names with non-breaking spaces, so without
+// the last step the phrase "Bárány and I. Kolossváry" could never match.
 function normalizeText(text) {
-    return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ');
 }
 
 function parseQuery(query) {
@@ -137,7 +154,7 @@ function parseQuery(query) {
             } else {
                 currentTerm += char;
             }
-        } else if (char === ' ' && !inQuotes) {
+        } else if (/\s/.test(char) && !inQuotes) { // any whitespace, e.g. Option+Space on a Mac
             if (currentTerm.trim()) {
                 terms.push({ type: 'word', value: currentTerm.trim() });
                 currentTerm = '';
@@ -201,14 +218,6 @@ function searchArticles(query, articles, filterCheckboxes) {
         orGroups = [[]];
     }
 
-    // Determine count mode from script src URL parameter, default to 'display'
-    let count = SCRIPT_URL && SCRIPT_URL.searchParams.get('count') === 'hidden' ? 'hidden' : 'display';
-
-    // User given page URL parameter overrides the script src URL parameter
-    const pageUrlParams = new URLSearchParams(window.location.search);
-    const pageCount = pageUrlParams.get('count');
-    count = pageCount === 'hidden' ? 'hidden' : pageCount === 'display' ? 'display' : count;
-
     articles.forEach(article => {
         let articleText = article.textContent;
         let articleClasses = Array.from(article.classList);
@@ -217,20 +226,12 @@ function searchArticles(query, articles, filterCheckboxes) {
                        checkedValues.some(filter => articleClasses.includes(filter))));
 
         if (!matchesFilter) {
-            if (count === 'display') {
-                article.style.display = 'none';
-            } else {
-                article.classList.add('hidden');
-            }
+            article.hidden = true;
             return;
         }
 
         if (terms.length === 0 || (terms.length === 1 && terms[0].value === '')) {
-            if (count === 'display') {
-                article.style.display = '';
-            } else {
-                article.classList.remove('hidden');
-            }
+            article.hidden = false;
             return;
         }
 
@@ -242,11 +243,33 @@ function searchArticles(query, articles, filterCheckboxes) {
             });
         });
 
-        if (count === 'display') {
-            article.style.display = matchesQuery ? '' : 'none';
-        } else {
-            article.classList.toggle('hidden', !matchesQuery);
-        }
+        article.hidden = !matchesQuery;
+    });
+}
+
+// Give every item an explicit value attribute holding the number it has when
+// the page loads: the value set in the HTML if there is one, otherwise the
+// number the <ol> gives its position. This must run before anything is
+// hidden, because an item hidden with display: none drops out of the <ol>
+// numbering: without explicit values the visible items would be renumbered.
+function freezeNumbers(list, articles) {
+    let step = list.reversed ? -1 : 1;
+    let next = list.hasAttribute('start') ? list.start : list.reversed ? articles.length : 1;
+    articles.forEach(article => {
+        let own = parseInt(article.getAttribute('value'), 10);
+        article.value = Number.isNaN(own) ? next : own;
+        next = article.value + step;
+    });
+}
+
+// count=display: number the visible items consecutively, counting down in a
+// reversed list (4, 3, 2, 1) and up otherwise.
+function renumberVisible(list, articles) {
+    let visible = articles.filter(article => !article.hidden);
+    let step = list.reversed ? -1 : 1;
+    let first = list.hasAttribute('start') ? list.start : list.reversed ? visible.length : 1;
+    visible.forEach((article, i) => {
+        article.value = first + i * step;
     });
 }
 
@@ -263,31 +286,38 @@ function debounce(func, delay) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
-    if (!searchInput) return; // page without a search bar
+    const list = document.getElementById('items');
+    if (!searchInput || !list) return; // page without a search bar or a list
 
-    const articles = document.querySelectorAll('#items li');
-    const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
+    // The list's own items only: an <li> of a list nested inside an item is
+    // not an item.
+    const articles = Array.from(document.querySelectorAll('#items > li'));
     const urlParams = new URLSearchParams(window.location.search);
-    const searchQuery = urlParams.get('search') || '';
+    searchInput.value = urlParams.get('search') || '';
 
-    searchInput.value = searchQuery;
+    freezeNumbers(list, articles);
 
-    searchArticles(searchQuery, articles, filterCheckboxes);
+    // Every search reads #search-input when it runs, never a copy taken
+    // earlier.
+    const runSearch = () => {
+        searchArticles(searchInput.value, articles, document.querySelectorAll('.filter-checkbox'));
+        if (COUNT_MODE === 'display') renumberVisible(list, articles);
+    };
 
-    // Apply debouncing to input event
-    const debouncedSearch = debounce((query) => {
-        searchArticles(query, articles, document.querySelectorAll('.filter-checkbox'));
-    }, 200);
+    runSearch();
 
-    searchInput.addEventListener('input', () => {
-        debouncedSearch(searchInput.value);
-    });
+    // Apply debouncing to input event. The delayed search reads the input
+    // when it fires, so one still pending when ESC is pressed finds the box
+    // empty instead of bringing the old results back.
+    const debouncedSearch = debounce(runSearch, 200);
+
+    searchInput.addEventListener('input', debouncedSearch);
 
     // Clear search input on ESC key and refocus
     searchInput.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') {
             searchInput.value = '';
-            searchArticles('', articles, document.querySelectorAll('.filter-checkbox'));
+            runSearch();
             searchInput.focus();
         }
     });
@@ -305,7 +335,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-            searchArticles(searchInput.value, articles, document.querySelectorAll('.filter-checkbox'));
+            runSearch();
         }
     });
 });
